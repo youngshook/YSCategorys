@@ -1,0 +1,46 @@
+
+#import "YSKit.h"
+#import "UIViewController+YSKit.h"
+
+@implementation UIViewController (YSKit)
+
++ (UIViewController *)rootViewControllerWhichCanPresentModalViewController {
+    UIViewController *vc = ([UIApplication sharedApplication].keyWindow.rootViewController)? : [(UIWindow *)[[UIApplication sharedApplication].windows firstObject] rootViewController];
+
+    while (vc.presentedViewController) {
+	vc = vc.presentedViewController;
+    }
+
+    return vc;
+}
+
+- (void)addChildViewController:(UIViewController *)childController intoView:(UIView *)viewControllerSubview {
+    [self addChildViewController:childController];
+    if (viewControllerSubview) {
+	[viewControllerSubview addSubview:childController.view];
+    }
+    else {
+	[self.view addSubview:childController.view];
+    }
+
+    [self didMoveToParentViewController:self];
+}
+
+- (void)removeFromParentViewControllerAndView {
+    [self willMoveToParentViewController:nil];
+
+    if (self.view.superview) {
+	[self.view removeFromSuperview];
+    }
+
+    if (self.parentViewController) {
+	[self removeFromParentViewController];
+    }
+}
+
+//! ref: http://lldong.github.com/blog/2012/11/02/dissmiss-keyboard/
+- (void)dismissKeyboard {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
+@end
