@@ -35,6 +35,8 @@
 		B5AC76761969B74B00566642 /* UITableView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC765D1969B74B00566642 /* UITableView+YSKit.m */; };
 		B5AC76771969B74B00566642 /* UIViewController+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC765F1969B74B00566642 /* UIViewController+YSKit.m */; };
 		B5AC76781969B74B00566642 /* UIWebView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76611969B74B00566642 /* UIWebView+YSKit.m */; };
+		B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767A196C469B00566642 /* NSNull+YSKit.m */; };
+		B5AC767E196C585800566642 /* NSData+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767D196C585800566642 /* NSData+YSKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,10 @@
 		B5AC76601969B74B00566642 /* UIWebView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+YSKit.h"; sourceTree = "<group>"; };
 		B5AC76611969B74B00566642 /* UIWebView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+YSKit.m"; sourceTree = "<group>"; };
 		B5AC76621969B74B00566642 /* YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSKit.h; sourceTree = "<group>"; };
+		B5AC7679196C469B00566642 /* NSNull+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+YSKit.h"; sourceTree = "<group>"; };
+		B5AC767A196C469B00566642 /* NSNull+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+YSKit.m"; sourceTree = "<group>"; };
+		B5AC767C196C585800566642 /* NSData+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YSKit.h"; sourceTree = "<group>"; };
+		B5AC767D196C585800566642 /* NSData+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YSKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,8 @@
 		B5AC76341969B74A00566642 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B5AC76451969B74B00566642 /* NSString+YSKit.h */,
+				B5AC76461969B74B00566642 /* NSString+YSKit.m */,
 				B5AC76351969B74A00566642 /* NSArray+YSKit.h */,
 				B5AC76361969B74B00566642 /* NSArray+YSKit.m */,
 				B5AC76371969B74B00566642 /* NSBundle+YSKit.h */,
@@ -189,10 +197,12 @@
 				B5AC76421969B74B00566642 /* NSNumberFormatter+YSKit.m */,
 				B5AC76431969B74B00566642 /* NSObject+YSKit.h */,
 				B5AC76441969B74B00566642 /* NSObject+YSKit.m */,
-				B5AC76451969B74B00566642 /* NSString+YSKit.h */,
-				B5AC76461969B74B00566642 /* NSString+YSKit.m */,
 				B5AC76471969B74B00566642 /* NSURL+YSKit.h */,
 				B5AC76481969B74B00566642 /* NSURL+YSKit.m */,
+				B5AC7679196C469B00566642 /* NSNull+YSKit.h */,
+				B5AC767A196C469B00566642 /* NSNull+YSKit.m */,
+				B5AC767C196C585800566642 /* NSData+YSKit.h */,
+				B5AC767D196C585800566642 /* NSData+YSKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -310,7 +320,9 @@
 				B5AC76741969B74B00566642 /* UISearchBar+YSKit.m in Sources */,
 				B5AC766D1969B74B00566642 /* UIAlertView+YSKit.m in Sources */,
 				B5AC76781969B74B00566642 /* UIWebView+YSKit.m in Sources */,
+				B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */,
 				B54A4063196987B100A5BDB9 /* main.m in Sources */,
+				B5AC767E196C585800566642 /* NSData+YSKit.m in Sources */,
 				B5AC76721969B74B00566642 /* UINavigationController+YSKit.m in Sources */,
 				B5AC76771969B74B00566642 /* UIViewController+YSKit.m in Sources */,
 				B5AC76651969B74B00566642 /* NSDate+YSKit.m in Sources */,
