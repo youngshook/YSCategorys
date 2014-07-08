@@ -18,6 +18,10 @@
 - (NSInteger)integerForKey:(NSString *)keyName;
 - (double)doubleForKey:(NSString *)keyName;
 
+- (NSString*) jsonString;
+
++ (NSDictionary*) dictionaryWithJSON:(NSString*)json;
+
 @end
 
 @interface NSMutableDictionary (YSKit)

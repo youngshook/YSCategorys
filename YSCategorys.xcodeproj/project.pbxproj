@@ -37,6 +37,7 @@
 		B5AC76781969B74B00566642 /* UIWebView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76611969B74B00566642 /* UIWebView+YSKit.m */; };
 		B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767A196C469B00566642 /* NSNull+YSKit.m */; };
 		B5AC767E196C585800566642 /* NSData+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767D196C585800566642 /* NSData+YSKit.m */; };
+		B5AC7681196C5ACB00566642 /* NSNumber+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,8 @@
 		B5AC767A196C469B00566642 /* NSNull+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+YSKit.m"; sourceTree = "<group>"; };
 		B5AC767C196C585800566642 /* NSData+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YSKit.h"; sourceTree = "<group>"; };
 		B5AC767D196C585800566642 /* NSData+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YSKit.m"; sourceTree = "<group>"; };
+		B5AC767F196C5ACB00566642 /* NSNumber+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YSKit.h"; sourceTree = "<group>"; };
+		B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YSKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,8 @@
 				B5AC767A196C469B00566642 /* NSNull+YSKit.m */,
 				B5AC767C196C585800566642 /* NSData+YSKit.h */,
 				B5AC767D196C585800566642 /* NSData+YSKit.m */,
+				B5AC767F196C5ACB00566642 /* NSNumber+YSKit.h */,
+				B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				B5AC76711969B74B00566642 /* UIImage+YSKit.m in Sources */,
 				B5AC766C1969B74B00566642 /* NSURL+YSKit.m in Sources */,
 				B5AC76751969B74B00566642 /* UIStoryboard+YSKit.m in Sources */,
+				B5AC7681196C5ACB00566642 /* NSNumber+YSKit.m in Sources */,
 				B5AC76671969B74B00566642 /* NSDictionary+YSKit.m in Sources */,
 				B5AC76631969B74B00566642 /* NSArray+YSKit.m in Sources */,
 				B5AC76741969B74B00566642 /* UISearchBar+YSKit.m in Sources */,
