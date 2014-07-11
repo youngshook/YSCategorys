@@ -1,8 +1,8 @@
 
-#import "YSKit.h"
 #import "UIImage+YSKit.h"
 
 @implementation UIImage (YSKit)
+
 + (UIImage *)resourceName:(NSString *)PNGFileName{
 	return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:PNGFileName ofType:@"png"]];
 }
@@ -11,8 +11,57 @@
 	return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:type]];
 }
 
+#pragma mark - Generating Images
+
++ (UIImage *)imageWithSolidColor:(UIColor *)color size:(CGSize)size
+{
+	NSParameterAssert(color);
+	NSAssert(!CGSizeEqualToSize(size, CGSizeZero), @"Size cannot be CGSizeZero");
+	
+	CGRect rect = CGRectMake(0, 0, size.width, size.height);
+	
+		// Create a context depending on given size
+	UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+	
+		// Fill it with your color
+	[color setFill];
+	UIRectFill(rect);
+	
+	UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	
+	return image;
+}
+
 - (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize {
     return [self imageAspectFillSize:targetSize];
+}
+
+- (UIImage *)imageMaskedAndTintedWithColor:(UIColor *)color
+{
+	NSParameterAssert(color);
+	
+	UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
+	CGContextRef ctx = UIGraphicsGetCurrentContext();
+	
+	CGRect bounds = (CGRect){CGPointZero, self.size};
+	
+		// do a vertical flip so that image is correct
+	CGAffineTransform flipVertical = CGAffineTransformMake(1, 0, 0, -1, 0, bounds.size.height);
+	CGContextConcatCTM(ctx, flipVertical);
+	
+		// create mask of image
+	CGContextClipToMask(ctx, bounds, self.CGImage);
+	
+		// fill with given color
+	[color setFill];
+	CGContextFillRect(ctx, bounds);
+	
+		// get back new image
+	UIImage *retImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	
+	return retImage;
 }
 
 //!ref: http://stackoverflow.com/a/605385/945906
@@ -109,6 +158,41 @@
 - (UIImage*)imageWithScale:(CGFloat)scale {
     CGSize newSize = CGSizeMake(self.size.width*scale, self.size.height*scale);
     return [self imageWithScaledSize:newSize];
+}
+
+- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees
+{
+	CGFloat radians				= (M_PI * (degrees) / 180.0);
+	CGImageRef ref				= [self CGImage];
+	CGRect rect					= {0.f, 0.f, [self size]};
+	CGAffineTransform transform	= CGAffineTransformMakeRotation(radians);
+	CGRect rotatedRect			= CGRectApplyAffineTransform(rect, transform);
+	CGColorSpaceRef colorSpace	= CGColorSpaceCreateDeviceRGB();
+	
+	#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_6_1
+	#define kCGImageAlphaPremultipliedFirst  (kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst)
+	#else
+	#define kCGImageAlphaPremultipliedFirst  kCGImageAlphaPremultipliedFirst
+	#endif
+	
+	CGContextRef ctx			= CGBitmapContextCreate(NULL, CGRectGetWidth(rotatedRect), CGRectGetHeight(rotatedRect), 8, 0, colorSpace, kCGImageAlphaPremultipliedFirst);
+	
+	CGContextSetAllowsAntialiasing	(ctx, true);
+	CGContextSetShouldAntialias		(ctx, YES);
+	CGContextSetInterpolationQuality(ctx, kCGInterpolationHigh);
+	CGContextTranslateCTM			(ctx, CGRectGetWidth(rotatedRect) / 2, CGRectGetHeight(rotatedRect) / 2);
+	CGContextRotateCTM				(ctx, radians);
+	CGContextTranslateCTM			(ctx, -CGRectGetWidth(rotatedRect) / 2, -CGRectGetHeight(rotatedRect) / 2);
+	CGContextDrawImage				(ctx, (CGRect){0.f, 0.f, rotatedRect.size}, ref);
+	
+	CGImageRef rotatedRef	= CGBitmapContextCreateImage(ctx);
+	UIImage* image			= [UIImage imageWithCGImage:rotatedRef];
+	
+	CGImageRelease(rotatedRef);
+	CGColorSpaceRelease	(colorSpace);
+	CFRelease			(ctx);
+	
+	return image;
 }
 
 #pragma mark - Tint color

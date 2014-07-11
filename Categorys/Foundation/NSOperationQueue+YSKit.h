@@ -1,5 +1,5 @@
 /*!
-	NSData extension
+	NSOperationQueue extension
 	YSCategorys
  
 	Copyright (c) 2013-2014 YoungShook
@@ -11,9 +11,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (YSKit)
+@interface NSOperationQueue (YSKit)
 
-- (NSData *) AES256EncryptWithKey:(NSString *)key;   // Encrypt
-- (NSData *) AES256DecryptWithKey:(NSString *)key;   // Decrypt
++ (instancetype)sharedQueue;
+
+- (void)addFIFOOperation:(NSOperation *)fifoOperation;
+- (void)addLIFOOperation:(NSOperation *)lifoOperation;
 
 @end

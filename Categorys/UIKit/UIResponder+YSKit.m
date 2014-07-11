@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "UIResponder+YSKit.h"
 
 @implementation UIResponder (YSKit)

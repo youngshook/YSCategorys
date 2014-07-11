@@ -1,10 +1,13 @@
-//
-//  NSNumber+YSKit.h
-//  YSCategorys
-//
-//  Created by YoungShook on 14-7-9.
-//  Copyright (c) 2014年 YShook Station. All rights reserved.
-//
+/*!
+	NSNumber extension
+	YSCategorys
+ 
+	Copyright (c) 2013-2014 YoungShook
+	https://github.com/youngshook/YSCategorys
+ 
+	The MIT License (MIT)
+	http://www.opensource.org/licenses/mit-license.php
+ */
 
 #import <Foundation/Foundation.h>
 

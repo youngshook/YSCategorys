@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "NSFileManager+YSKit.h"
 
 @implementation NSFileManager (YSKit)
@@ -70,7 +69,7 @@
 	}
     }
     return fileArray;
-	#undef _RFKit_NSFileManager_handleError
+	#undef _YSKit_NSFileManager_handleError
 }
 
 - (long long)fileSizeForPath:(NSString *)path {

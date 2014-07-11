@@ -11,6 +11,12 @@
 
 @interface UIWebView (YSKit)
 
+/**
+ Getting the current document's title
+ @returns A string with the document title
+ */
+- (NSString *)documentTitle;
+
 /** Make the receiver’s background transparent.
  */
 - (void)clearBackgroundImages;

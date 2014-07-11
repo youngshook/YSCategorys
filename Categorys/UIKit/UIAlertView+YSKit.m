@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "UIAlertView+YSKit.h"
 
 @implementation UIAlertView (YSKit)

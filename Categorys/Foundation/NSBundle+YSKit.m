@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "NSBundle+YSKit.h"
 
 @implementation NSBundle (YSKit)

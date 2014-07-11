@@ -164,13 +164,33 @@ FOUNDATION_EXPORT NSString* NSStringIsNotEmptyString(NSString *stringValue);
 
  @return String reversed
  */
-- (NSString *)reverseString;
-
 - (NSString *)stringTrimToWidthLength:(CGFloat)length WithFont:(UIFont *)font DEPRECATED_ATTRIBUTE;
 
 /** Remove HTML tags in receiver’s.
  */
 - (NSString *)extractedHTMLContent;
+
+- (BOOL)isInteger;
+- (NSArray *)componentsSeparatedAtEachCharacter;
+
+- (NSInteger)numberOfOccurrencesOfString:(NSString *)string;
+- (NSString *)stringByRemovingCharactersInSet:(NSCharacterSet *)set;
+- (NSString *)firstLetterCapitalizedString;
+- (NSString *)stringRepeated:(NSUInteger)repeatCount;
+- (NSString *)normalizedString;
+- (NSString *)reverseString;
+
+- (NSString *)URLEncodedString;
+- (NSString *)URLDecodedString;
+- (NSDictionary *)parametersFromURLString;
+
+- (NSString *)substringFromString:(NSString *)string;
+- (NSString *)substringToString:(NSString *)string;
+- (NSString *)substringBetweenString:(NSString *)startString andString:(NSString *)endString;
+
+- (NSString *)substringFromString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd;
+- (NSString *)substringToString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd;
+- (NSString *)substringBetweenString:(NSString *)startString andString:(NSString *)endString searchFromEnd:(BOOL)searchFromEnd;
 
 #pragma mark - Blank
 

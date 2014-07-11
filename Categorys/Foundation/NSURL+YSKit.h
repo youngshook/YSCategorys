@@ -17,5 +17,8 @@
  */
 - (NSDictionary *)queryDictionary;
 
++ (NSURL *)appStoreURLforApplicationIdentifier:(NSString *)identifier;
+
++ (NSURL *)appStoreReviewURLForApplicationIdentifier:(NSString *)identifier;
 
 @end

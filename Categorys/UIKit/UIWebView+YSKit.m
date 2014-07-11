@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "UIWebView+YSKit.h"
 
 @implementation UIWebView (YSKit)
@@ -11,6 +10,11 @@
 	    view.hidden = YES;
 	}
     }
+}
+
+- (NSString *)documentTitle
+{
+   	return [self stringByEvaluatingJavaScriptFromString:@"document.title"];
 }
 
 @end

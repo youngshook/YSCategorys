@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "UIColor+YSKit.h"
 
 @implementation UIColor (YSKit)

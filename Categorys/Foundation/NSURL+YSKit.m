@@ -1,9 +1,7 @@
 
-#import "YSKit.h"
 #import "NSURL+YSKit.h"
 
 @implementation NSURL (YSKit)
-
 
 - (NSDictionary *)queryDictionary {
 	NSString * queryString = [self query];
@@ -23,4 +21,18 @@
 	}
 	return queryDictionary;
 }
+
++ (NSURL *)appStoreURLforApplicationIdentifier:(NSString *)identifier
+{
+	NSString *link = [NSString stringWithFormat:@"http://itunes.apple.com/us/app/id%@?mt=8", identifier];
+	
+	return [NSURL URLWithString:link];
+}
+
++ (NSURL *)appStoreReviewURLForApplicationIdentifier:(NSString *)identifier
+{
+	NSString *link = [NSString stringWithFormat:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@", identifier];
+	return [NSURL URLWithString:link];
+}
+
 @end

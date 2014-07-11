@@ -1,10 +1,3 @@
-//
-//  NSData+YSKit.m
-//  YSCategorys
-//
-//  Created by YoungShook on 14-7-9.
-//  Copyright (c) 2014年 YShook Station. All rights reserved.
-//
 
 //! via: http://stackoverflow.com/questions/11482470/ios-5-data-encryption-aes-256-encryptwithkey-not-found
 

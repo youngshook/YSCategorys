@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "NSDictionary+YSKit.h"
 
 @implementation NSDictionary (YSKit)
@@ -19,7 +18,7 @@
 
 #pragma mark - JSON
 
-- (NSString *) jsonString
+- (NSString *)jsonString
 {
     NSError *error = nil;
 	
@@ -39,7 +38,7 @@
 	return jsonString;
 }
 
-+ (NSDictionary *) dictionaryWithJSON:(NSString *)json
++ (NSDictionary *)dictionaryWithJSON:(NSString *)json
 {
     NSError *error = nil;
 	
@@ -55,6 +54,50 @@
     }
 	
     return jsonDict;
+}
+
++ (NSDictionary *)dictionaryWithContentsOfURL:(NSURL *)URL error:(NSError **)error
+{
+	NSData *readData = [NSData dataWithContentsOfURL:URL options:0 error:error];
+	
+	if (!readData)
+		{
+		return nil;
+		}
+	
+	return [NSDictionary dictionaryWithContentsOfData:readData error:error];
+}
+
++ (NSDictionary *)dictionaryWithContentsOfFile:(NSString *)path error:(NSError **)error
+{
+	NSURL *url = [NSURL fileURLWithPath:path];
+	return [NSDictionary dictionaryWithContentsOfURL:url error:error];
+}
+
++ (NSDictionary *)dictionaryWithContentsOfData:(NSData *)data error:(NSError **)error
+{
+	CFErrorRef parseError = NULL;
+	NSDictionary *dictionary = (__bridge_transfer NSDictionary *)CFPropertyListCreateWithData(kCFAllocatorDefault, (__bridge CFDataRef)data, kCFPropertyListImmutable, NULL, (CFErrorRef *)&parseError);
+	
+		// we check if it is the correct type and only return it if it is
+	if ([dictionary isKindOfClass:[NSDictionary class]])
+		{
+		return dictionary;
+		}
+	else
+		{
+		if (parseError)
+			{
+			if (error)
+				{
+				*error = (__bridge NSError *)parseError;
+				}
+			
+			CFRelease(parseError);
+			}
+		
+		return nil;
+		}
 }
 
 @end

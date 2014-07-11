@@ -31,4 +31,24 @@
  @return A UITableViewCell object with the associated identifier or nil if no such object exists in the reusable-cell queue.
  */
 - (id)dequeueReusableCellWithClass:(Class)cellClass;
+
+- (void)reloadDataKeepSelection;
+- (void)reloadDataWithRowAnimation:(UITableViewRowAnimation)animation;
+
+- (void)selectRowsAtIndexPaths:(NSArray *)indexPaths animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
+- (void)selectAllRowsAnimated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
+
+- (CGSize)cellSize;
+- (CGSize)cellSizeForIndexPath:(NSIndexPath *)indexPath;
+
+- (void)registerClassForCellWithDefaultReuseIdentifier:(Class)cellClass;
+- (id)dequeueReusableCellWithDefaultIdentifier;
+- (id)dequeueReusableCellWithDefaultIdentifierForIndexPath:(NSIndexPath *)indexPath;
+
+- (void)scrollToTop;
+- (void)scrollToTopAnimated:(BOOL)animated;
+
+- (void)scrollToBottom;
+- (void)scrollToBottomAnimated:(BOOL)animated;
+
 @end

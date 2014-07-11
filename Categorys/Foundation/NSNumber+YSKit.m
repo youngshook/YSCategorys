@@ -1,10 +1,3 @@
-//
-//  NSNumber+YSKit.m
-//  YSCategorys
-//
-//  Created by YoungShook on 14-7-9.
-//  Copyright (c) 2014年 YShook Station. All rights reserved.
-//
 
 #import "NSNumber+YSKit.h"
 

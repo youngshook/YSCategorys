@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "UIButton+YSKit.h"
 
 @implementation UIButton (YSKit)

@@ -1,5 +1,4 @@
 
-#import "YSKit.h"
 #import "NSNumberFormatter+YSKit.h"
 
 @implementation NSNumberFormatter (YSKit)

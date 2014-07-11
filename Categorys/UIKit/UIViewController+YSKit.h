@@ -11,6 +11,8 @@
 
 @interface UIViewController (YSKit)
 
+- (CGRect)defaultViewFrame;
+
 /** Return a view which can present another view controller.
 
  @discussion First we get an window´s root view controller. Then  traverse its presentedViewController property until the presentedViewController property is nil.

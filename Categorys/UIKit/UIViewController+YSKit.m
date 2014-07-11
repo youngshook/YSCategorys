@@ -1,8 +1,19 @@
 
-#import "YSKit.h"
 #import "UIViewController+YSKit.h"
 
 @implementation UIViewController (YSKit)
+
+- (CGRect)defaultViewFrame
+{
+	CGRect frame		= [[UIScreen mainScreen] bounds];
+	frame.size.height  -= [[UIApplication sharedApplication] isStatusBarHidden] ? 0.f : 20.f;
+	frame.size.height  -= CGRectGetHeight([[[self tabBarController] tabBar] frame]);
+	
+	if ([self navigationController] && ![[self navigationController] isNavigationBarHidden])
+		frame.size.height -= CGRectGetHeight([[[self navigationController] navigationBar] frame]);
+	
+	return frame;
+}
 
 + (UIViewController *)rootViewControllerWhichCanPresentModalViewController {
     UIViewController *vc = ([UIApplication sharedApplication].keyWindow.rootViewController)? : [(UIWindow *)[[UIApplication sharedApplication].windows firstObject] rootViewController];
@@ -38,9 +49,11 @@
     }
 }
 
-//! ref: http://lldong.github.com/blog/2012/11/02/dissmiss-keyboard/
 - (void)dismissKeyboard {
-    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+	[[UIApplication sharedApplication].keyWindow endEditing:YES];
+	
+	//! ref: http://lldong.github.com/blog/2012/11/02/dissmiss-keyboard/
+	//[[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
 @end

@@ -1,5 +1,5 @@
 /*!
-	NSData extension
+	NSAttributedString extension
 	YSCategorys
  
 	Copyright (c) 2013-2014 YoungShook
@@ -11,9 +11,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (YSKit)
+@interface NSAttributedString (YSKit)
 
-- (NSData *) AES256EncryptWithKey:(NSString *)key;   // Encrypt
-- (NSData *) AES256DecryptWithKey:(NSString *)key;   // Decrypt
++ (instancetype)hyperlinkFromString:(NSString*)inString withURL:(NSURL*)aURL;
+
++ (instancetype)linkifiedAttributedStringFromString:(NSString *)string;
 
 @end

@@ -38,6 +38,15 @@
 		B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767A196C469B00566642 /* NSNull+YSKit.m */; };
 		B5AC767E196C585800566642 /* NSData+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767D196C585800566642 /* NSData+YSKit.m */; };
 		B5AC7681196C5ACB00566642 /* NSNumber+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */; };
+		B5AC76941970156A00566642 /* UIView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76931970156A00566642 /* UIView+YSKit.m */; };
+		B5AC769719703C0000566642 /* NSAttributedString+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769619703C0000566642 /* NSAttributedString+YSKit.m */; };
+		B5AC769A19703CD400566642 /* NSNotificationCenter+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769919703CD400566642 /* NSNotificationCenter+YSKit.m */; };
+		B5AC769D197040F800566642 /* NSOperationQueue+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769C197040F800566642 /* NSOperationQueue+YSKit.m */; };
+		B5AC76A0197043E200566642 /* NSUserDefaults+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769F197043E200566642 /* NSUserDefaults+YSKit.m */; };
+		B5AC76A31970446000566642 /* UIApplication+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76A21970446000566642 /* UIApplication+YSKit.m */; };
+		B5AC76A61970451800566642 /* UIBarButtonItem+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76A51970451800566642 /* UIBarButtonItem+YSKit.m */; };
+		B5AC76A91970454500566642 /* UICollectionView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76A81970454500566642 /* UICollectionView+YSKit.m */; };
+		B5AC76AC19704D9900566642 /* UIWindow+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76AB19704D9900566642 /* UIWindow+YSKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +112,24 @@
 		B5AC767D196C585800566642 /* NSData+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YSKit.m"; sourceTree = "<group>"; };
 		B5AC767F196C5ACB00566642 /* NSNumber+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YSKit.h"; sourceTree = "<group>"; };
 		B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76921970156A00566642 /* UIView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76931970156A00566642 /* UIView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769519703C0000566642 /* NSAttributedString+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769619703C0000566642 /* NSAttributedString+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769819703CD400566642 /* NSNotificationCenter+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769919703CD400566642 /* NSNotificationCenter+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769B197040F800566642 /* NSOperationQueue+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769C197040F800566642 /* NSOperationQueue+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769E197043E200566642 /* NSUserDefaults+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769F197043E200566642 /* NSUserDefaults+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76A11970446000566642 /* UIApplication+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76A21970446000566642 /* UIApplication+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76A41970451800566642 /* UIBarButtonItem+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76A51970451800566642 /* UIBarButtonItem+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76A71970454500566642 /* UICollectionView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76A81970454500566642 /* UICollectionView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76AA19704D9900566642 /* UIWindow+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76AB19704D9900566642 /* UIWindow+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+YSKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +199,9 @@
 		B5AC76331969B74A00566642 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				B5AC76621969B74B00566642 /* YSKit.h */,
 				B5AC76341969B74A00566642 /* Foundation */,
 				B5AC76491969B74B00566642 /* UIKit */,
-				B5AC76621969B74B00566642 /* YSKit.h */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -208,6 +235,16 @@
 				B5AC767D196C585800566642 /* NSData+YSKit.m */,
 				B5AC767F196C5ACB00566642 /* NSNumber+YSKit.h */,
 				B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */,
+				B5AC769519703C0000566642 /* NSAttributedString+YSKit.h */,
+				B5AC769619703C0000566642 /* NSAttributedString+YSKit.m */,
+				B5AC769819703CD400566642 /* NSNotificationCenter+YSKit.h */,
+				B5AC769919703CD400566642 /* NSNotificationCenter+YSKit.m */,
+				B5AC769B197040F800566642 /* NSOperationQueue+YSKit.h */,
+				B5AC769C197040F800566642 /* NSOperationQueue+YSKit.m */,
+				B5AC769E197043E200566642 /* NSUserDefaults+YSKit.h */,
+				B5AC769F197043E200566642 /* NSUserDefaults+YSKit.m */,
+				B5AC76A11970446000566642 /* UIApplication+YSKit.h */,
+				B5AC76A21970446000566642 /* UIApplication+YSKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -215,6 +252,8 @@
 		B5AC76491969B74B00566642 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B5AC76921970156A00566642 /* UIView+YSKit.h */,
+				B5AC76931970156A00566642 /* UIView+YSKit.m */,
 				B5AC764A1969B74B00566642 /* UIAlertView+YSKit.h */,
 				B5AC764B1969B74B00566642 /* UIAlertView+YSKit.m */,
 				B5AC764C1969B74B00566642 /* UIButton+YSKit.h */,
@@ -239,6 +278,12 @@
 				B5AC765F1969B74B00566642 /* UIViewController+YSKit.m */,
 				B5AC76601969B74B00566642 /* UIWebView+YSKit.h */,
 				B5AC76611969B74B00566642 /* UIWebView+YSKit.m */,
+				B5AC76A41970451800566642 /* UIBarButtonItem+YSKit.h */,
+				B5AC76A51970451800566642 /* UIBarButtonItem+YSKit.m */,
+				B5AC76A71970454500566642 /* UICollectionView+YSKit.h */,
+				B5AC76A81970454500566642 /* UICollectionView+YSKit.m */,
+				B5AC76AA19704D9900566642 /* UIWindow+YSKit.h */,
+				B5AC76AB19704D9900566642 /* UIWindow+YSKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -306,19 +351,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AC76AC19704D9900566642 /* UIWindow+YSKit.m in Sources */,
 				B54A4067196987B100A5BDB9 /* YSAppDelegate.m in Sources */,
 				B5AC76691969B74B00566642 /* NSNumberFormatter+YSKit.m in Sources */,
+				B5AC769D197040F800566642 /* NSOperationQueue+YSKit.m in Sources */,
 				B5AC766E1969B74B00566642 /* UIButton+YSKit.m in Sources */,
 				B5AC766A1969B74B00566642 /* NSObject+YSKit.m in Sources */,
 				B5AC76761969B74B00566642 /* UITableView+YSKit.m in Sources */,
+				B5AC76941970156A00566642 /* UIView+YSKit.m in Sources */,
 				B5AC76641969B74B00566642 /* NSBundle+YSKit.m in Sources */,
+				B5AC76A0197043E200566642 /* NSUserDefaults+YSKit.m in Sources */,
 				B5AC76661969B74B00566642 /* NSDateFormatter+YSKit.m in Sources */,
 				B5AC766B1969B74B00566642 /* NSString+YSKit.m in Sources */,
 				B5AC76681969B74B00566642 /* NSFileManager+YSKit.m in Sources */,
+				B5AC76A91970454500566642 /* UICollectionView+YSKit.m in Sources */,
 				B5AC76701969B74B00566642 /* UIDevice+YSKit.m in Sources */,
 				B5AC766F1969B74B00566642 /* UIColor+YSKit.m in Sources */,
 				B5AC76711969B74B00566642 /* UIImage+YSKit.m in Sources */,
 				B5AC766C1969B74B00566642 /* NSURL+YSKit.m in Sources */,
+				B5AC76A31970446000566642 /* UIApplication+YSKit.m in Sources */,
 				B5AC76751969B74B00566642 /* UIStoryboard+YSKit.m in Sources */,
 				B5AC7681196C5ACB00566642 /* NSNumber+YSKit.m in Sources */,
 				B5AC76671969B74B00566642 /* NSDictionary+YSKit.m in Sources */,
@@ -326,7 +377,10 @@
 				B5AC76741969B74B00566642 /* UISearchBar+YSKit.m in Sources */,
 				B5AC766D1969B74B00566642 /* UIAlertView+YSKit.m in Sources */,
 				B5AC76781969B74B00566642 /* UIWebView+YSKit.m in Sources */,
+				B5AC769A19703CD400566642 /* NSNotificationCenter+YSKit.m in Sources */,
+				B5AC769719703C0000566642 /* NSAttributedString+YSKit.m in Sources */,
 				B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */,
+				B5AC76A61970451800566642 /* UIBarButtonItem+YSKit.m in Sources */,
 				B54A4063196987B100A5BDB9 /* main.m in Sources */,
 				B5AC767E196C585800566642 /* NSData+YSKit.m in Sources */,
 				B5AC76721969B74B00566642 /* UINavigationController+YSKit.m in Sources */,
