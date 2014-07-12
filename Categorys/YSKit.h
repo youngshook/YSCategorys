@@ -1,11 +1,11 @@
 /*!
- YSCategorys
- A set of categorys to make iOS development easier.
- Copyright (c) 2013-2014 YoungShook
- https://github.com/youngshook/YSCategorys
+	YSCategorys
+	A set of categorys to make iOS development easier.
+	Copyright (c) 2013-2014 YoungShook
+	https://github.com/youngshook/YSCategorys
  
- The MIT License (MIT)
- http://www.opensource.org/licenses/mit-license.php
+	The MIT License (MIT)
+	http://www.opensource.org/licenses/mit-license.php
  */
 
 //Foundation
