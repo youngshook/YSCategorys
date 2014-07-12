@@ -1,12 +1,16 @@
 # Change Log
 
+### 1.0.2
+
+* Added prefix to all source files to avoid name collision.
+
 ### 1.0.1
 
-* Added UIView Utils
+* Added UIView Utils.
 
 ### 1.0.0
 
-Added Foundation UIKit 
+Added Foundation UIKit.
 
 *   Foundation
        * NSString
