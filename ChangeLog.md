@@ -1,5 +1,9 @@
 # Change Log
 
+### 1.0.1
+
+* Added UIView Utils
+
 ### 1.0.0
 
 Added Foundation UIKit 
