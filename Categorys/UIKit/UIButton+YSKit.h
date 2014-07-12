@@ -25,13 +25,13 @@
  @param backGroundImageName Resource name of the background image. Set to nil will not
     change, set to @"" will clear the button background image.
  */
-- (void)setResourceImage:(NSString *)imageName background:(NSString *)backGroundImageName;
+- (void)ys_setResourceImage:(NSString *)imageName background:(NSString *)backGroundImageName;
 
 /** Change the background image to be resizable with the specified cap insets for the specified button state.
 
  @param capInsets The values to use for the cap insets.
  @param state The state that uses the specified image. The values are described in UIControlState.
  */
-- (void)setBackgroundImageResizingCapInsets:(UIEdgeInsets)capInsets forState:(UIControlState)state NS_AVAILABLE_IOS(5_0);
+- (void)ys_setBackgroundImageResizingCapInsets:(UIEdgeInsets)capInsets forState:(UIControlState)state NS_AVAILABLE_IOS(5_0);
 
 @end

@@ -11,14 +11,14 @@
 
 @interface UIColor (YSKit)
 
-- (UIColor *)initWithRGBHex:(NSInteger)hexValue alpha:(CGFloat)alpha;
-+ (UIColor*)colorWithRGBHex:(NSInteger)hexValue alpha:(CGFloat)alpha;
-+ (UIColor*)colorWithRGBHex:(NSInteger)hexValue;
+- (UIColor *)ys_initWithRGBHex:(NSInteger)hexValue alpha:(CGFloat)alpha;
++ (UIColor *)ys_colorWithRGBHex:(NSInteger)hexValue alpha:(CGFloat)alpha;
++ (UIColor *)ys_colorWithRGBHex:(NSInteger)hexValue;
 
-+ (UIColor *)colorWithRGBString:(NSString *)nsstring;
-+ (UIColor *)colorWithRGBString:(NSString *)nsstring alpha:(CGFloat)alpha;
++ (UIColor *)ys_colorWithRGBString:(NSString *)nsstring;
++ (UIColor *)ys_colorWithRGBString:(NSString *)nsstring alpha:(CGFloat)alpha;
 
-+ (UIColor *)colorWithPatternImageName:(NSString *)resourceName;
++ (UIColor *)ys_colorWithPatternImageName:(NSString *)resourceName;
 
-+ (UIColor *)randColorWithAlpha:(CGFloat)alpha;
++ (UIColor *)ys_randColorWithAlpha:(CGFloat)alpha;
 @end

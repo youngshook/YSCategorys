@@ -5,22 +5,22 @@
 @implementation NSString (YSKit)
 
 //! via: http://lldong.github.io/2012/11/06/hanzi-to-pinyin/
-+ (NSString *)pinyinFromString:(NSString *)orgString {
++ (NSString *)ys_pinyinFromString:(NSString *)orgString {
     NSMutableString *string = [orgString mutableCopy];
     CFStringTransform((__bridge CFMutableStringRef)string, NULL, kCFStringTransformMandarinLatin, NO);
     CFStringTransform((__bridge CFMutableStringRef)string, NULL, kCFStringTransformStripDiacritics, NO);
     return string;
 }
 
-- (BOOL)containsString:(NSString *)string {
+- (BOOL)ys_containsString:(NSString *)string {
     return ([self rangeOfString:string].location != NSNotFound);
 }
 
-- (BOOL)containsString:(NSString *)string options:(NSStringCompareOptions)mask {
+- (BOOL)ys_containsString:(NSString *)string options:(NSStringCompareOptions)mask {
     return ([self rangeOfString:string options:mask].location != NSNotFound);
 }
 
-- (NSString *)stringTrimToWidthLength:(CGFloat)length WithFont:(UIFont *)font {
+- (NSString *)ys_stringTrimToWidthLength:(CGFloat)length WithFont:(UIFont *)font {
 	NSString * tmp = self;
 	CGFloat ctLength;
 	NSUInteger charNumToRemove;
@@ -40,7 +40,7 @@
 }
 
 //! via: http://stackoverflow.com/questions/1524604/md5-algorithm-in-objective-c
-+ (NSString *)MD5String:(NSString *)string {
++ (NSString *)ys_MD5String:(NSString *)string {
     const char *cStr = [string UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
@@ -48,19 +48,19 @@
 
 }
 
-- (NSString *)extractedHTMLContent {
+- (NSString *)ys_extractedHTMLContent {
     NSError __autoreleasing *e = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"<(?:\"[^\"]*\"['\"]*|'[^']*'['\"]*|[^'\">])+>" options:NSRegularExpressionDotMatchesLineSeparators error:&e];
     if (e) NSLog(@"%@", e);
     return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, self.length) withTemplate:@""];
 }
 
-- (BOOL)isInteger
+- (BOOL)ys_isInteger
 {
 	return [self rangeOfCharacterFromSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]].location == NSNotFound;
 }
 
-- (NSArray *)componentsSeparatedAtEachCharacter
+- (NSArray *)ys_componentsSeparatedAtEachCharacter
 {
 	NSUInteger length		= [self length];
 	NSMutableArray* array	= [NSMutableArray arrayWithCapacity:length];
@@ -73,7 +73,7 @@
 	return [NSArray arrayWithArray:array];
 }
 
-- (NSInteger)numberOfOccurrencesOfString:(NSString *)string
+- (NSInteger)ys_numberOfOccurrencesOfString:(NSString *)string
 {
 	NSInteger fullLength	= [self length];
 	NSInteger removedLength = [[self stringByReplacingOccurrencesOfString:string withString:@""] length];
@@ -81,7 +81,7 @@
 	return (fullLength - removedLength) / [string length];
 }
 
-- (NSString *)stringByRemovingCharactersInSet:(NSCharacterSet *)set
+- (NSString *)ys_stringByRemovingCharactersInSet:(NSCharacterSet *)set
 {
 	NSUInteger length		= [self length];
 	NSMutableString* string	= [NSMutableString stringWithCapacity:length];
@@ -98,7 +98,7 @@
 }
 
 
-- (NSString *)firstLetterCapitalizedString
+- (NSString *)ys_firstLetterCapitalizedString
 {
 	if ([self length] < 2)
 		return [self uppercaseString];
@@ -109,7 +109,7 @@
 	return [NSString stringWithFormat:@"%@%@", [first uppercaseString], rest];
 }
 
-- (NSString *)stringRepeated:(NSUInteger)repeatCount
+- (NSString *)ys_stringRepeated:(NSUInteger)repeatCount
 {
 	if (!repeatCount)
 		return nil;
@@ -125,12 +125,12 @@
 	return [NSString stringWithString:repeatedString];
 }
 
-- (NSString *)normalizedString
+- (NSString *)ys_normalizedString
 {
 	return [[self decomposedStringWithCanonicalMapping] lowercaseString];
 }
 
-- (NSString *)reverseString {
+- (NSString *)ys_reverseString {
 	NSMutableString *reversedStr;
 	NSUInteger len = self.length;
 
@@ -142,18 +142,18 @@
 	return reversedStr;
 }
 
-- (NSString *)URLEncodedString
+- (NSString *)ys_URLEncodedString
 {
 	return (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(NULL,  (__bridge CFStringRef)self,  NULL,  (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8);
 }
 
-- (NSString *)URLDecodedString
+- (NSString *)ys_URLDecodedString
 {
 	return (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding
 	(NULL, (__bridge CFStringRef)self, NULL, kCFStringEncodingUTF8);
 }
 
-- (NSDictionary *)parametersFromURLString
+- (NSDictionary *)ys_parametersFromURLString
 {
 	NSArray* pairs				= [self componentsSeparatedByString:@"&"];
 	NSMutableDictionary* params	= [NSMutableDictionary dictionary];
@@ -171,32 +171,32 @@
 	return [NSDictionary dictionaryWithDictionary:params];
 }
 
-- (NSString *)substringFromString:(NSString *)string
+- (NSString *)ys_substringFromString:(NSString *)string
 {
-	return [self substringFromString:string searchFromEnd:NO];
+	return [self ys_substringFromString:string searchFromEnd:NO];
 }
 
-- (NSString *)substringToString:(NSString *)string
+- (NSString *)ys_substringToString:(NSString *)string
 {
-	return [self substringToString:string searchFromEnd:NO];
+	return [self ys_substringToString:string searchFromEnd:NO];
 }
 
-- (NSString *)substringBetweenString:(NSString *)startString andString:(NSString *)endString
+- (NSString *)ys_substringBetweenString:(NSString *)startString andString:(NSString *)endString
 {
-	return [self substringBetweenString:startString andString:endString searchFromEnd:NO];
+	return [self ys_substringBetweenString:startString andString:endString searchFromEnd:NO];
 }
 
-- (NSString *)substringFromString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd
+- (NSString *)ys_substringFromString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd
 {
-	return [self substringBetweenString:string andString:@"" searchFromEnd:searchFromEnd];
+	return [self ys_substringBetweenString:string andString:@"" searchFromEnd:searchFromEnd];
 }
 
-- (NSString *)substringToString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd
+- (NSString *)ys_substringToString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd
 {
-	return [self substringBetweenString:@"" andString:string searchFromEnd:searchFromEnd];
+	return [self ys_substringBetweenString:@"" andString:string searchFromEnd:searchFromEnd];
 }
 
-- (NSString *)substringBetweenString:(NSString *)startString andString:(NSString *)endString searchFromEnd:(BOOL)searchFromEnd
+- (NSString *)ys_substringBetweenString:(NSString *)startString andString:(NSString *)endString searchFromEnd:(BOOL)searchFromEnd
 {
 	NSUInteger len = [self length];
 	
@@ -222,56 +222,56 @@
 
 #pragma mark - Blank
 
-+ (BOOL) isBlank:(NSString *)stringValue
++ (BOOL) ys_isBlank:(NSString *)stringValue
 {
-    return NSStringIsBlank(stringValue);
+    return YSNSStringIsBlank(stringValue);
 }
 
-+ (NSString *) isBlankString:(NSString *)stringValue
++ (NSString *) ys_isBlankString:(NSString *)stringValue
 {
-    return NSStringIsBlankString(stringValue);
+    return YSNSStringIsBlankString(stringValue);
 }
 
-+ (BOOL) isNotBlank:(NSString *)stringValue
++ (BOOL) ys_isNotBlank:(NSString *)stringValue
 {
-    return NSStringIsNotBlank(stringValue);
+    return YSNSStringIsNotBlank(stringValue);
 }
 
-+ (NSString *) isNotBlankString:(NSString *)stringValue
++ (NSString *) ys_isNotBlankString:(NSString *)stringValue
 {
-    return NSStringIsNotBlankString(stringValue);
+    return YSNSStringIsNotBlankString(stringValue);
 }
 
-+ (BOOL) isEmpty:(NSString *)stringValue
++ (BOOL) ys_isEmpty:(NSString *)stringValue
 {
-    return NSStringIsEmpty(stringValue);
+    return YSNSStringIsEmpty(stringValue);
 }
 
-+ (NSString *) isEmptyString:(NSString *)stringValue
++ (NSString *) ys_isEmptyString:(NSString *)stringValue
 {
-    return NSStringIsEmptyString(stringValue);
+    return YSNSStringIsEmptyString(stringValue);
 }
 
-+ (BOOL) isNotEmpty:(NSString *)stringValue
++ (BOOL) ys_isNotEmpty:(NSString *)stringValue
 {
-    return NSStringIsNotEmpty(stringValue);
+    return YSNSStringIsNotEmpty(stringValue);
 }
 
-+ (NSString *) isNotEmptyString:(NSString *)stringValue
++ (NSString *) ys_isNotEmptyString:(NSString *)stringValue
 {
-    return NSStringIsNotEmptyString(stringValue);
+    return YSNSStringIsNotEmptyString(stringValue);
 }
 
 @end
 
 #pragma mark - Blank C function
 
-NSString* NSStringFromBOOL(BOOL boolValue)
+NSString* YSNSStringFromBOOL(BOOL boolValue)
 {
     return boolValue == YES ? @"YES" : @"NO";
 }
 
-BOOL NSStringIsBlank(NSString *stringValue)
+BOOL YSNSStringIsBlank(NSString *stringValue)
 {
     BOOL blank = NO;
 	
@@ -287,22 +287,22 @@ BOOL NSStringIsBlank(NSString *stringValue)
     return blank;
 }
 
-NSString* NSStringIsBlankString(NSString *stringValue)
+NSString* YSNSStringIsBlankString(NSString *stringValue)
 {
-    return NSStringFromBOOL(NSStringIsBlank(stringValue));
+    return YSNSStringFromBOOL(YSNSStringIsBlank(stringValue));
 }
 
-BOOL NSStringIsNotBlank(NSString *stringValue)
+BOOL YSNSStringIsNotBlank(NSString *stringValue)
 {
-    return !NSStringIsBlank(stringValue);
+    return !YSNSStringIsBlank(stringValue);
 }
 
-NSString* NSStringIsNotBlankString(NSString *stringValue)
+NSString* YSNSStringIsNotBlankString(NSString *stringValue)
 {
-    return NSStringFromBOOL(NSStringIsNotBlank(stringValue));
+    return YSNSStringFromBOOL(YSNSStringIsNotBlank(stringValue));
 }
 
-BOOL NSStringIsEmpty(NSString *stringValue)
+BOOL YSNSStringIsEmpty(NSString *stringValue)
 {
     BOOL empty = NO;
 	
@@ -314,22 +314,18 @@ BOOL NSStringIsEmpty(NSString *stringValue)
     return empty;
 }
 
-NSString* NSStringIsEmptyString(NSString *stringValue)
+NSString* YSNSStringIsEmptyString(NSString *stringValue)
 {
-    return NSStringFromBOOL(NSStringIsEmpty(stringValue));
+    return YSNSStringFromBOOL(YSNSStringIsEmpty(stringValue));
 }
 
-BOOL NSStringIsNotEmpty(NSString *stringValue)
+BOOL YSNSStringIsNotEmpty(NSString *stringValue)
 {
-    return !(NSStringIsEmpty(stringValue));
+    return !(YSNSStringIsEmpty(stringValue));
 }
 
-NSString* NSStringIsNotEmptyString(NSString *stringValue)
+NSString* YSNSStringIsNotEmptyString(NSString *stringValue)
 {
-    return NSStringFromBOOL(NSStringIsNotEmpty(stringValue));
+    return YSNSStringFromBOOL(YSNSStringIsNotEmpty(stringValue));
 }
-
-
-
-
 

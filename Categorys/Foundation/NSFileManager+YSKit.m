@@ -3,7 +3,7 @@
 
 @implementation NSFileManager (YSKit)
 
-- (NSURL *)subDirectoryURLWithPathComponent:(NSString *)pathComponent inDirectory:(NSSearchPathDirectory)directory createIfNotExist:(BOOL)createIfNotExist error:(NSError *__autoreleasing *)error {
+- (NSURL *)ys_subDirectoryURLWithPathComponent:(NSString *)pathComponent inDirectory:(NSSearchPathDirectory)directory createIfNotExist:(BOOL)createIfNotExist error:(NSError *__autoreleasing *)error {
 
     NSURL *parentDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:directory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:error];
     NSURL *directoryURL = [parentDirectoryURL URLByAppendingPathComponent:pathComponent? pathComponent : @""];
@@ -25,7 +25,7 @@
     return directoryURL;
 }
 
-- (NSArray *)subDirectoryOfDirectoryAtPath:(NSString *)path error:(NSError *__autoreleasing *)error {
+- (NSArray *)ys_subDirectoryOfDirectoryAtPath:(NSString *)path error:(NSError *__autoreleasing *)error {
 	NSMutableArray * sub = [[self contentsOfDirectoryAtPath:path error:error] mutableCopy];
 	BOOL isDir = false;
 	NSString * tmpPath = nil;
@@ -42,7 +42,7 @@
 	return [NSArray arrayWithArray:sub];
 }
 
-- (NSArray *)filesInDirectory:(NSURL *)directory withExtensions:(NSSet *)fileTypes directoryEnumerationOptions:(NSDirectoryEnumerationOptions)mask errorHandler:(BOOL (^)(NSURL *url, NSError *error))handler {
+- (NSArray *)ys_filesInDirectory:(NSURL *)directory withExtensions:(NSSet *)fileTypes directoryEnumerationOptions:(NSDirectoryEnumerationOptions)mask errorHandler:(BOOL (^)(NSURL *url, NSError *error))handler {
 
     NSError *e = nil;
 	#define _YSKit_NSFileManager_handleError \
@@ -72,18 +72,18 @@
 	#undef _YSKit_NSFileManager_handleError
 }
 
-- (long long)fileSizeForPath:(NSString *)path {
-    return [self fileSizeForPath:path error:nil];
+- (long long)ys_fileSizeForPath:(NSString *)path {
+    return [self ys_fileSizeForPath:path error:nil];
 }
 
-- (long long)fileSizeForPath:(NSString *)path error:(NSError *__autoreleasing *)inputError {
+- (long long)ys_fileSizeForPath:(NSString *)path error:(NSError *__autoreleasing *)inputError {
     BOOL isDir = NO;
     if (![self fileExistsAtPath:path isDirectory:&isDir]) {
 	return 0;
     }
 
     if (isDir) {
-	return [self sizeForDirectory:path fileCount:NULL directoryCount:NULL error:inputError];
+	return [self ys_sizeForDirectory:path fileCount:NULL directoryCount:NULL error:inputError];
     }
 
     NSError *error = nil;
@@ -96,7 +96,7 @@
     return fileDict.fileSize;
 }
 
-- (long long)sizeForDirectory:(NSString *)directoryPath fileCount:(int *)fileCount directoryCount:(int *)directoryCount error:(NSError *__autoreleasing *)inputError {
+- (long long)ys_sizeForDirectory:(NSString *)directoryPath fileCount:(int *)fileCount directoryCount:(int *)directoryCount error:(NSError *__autoreleasing *)inputError {
     long long fileSize = 0;
     BOOL isDir = NO;
     BOOL isExist = [self fileExistsAtPath:directoryPath isDirectory:&isDir];

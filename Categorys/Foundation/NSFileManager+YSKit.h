@@ -29,9 +29,9 @@
 
  @return A URL pointing to the directory, or nil if the url is a file or error occurs.
  */
-- (NSURL *)subDirectoryURLWithPathComponent:(NSString *)pathComponent inDirectory:(NSSearchPathDirectory)directory createIfNotExist:(BOOL)createIfNotExist error:(NSError *__autoreleasing *)error;
+- (NSURL *)ys_subDirectoryURLWithPathComponent:(NSString *)pathComponent inDirectory:(NSSearchPathDirectory)directory createIfNotExist:(BOOL)createIfNotExist error:(NSError *__autoreleasing *)error;
 
-- (NSArray *)subDirectoryOfDirectoryAtPath:(NSString *)path error:(NSError *__autoreleasing *)error;
+- (NSArray *)ys_subDirectoryOfDirectoryAtPath:(NSString *)path error:(NSError *__autoreleasing *)error;
 
 /** Performs a deep search of the specified directory and returns URLs for the contained items which has given file extension.
 
@@ -50,21 +50,21 @@
 
  @return An array of NSURL.
  */
-- (NSArray *)filesInDirectory:(NSURL *)directory withExtensions:(NSSet *)fileTypes directoryEnumerationOptions:(NSDirectoryEnumerationOptions)mask errorHandler:(BOOL (^)(NSURL *url, NSError *error))handler;
+- (NSArray *)ys_filesInDirectory:(NSURL *)directory withExtensions:(NSSet *)fileTypes directoryEnumerationOptions:(NSDirectoryEnumerationOptions)mask errorHandler:(BOOL (^)(NSURL *url, NSError *error))handler;
 
 /** Get file size of the given path, support directory. This method will not traverse any symbolic link.
 
  @return file size. If the file not exist, the return value will be 0. If error occurs, the return value will be -1.
  */
-- (long long)fileSizeForPath:(NSString *)path error:(NSError *__autoreleasing *)error;
+- (long long)ys_fileSizeForPath:(NSString *)path error:(NSError *__autoreleasing *)error;
 
 /// @see fileSizeForPath:error:.
-- (long long)fileSizeForPath:(NSString *)path;
+- (long long)ys_fileSizeForPath:(NSString *)path;
 
 /** Get size of a directory, include file count and subdirectory count in that directory. This method will not traverse any symbolic link.
 
  @return Directory size. If the path is not a directory zero will be returned.
  */
-- (long long)sizeForDirectory:(NSString *)directoryPath fileCount:(int *)fileCount directoryCount:(int *)directoryCount error:(NSError *__autoreleasing *)error;
+- (long long)ys_sizeForDirectory:(NSString *)directoryPath fileCount:(int *)fileCount directoryCount:(int *)directoryCount error:(NSError *__autoreleasing *)error;
 
 @end

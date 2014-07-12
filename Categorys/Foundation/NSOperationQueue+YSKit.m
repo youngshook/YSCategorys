@@ -3,7 +3,7 @@
 
 @implementation NSOperationQueue (YSKit)
 
-+ (instancetype)sharedQueue
++ (instancetype)ys_sharedQueue
 {
 	static NSOperationQueue* instance	= nil;
 	static dispatch_once_t token		= 0;
@@ -17,12 +17,12 @@
 	return instance;
 }
 
-- (void)addFIFOOperation:(NSOperation *)fifoOperation
+- (void)ys_addFIFOOperation:(NSOperation *)fifoOperation
 {
 	[self addOperation:fifoOperation];
 }
 
-- (void)addLIFOOperation:(NSOperation *)lifoOperation
+- (void)ys_addLIFOOperation:(NSOperation *)lifoOperation
 {
 	BOOL suspended		= [self isSuspended];
 	NSArray* operations = [self operations];

@@ -13,9 +13,9 @@
 
 @interface NSOperationQueue (YSKit)
 
-+ (instancetype)sharedQueue;
++ (instancetype)ys_sharedQueue;
 
-- (void)addFIFOOperation:(NSOperation *)fifoOperation;
-- (void)addLIFOOperation:(NSOperation *)lifoOperation;
+- (void)ys_addFIFOOperation:(NSOperation *)fifoOperation;
+- (void)ys_addLIFOOperation:(NSOperation *)lifoOperation;
 
 @end

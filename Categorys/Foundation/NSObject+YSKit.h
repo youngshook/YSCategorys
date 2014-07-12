@@ -21,14 +21,14 @@
  @param block The block to execute for the instance method, a pointer to the instance is passed as the only parameter.
  @returns `YES` if the operation was successful
  */
-+ (BOOL)addInstanceMethodWithSelectorName:(NSString *)selectorName block:(void(^)(id))block;
++ (BOOL)ys_addInstanceMethodWithSelectorName:(NSString *)selectorName block:(void(^)(id))block;
 
 /**
  Exchanges two method implementations. After the call methods to the first selector will now go to the second one and vice versa.
  @param selector The first method
  @param otherSelector The second method
  */
-+ (void)swizzleMethod:(SEL)selector withMethod:(SEL)otherSelector;
++ (void)ys_swizzleMethod:(SEL)selector withMethod:(SEL)otherSelector;
 
 
 /**
@@ -36,6 +36,6 @@
  @param selector The first method
  @param otherSelector The second method
  */
-+ (void)swizzleClassMethod:(SEL)selector withMethod:(SEL)otherSelector;
++ (void)ys_swizzleClassMethod:(SEL)selector withMethod:(SEL)otherSelector;
 
 @end

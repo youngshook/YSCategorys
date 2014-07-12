@@ -3,17 +3,17 @@
 
 @implementation UIImage (YSKit)
 
-+ (UIImage *)resourceName:(NSString *)PNGFileName{
++ (UIImage *)ys_resourceName:(NSString *)PNGFileName{
 	return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:PNGFileName ofType:@"png"]];
 }
 
-+ (UIImage *)resourceName:(NSString *)fileName ofType:(NSString *)type {
++ (UIImage *)ys_resourceName:(NSString *)fileName ofType:(NSString *)type {
 	return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:type]];
 }
 
 #pragma mark - Snapshot Images
 
-+ (UIImage *)captureView:(UIView *)view
++ (UIImage *)ys_captureView:(UIView *)view
 {
     UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
     [view.layer renderInContext:UIGraphicsGetCurrentContext()];
@@ -22,7 +22,7 @@
     return img;
 }
 
-+ (UIImage *)captureFrame:(CGRect)frame inView:(UIView *)view
++ (UIImage *)ys_captureFrame:(CGRect)frame inView:(UIView *)view
 {
     UIGraphicsBeginImageContextWithOptions(frame.size, view.opaque, 0.0);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
@@ -35,7 +35,7 @@
 
 #pragma mark - Generating Images
 
-+ (UIImage *)imageWithSolidColor:(UIColor *)color size:(CGSize)size
++ (UIImage *)ys_imageWithSolidColor:(UIColor *)color size:(CGSize)size
 {
 	NSParameterAssert(color);
 	NSAssert(!CGSizeEqualToSize(size, CGSizeZero), @"Size cannot be CGSizeZero");
@@ -55,11 +55,11 @@
 	return image;
 }
 
-- (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize {
-    return [self imageAspectFillSize:targetSize];
+- (UIImage *)ys_imageByScalingAndCroppingForSize:(CGSize)targetSize {
+    return [self ys_imageAspectFillSize:targetSize];
 }
 
-- (UIImage *)imageMaskedAndTintedWithColor:(UIColor *)color
+- (UIImage *)ys_imageMaskedAndTintedWithColor:(UIColor *)color
 {
 	NSParameterAssert(color);
 	
@@ -87,7 +87,7 @@
 }
 
 //!ref: http://stackoverflow.com/a/605385/945906
-- (UIImage *)imageAspectFillSize:(CGSize)targetSize{
+- (UIImage *)ys_imageAspectFillSize:(CGSize)targetSize{
 	if (CGSizeEqualToSize(self.size, targetSize)) {
 		return [self copy];
 	}
@@ -122,7 +122,7 @@
 	return newImage;
 }
 
-- (UIImage *)imageAspectFitSize:(CGSize)targetSize {
+- (UIImage *)ys_imageAspectFitSize:(CGSize)targetSize {
     if (CGSizeEqualToSize(self.size, targetSize)) {
 		return [self copy];
 	}
@@ -158,7 +158,7 @@
 }
 
 //!ref: http://stackoverflow.com/a/7704399/945906
-- (UIImage *)imageWithCropRect:(CGRect)rect {
+- (UIImage *)ys_imageWithCropRect:(CGRect)rect {
     CGFloat scale = self.scale;
     rect = CGRectMake(rect.origin.x*scale, rect.origin.y*scale, rect.size.width*scale, rect.size.height*scale);
 
@@ -168,7 +168,7 @@
     return result;
 }
 
-- (UIImage*)imageWithScaledSize:(CGSize)newSize {
+- (UIImage*)ys_imageWithScaledSize:(CGSize)newSize {
     UIGraphicsBeginImageContext(newSize);
     [self drawInRect:(CGRect){CGPointZero, newSize}];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -177,12 +177,12 @@
     return newImage;
 }
 
-- (UIImage*)imageWithScale:(CGFloat)scale {
+- (UIImage*)ys_imageWithScale:(CGFloat)scale {
     CGSize newSize = CGSizeMake(self.size.width*scale, self.size.height*scale);
-    return [self imageWithScaledSize:newSize];
+    return [self ys_imageWithScaledSize:newSize];
 }
 
-- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees
+- (UIImage *)ys_imageRotatedByDegrees:(CGFloat)degrees
 {
 	CGFloat radians				= (M_PI * (degrees) / 180.0);
 	CGImageRef ref				= [self CGImage];
@@ -218,7 +218,7 @@
 }
 
 #pragma mark - Tint color
-- (UIImage *)imageWithTintColor:(UIColor *)tintColor {
+- (UIImage *)ys_imageWithTintColor:(UIColor *)tintColor {
     CGRect contextBounds = CGRectMake(0, 0, self.size.width, self.size.height);
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
 
@@ -231,7 +231,7 @@
     return tintImageKeepBright;
 }
 
-- (UIImage *)imageOnlyKeepsAlphaWithTintColor:(UIColor *)tintColor {
+- (UIImage *)ys_imageOnlyKeepsAlphaWithTintColor:(UIColor *)tintColor {
     CGRect contextBounds = CGRectMake(0, 0, self.size.width, self.size.height);
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
 

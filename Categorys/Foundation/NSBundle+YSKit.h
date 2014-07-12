@@ -12,15 +12,15 @@
 #import <Foundation/Foundation.h>
 
 @interface NSBundle (YSKit)
-+ (NSString *)mainBundlePathForCaches;
-+ (NSString *)mainBundlePathForPreferences;
-+ (NSString *)mainBundlePathForDocuments;
-+ (NSString *)mainBundlePathForTemp;
-+ (NSString *)pathForMainBoundlePath:(NSString *)path;
++ (NSString *)ys_mainBundlePathForCaches;
++ (NSString *)ys_mainBundlePathForPreferences;
++ (NSString *)ys_mainBundlePathForDocuments;
++ (NSString *)ys_mainBundlePathForTemp;
++ (NSString *)ys_pathForMainBoundlePath:(NSString *)path;
 
 /**
     Bundle version string, according to Info.plist file.
     CFBundleShortVersionString + CFBundleVersion
  */
-- (NSString *)versionString;
+- (NSString *)ys_versionString;
 @end

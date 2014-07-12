@@ -3,7 +3,7 @@
 
 @implementation NSDate (YSKit)
 
-+ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second {
++ (NSDate *)ys_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second {
     NSDateComponents *dc = [[NSDateComponents alloc] init];
     dc.year = year;
     dc.month = month;
@@ -14,11 +14,11 @@
     return [[NSCalendar currentCalendar] dateFromComponents:dc];
 }
 
-+ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
-    return [NSDate dateWithYear:year month:month day:day hour:0 minute:0 second:0];
++ (NSDate *)ys_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day {
+    return [NSDate ys_dateWithYear:year month:month day:day hour:0 minute:0 second:0];
 }
 
-- (BOOL)isSameDayWithDate:(NSDate *)date {
+- (BOOL)ys_isSameDayWithDate:(NSDate *)date {
     if (!date) return false;
 
     NSDateComponents *target = [[NSCalendar currentCalendar] components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:date];
@@ -27,7 +27,7 @@
 }
 
 //! ref: http://stackoverflow.com/a/4739650/945906
-+ (NSInteger)daysBetweenDate:(NSDate *)fromDateTime andDate:(NSDate *)toDateTime {
++ (NSInteger)ys_daysBetweenDate:(NSDate *)fromDateTime andDate:(NSDate *)toDateTime {
     if (!fromDateTime && !toDateTime) return 0;
     NSParameterAssert(fromDateTime != nil);
     NSParameterAssert(toDateTime != nil);
@@ -43,7 +43,7 @@
     return difference.day;
 }
 
-- (NSDate *)startTimeOfDate {
+- (NSDate *)ys_startTimeOfDate {
     NSDateComponents *components = [[NSCalendar currentCalendar] components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:self];
     components.hour = 0;
     components.minute = 0;
@@ -51,7 +51,7 @@
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
-- (NSDate *)endTimeOfDate {
+- (NSDate *)ys_endTimeOfDate {
     NSDateComponents *components = [[NSCalendar currentCalendar] components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:self];
     components.hour = 24;
     components.minute = 0;
@@ -63,7 +63,7 @@
  * This guy can be a little unreliable and produce unexpected results,
  * you're better off using daysAgoAgainstMidnight
  */
-- (NSUInteger) daysAgo
+- (NSUInteger) ys_daysAgo
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSDayCalendarUnit)
@@ -74,7 +74,7 @@
     return [components day];
 }
 
-- (NSUInteger) hoursAgo
+- (NSUInteger) ys_hoursAgo
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSHourCalendarUnit)
@@ -85,7 +85,7 @@
     return [components hour];
 }
 
-- (NSUInteger) daysAgoAgainstMidnight
+- (NSUInteger) ys_daysAgoAgainstMidnight
 {
 		// get a midnight version of ourself:
     NSDateFormatter *mdf = [[NSDateFormatter alloc] init];
@@ -97,14 +97,14 @@
     return (int)[midnight timeIntervalSinceNow] / (secondsIn1Day) * -1;
 }
 
-- (NSString *) stringDaysAgo
+- (NSString *) ys_stringDaysAgo
 {
-    return [self stringDaysAgoAgainstMidnight:YES];
+    return [self ys_stringDaysAgoAgainstMidnight:YES];
 }
 
-- (NSString *) stringDaysAgoAgainstMidnight:(BOOL)flag
+- (NSString *) ys_stringDaysAgoAgainstMidnight:(BOOL)flag
 {
-    NSUInteger daysAgo = (flag) ? [self daysAgoAgainstMidnight] : [self daysAgo];
+    NSUInteger daysAgo = (flag) ? [self ys_daysAgoAgainstMidnight] : [self ys_daysAgo];
     NSString *text = nil;
 	
     switch (daysAgo) {
@@ -123,7 +123,7 @@
     return text;
 }
 
-- (NSUInteger) weekday
+- (NSUInteger) ys_weekday
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *weekdayComponents = [calendar components:(NSWeekdayCalendarUnit) fromDate:self];
@@ -131,18 +131,18 @@
     return [weekdayComponents weekday];
 }
 
-- (NSTimeInterval) unixTime
+- (NSTimeInterval) ys_unixTime
 {
 	
     return [self timeIntervalSince1970];     // if nil, return 0.0
 }
 
-+ (NSDate *) dateFromString:(NSString *)string
++ (NSDate *) ys_dateFromString:(NSString *)string
 {
-    return [NSDate dateFromString:string withFormat:[NSDate dbFormatString]];
+    return [NSDate ys_dateFromString:string withFormat:[NSDate ys_dbFormatString]];
 }
 
-+ (NSDate *) dateFromString:(NSString *)string withFormat:(NSString *)format
++ (NSDate *) ys_dateFromString:(NSString *)string withFormat:(NSString *)format
 {
     NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
 	
@@ -153,17 +153,17 @@
     return date;
 }
 
-+ (NSString *) stringFromDate:(NSDate *)date withFormat:(NSString *)format
++ (NSString *) ys_stringFromDate:(NSDate *)date withFormat:(NSString *)format
 {
-    return [date stringWithFormat:format];
+    return [date ys_stringWithFormat:format];
 }
 
-+ (NSString *) stringFromDate:(NSDate *)date
++ (NSString *) ys_stringFromDate:(NSDate *)date
 {
-    return [date string];
+    return [date ys_string];
 }
 
-+ (NSString *) stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed alwaysDisplayTime:(BOOL)displayTime
++ (NSString *) ys_stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed alwaysDisplayTime:(BOOL)displayTime
 {
     /*
      * if the date is in today, display 12-hour time with meridian,
@@ -243,17 +243,17 @@
     return displayString;
 }
 
-+ (NSString *) stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed
++ (NSString *) ys_stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed
 {
-    return [[self class] stringForDisplayFromDate:date prefixed:prefixed alwaysDisplayTime:NO];
+    return [[self class] ys_stringForDisplayFromDate:date prefixed:prefixed alwaysDisplayTime:NO];
 }
 
-+ (NSString *) stringForDisplayFromDate:(NSDate *)date
++ (NSString *) ys_stringForDisplayFromDate:(NSDate *)date
 {
-    return [self stringForDisplayFromDate:date prefixed:NO];
+    return [self ys_stringForDisplayFromDate:date prefixed:NO];
 }
 
-- (NSString *) stringWithFormat:(NSString *)format
+- (NSString *) ys_stringWithFormat:(NSString *)format
 {
     NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
 	
@@ -264,12 +264,12 @@
     return timestamp_str;
 }
 
-- (NSString *) string
+- (NSString *) ys_string
 {
-    return [self stringWithFormat:[NSDate dbFormatString]];
+    return [self ys_stringWithFormat:[NSDate ys_dbFormatString]];
 }
 
-- (NSString *) stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle
+- (NSString *) ys_stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle
 {
     NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
 	
@@ -281,7 +281,7 @@
     return outputString;
 }
 
-- (NSDate *) beginningOfWeek
+- (NSDate *) ys_beginningOfWeek
 {
 		// largely borrowed from "Date and Time Programming Guide for Cocoa"
 		// we'll use the default calendar and hope for the best
@@ -315,7 +315,7 @@
     return [calendar dateFromComponents:components];
 }
 
-- (NSDate *) beginningOfDay
+- (NSDate *) ys_beginningOfDay
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
 		// Get the weekday component of the current date
@@ -325,7 +325,7 @@
     return [calendar dateFromComponents:components];
 }
 
-- (NSDate *) endOfWeek
+- (NSDate *) ys_endOfWeek
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
 		// Get the weekday component of the current date
@@ -340,25 +340,25 @@
     return endOfWeek;
 }
 
-+ (NSString *) dateFormatString
++ (NSString *) ys_dateFormatString
 {
     return @"yyyy-MM-dd";
 }
 
-+ (NSString *) timeFormatString
++ (NSString *) ys_timeFormatString
 {
     return @"HH:mm:ss";
 }
 
-+ (NSString *) timestampFormatString
++ (NSString *) ys_timestampFormatString
 {
     return @"yyyy-MM-dd HH:mm:ss";
 }
 
 	// preserving for compatibility
-+ (NSString *) dbFormatString
++ (NSString *) ys_dbFormatString
 {
-    return [NSDate timestampFormatString];
+    return [NSDate ys_timestampFormatString];
 }
 
 @end

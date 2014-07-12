@@ -13,13 +13,13 @@
 
 @interface UICollectionView (YSKit)
 
-- (void)reloadDataKeepSelection;
+- (void)ys_reloadDataKeepSelection;
 
-- (void)selectItemsAtIndexPaths:(NSArray *)indexPaths animated:(BOOL)animated scrollPosition:(UICollectionViewScrollPosition)scrollPosition;
-- (void)selectAllItemsAnimated:(BOOL)animated scrollPosition:(UICollectionViewScrollPosition)scrollPosition;
+- (void)ys_selectItemsAtIndexPaths:(NSArray *)indexPaths animated:(BOOL)animated scrollPosition:(UICollectionViewScrollPosition)scrollPosition;
+- (void)ys_selectAllItemsAnimated:(BOOL)animated scrollPosition:(UICollectionViewScrollPosition)scrollPosition;
 
-- (void)registerClassForCellWithDefaultReuseIdentifier:(Class)cellClass;
-- (id)dequeueReusableCellWithDefaultReuseIdentifierForIndexPath:(NSIndexPath *)indexPath;
+- (void)ys_registerClassForCellWithDefaultReuseIdentifier:(Class)cellClass;
+- (id)ys_dequeueReusableCellWithDefaultReuseIdentifierForIndexPath:(NSIndexPath *)indexPath;
 
 
 @end

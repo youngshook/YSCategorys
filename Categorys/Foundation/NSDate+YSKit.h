@@ -15,37 +15,37 @@
 
 @interface NSDate (YSKit)
 
-- (NSUInteger) daysAgo;
-- (NSUInteger) hoursAgo;
-- (NSUInteger) daysAgoAgainstMidnight;
-- (NSString *) stringDaysAgo;
-- (NSString *) stringDaysAgoAgainstMidnight:(BOOL)flag;
-- (NSUInteger) weekday;
-- (NSTimeInterval) unixTime;
+- (NSUInteger) ys_daysAgo;
+- (NSUInteger) ys_hoursAgo;
+- (NSUInteger) ys_daysAgoAgainstMidnight;
+- (NSString *) ys_stringDaysAgo;
+- (NSString *) ys_stringDaysAgoAgainstMidnight:(BOOL)flag;
+- (NSUInteger) ys_weekday;
+- (NSTimeInterval) ys_unixTime;
 
-+ (NSDate *) dateFromString:(NSString *)string;
-+ (NSDate *) dateFromString:(NSString *)string withFormat:(NSString *)format;
-+ (NSString *) stringFromDate:(NSDate *)date withFormat:(NSString *)string;
-+ (NSString *) stringFromDate:(NSDate *)date;
-+ (NSString *) stringForDisplayFromDate:(NSDate *)date;
-+ (NSString *) stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed;
-+ (NSString *) stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed alwaysDisplayTime:(BOOL)displayTime;
++ (NSDate *) ys_dateFromString:(NSString *)string;
++ (NSDate *) ys_dateFromString:(NSString *)string withFormat:(NSString *)format;
++ (NSString *) ys_stringFromDate:(NSDate *)date withFormat:(NSString *)string;
++ (NSString *) ys_stringFromDate:(NSDate *)date;
++ (NSString *) ys_stringForDisplayFromDate:(NSDate *)date;
++ (NSString *) ys_stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed;
++ (NSString *) ys_stringForDisplayFromDate:(NSDate *)date prefixed:(BOOL)prefixed alwaysDisplayTime:(BOOL)displayTime;
 
-- (NSString *) string;
-- (NSString *) stringWithFormat:(NSString *)format;
-- (NSString *) stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle;
+- (NSString *) ys_string;
+- (NSString *) ys_stringWithFormat:(NSString *)format;
+- (NSString *) ys_stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle;
 
-- (NSDate *) beginningOfWeek;
-- (NSDate *) beginningOfDay;
-- (NSDate *) endOfWeek;
+- (NSDate *) ys_beginningOfWeek;
+- (NSDate *) ys_beginningOfDay;
+- (NSDate *) ys_endOfWeek;
 
-+ (NSString *) dateFormatString;
-+ (NSString *) timeFormatString;
-+ (NSString *) timestampFormatString;
-+ (NSString *) dbFormatString;
++ (NSString *) ys_dateFormatString;
++ (NSString *) ys_timeFormatString;
++ (NSString *) ys_timestampFormatString;
++ (NSString *) ys_dbFormatString;
 
-+ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
-+ (NSDate *)dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
++ (NSDate *) ys_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
++ (NSDate *) ys_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 
 /** Returns a Boolean value that indicates whether the receiver and a given date object are the same day.
 
@@ -53,7 +53,7 @@
 
  @return `YES` if the receiver and anObject are the same day, otherwise `NO`.
  */
-- (BOOL)isSameDayWithDate:(NSDate *)date;
+- (BOOL) ys_isSameDayWithDate:(NSDate *)date;
 
 /** Returns the number of calendar days between two dates.
 
@@ -62,8 +62,8 @@
 
  @return The number of calendar days between two dates.
  */
-+ (NSInteger)daysBetweenDate:(NSDate *)fromDateTime andDate:(NSDate *)toDateTime;
++ (NSInteger) ys_daysBetweenDate:(NSDate *)fromDateTime andDate:(NSDate *)toDateTime;
 
-- (NSDate *)startTimeOfDate;
-- (NSDate *)endTimeOfDate;
+- (NSDate *) ys_startTimeOfDate;
+- (NSDate *) ys_endTimeOfDate;
 @end

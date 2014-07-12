@@ -172,12 +172,12 @@ static char kDTActionHandlerLongPressGestureKey;
     ? self.width : self.height;
 }
 
-- (UIView*)descendantOrSelfWithClass:(Class)cls {
+- (UIView*)ys_descendantOrSelfWithClass:(Class)cls {
     if ([self isKindOfClass:cls])
         return self;
     
     for (UIView* child in self.subviews) {
-        UIView* it = [child descendantOrSelfWithClass:cls];
+        UIView* it = [child ys_descendantOrSelfWithClass:cls];
         if (it)
             return it;
     }
@@ -185,26 +185,26 @@ static char kDTActionHandlerLongPressGestureKey;
     return nil;
 }
 
-- (UIView*)ancestorOrSelfWithClass:(Class)cls {
+- (UIView*)ys_ancestorOrSelfWithClass:(Class)cls {
     if ([self isKindOfClass:cls]) {
         return self;
         
     } else if (self.superview) {
-        return [self.superview ancestorOrSelfWithClass:cls];
+        return [self.superview ys_ancestorOrSelfWithClass:cls];
         
     } else {
         return nil;
     }
 }
 
-- (void)removeAllSubviews {
+- (void)ys_removeAllSubviews {
     while (self.subviews.count) {
         UIView* child = self.subviews.lastObject;
         [child removeFromSuperview];
     }
 }
 
-- (CGPoint)offsetFromView:(UIView*)otherView {
+- (CGPoint)ys_offsetFromView:(UIView*)otherView {
     CGFloat x = 0.0f, y = 0.0f;
     for (UIView* view = self; view && view != otherView; view = view.superview) {
         x += view.left;
@@ -213,7 +213,7 @@ static char kDTActionHandlerLongPressGestureKey;
     return CGPointMake(x, y);
 }
 
-- (void)setTapActionWithBlock:(void (^)(void))block
+- (void)ys_setTapActionWithBlock:(void (^)(void))block
 {
 	UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kDTActionHandlerTapGestureKey);
     
@@ -240,7 +240,7 @@ static char kDTActionHandlerLongPressGestureKey;
 		}
 }
 
-- (void)setLongPressActionWithBlock:(void (^)(void))block
+- (void)ys_setLongPressActionWithBlock:(void (^)(void))block
 {
 	UILongPressGestureRecognizer *gesture = objc_getAssociatedObject(self, &kDTActionHandlerLongPressGestureKey);
     
@@ -269,7 +269,7 @@ static char kDTActionHandlerLongPressGestureKey;
 
 #pragma mark - UIView Draw
 
-- (UIImage *)snapshotImage
+- (UIImage *)ys_snapshotImage
 {
 	UIGraphicsBeginImageContext(self.bounds.size);
 	[self.layer renderInContext:UIGraphicsGetCurrentContext()];
@@ -279,7 +279,7 @@ static char kDTActionHandlerLongPressGestureKey;
 	return image;
 }
 
-- (void)setRoundedCornersWithRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color
+- (void)ys_setRoundedCornersWithRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color
 {
 	self.clipsToBounds = YES;
 	self.layer.cornerRadius = radius;
@@ -291,7 +291,7 @@ static char kDTActionHandlerLongPressGestureKey;
 		}
 }
 
-- (void)addShadowWithColor:(UIColor *)color alpha:(CGFloat)alpha radius:(CGFloat)radius offset:(CGSize)offset
+- (void)ys_addShadowWithColor:(UIColor *)color alpha:(CGFloat)alpha radius:(CGFloat)radius offset:(CGSize)offset
 {
 	self.layer.shadowOpacity = alpha;
 	self.layer.shadowRadius = radius;
@@ -306,7 +306,7 @@ static char kDTActionHandlerLongPressGestureKey;
 	self.layer.masksToBounds = NO;
 }
 
-- (void)updateShadowPathToBounds:(CGRect)bounds withDuration:(NSTimeInterval)duration
+- (void)ys_updateShadowPathToBounds:(CGRect)bounds withDuration:(NSTimeInterval)duration
 {
 	CGPathRef oldPath = self.layer.shadowPath;
 	CGPathRef newPath = CGPathCreateWithRect(bounds, NULL);
@@ -326,14 +326,14 @@ static char kDTActionHandlerLongPressGestureKey;
 	CGPathRelease(newPath);
 }
 
-- (id)subviewWithClassname:(NSString *)classname
+- (id)ys_subviewWithClassname:(NSString *)classname
 {
 	for (UIView* view in [self subviews]) {
 		
 		if ([classname isEqualToString:NSStringFromClass([view class])])
 			return view;
 		
-		UIView* subview = [view subviewWithClassname:classname];
+		UIView* subview = [view ys_subviewWithClassname:classname];
 		
 		if (subview)
 			return subview;
@@ -342,7 +342,7 @@ static char kDTActionHandlerLongPressGestureKey;
 	return nil;
 }
 
-- (void)addSubviewAndPreservePosition:(UIView *)view
+- (void)ys_addSubviewAndPreservePosition:(UIView *)view
 {
 	CGPoint center = [self convertPoint:[view center] fromView:[view superview]];
 	
@@ -353,7 +353,7 @@ static char kDTActionHandlerLongPressGestureKey;
 
 #pragma mark - Animations
 
-- (void)performAnimatedBlock:(void (^)(void))block duration:(CGFloat)duration
+- (void)ys_performAnimatedBlock:(void (^)(void))block duration:(CGFloat)duration
 {
 	if (duration > 0.f)
 		[UIView animateWithDuration:duration delay:0.f options:UIViewAnimationOptionAllowAnimatedContent|UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState animations:block completion:NULL];
@@ -361,30 +361,30 @@ static char kDTActionHandlerLongPressGestureKey;
 		block();
 }
 
-- (void)setAlpha:(CGFloat)alpha animationDuration:(CGFloat)duration
+- (void)ys_setAlpha:(CGFloat)alpha animationDuration:(CGFloat)duration
 {
-	[self performAnimatedBlock:^{ [self setAlpha:alpha]; } duration:duration];
+	[self ys_performAnimatedBlock:^{ [self setAlpha:alpha]; } duration:duration];
 }
 
-- (void)rotateToAngle:(CGFloat)angle animationDuration:(CGFloat)duration
+- (void)ys_rotateToAngle:(CGFloat)angle animationDuration:(CGFloat)duration
 {
-	[self performAnimatedBlock:^{
+	[self ys_performAnimatedBlock:^{
 		
 		[self setTransform:CGAffineTransformMakeRotation(M_PI * (angle))];
 		
 	} duration:duration];
 }
 
-- (void)moveToPoint:(CGPoint)center animationDuration:(CGFloat)duration
+- (void)ys_moveToPoint:(CGPoint)center animationDuration:(CGFloat)duration
 {
-	[self performAnimatedBlock:^{
+	[self ys_performAnimatedBlock:^{
 		
 		[self setCenter:center];
 		
 	} duration:duration];
 }
 
-- (void)spinWithVelocity:(CGFloat)velocity forInterval:(NSTimeInterval)interval
+- (void)ys_spinWithVelocity:(CGFloat)velocity forInterval:(NSTimeInterval)interval
 {
 	CALayer* layer					= [self layer];
 	CATransform3D originalTransform	= [layer transform];

@@ -15,6 +15,6 @@
 
  @return A view controller. `nil` if cannot find a UIViewController in responder chain.
  */
-- (id)viewController;
+- (id)ys_viewController;
 
 @end

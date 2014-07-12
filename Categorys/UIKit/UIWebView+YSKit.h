@@ -15,10 +15,10 @@
  Getting the current document's title
  @returns A string with the document title
  */
-- (NSString *)documentTitle;
+- (NSString *)ys_documentTitle;
 
 /** Make the receiver’s background transparent.
  */
-- (void)clearBackgroundImages;
+- (void)ys_clearBackgroundImages;
 
 @end

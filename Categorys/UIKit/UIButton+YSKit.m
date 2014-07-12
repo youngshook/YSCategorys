@@ -4,7 +4,7 @@
 @implementation UIButton (YSKit)
 
 // Reserved  Selected Disabled Highlighted
-- (void)setResourceImage:(NSString *)imageName background:(NSString *)backGroundImageName {
+- (void)ys_setResourceImage:(NSString *)imageName background:(NSString *)backGroundImageName {
 	NSString * file = nil;
 	NSString * type = @"png";
 
@@ -65,7 +65,7 @@
     }
 }
 
-- (void)setBackgroundImageResizingCapInsets:(UIEdgeInsets)capInsets forState:(UIControlState)state {
+- (void)ys_setBackgroundImageResizingCapInsets:(UIEdgeInsets)capInsets forState:(UIControlState)state {
     UIImage *ri = [[self backgroundImageForState:state] resizableImageWithCapInsets:capInsets];
     [self setBackgroundImage:ri forState:state];
 }

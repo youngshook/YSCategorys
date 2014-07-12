@@ -13,14 +13,14 @@
 
 @interface NSDictionary (YSKit)
 
-- (BOOL)boolForKey:(NSString *)keyName;
-- (float)floatForKey:(NSString *)keyName;
-- (NSInteger)integerForKey:(NSString *)keyName;
-- (double)doubleForKey:(NSString *)keyName;
+- (BOOL)ys_boolForKey:(NSString *)keyName;
+- (float)ys_floatForKey:(NSString *)keyName;
+- (NSInteger)ys_integerForKey:(NSString *)keyName;
+- (double)ys_doubleForKey:(NSString *)keyName;
 
-- (NSString*)jsonString;
+- (NSString*)ys_jsonString;
 
-+ (NSDictionary*)dictionaryWithJSON:(NSString*)json;
++ (NSDictionary*)ys_dictionaryWithJSON:(NSString*)json;
 
 /**
  Creates and returns a dictionary using the keys and values found in a file specified by a given URL.
@@ -29,7 +29,7 @@
  @param error If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
  @return A new dictionary that contains the dictionary at path, or `nil` if there is a file error or if the contents of the file are an invalid representation of a dictionary.
  */
-+ (NSDictionary *)dictionaryWithContentsOfURL:(NSURL *)URL error:(NSError **)error;
++ (NSDictionary *)ys_dictionaryWithContentsOfURL:(NSURL *)URL error:(NSError **)error;
 
 /**
  Creates and returns a dictionary using the keys and values found in a file specified by a given path.
@@ -38,7 +38,7 @@
  @param error If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
  @return A new dictionary that contains the dictionary at path, or `nil` if there is a file error or if the contents of the file are an invalid representation of a dictionary.
  */
-+ (NSDictionary *)dictionaryWithContentsOfFile:(NSString *)path error:(NSError **)error;
++ (NSDictionary *)ys_dictionaryWithContentsOfFile:(NSString *)path error:(NSError **)error;
 
 /**
  Creates and returns a dictionary using the keys and values found in the given data.
@@ -47,7 +47,7 @@
  @param error If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
  @return A new dictionary that contains the dictionary at path, or `nil` if there is a file error or if the contents of the file are an invalid representation of a dictionary.
  */
-+ (NSDictionary *)dictionaryWithContentsOfData:(NSData *)data error:(NSError **)error;
++ (NSDictionary *)ys_dictionaryWithContentsOfData:(NSData *)data error:(NSError **)error;
 
 @end
 
@@ -58,11 +58,11 @@
  @param sourceDictionary The dictionary from which to add entries.
  @param firstKey ... Keys specifying which entry will be added to the reciver.
  */
-- (NSUInteger)addEntriesFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ... NS_REQUIRES_NIL_TERMINATION;
+- (NSUInteger)ys_addEntriesFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ... NS_REQUIRES_NIL_TERMINATION;
 
-- (void)setBool:(BOOL)value forKey:(NSString *)keyName;
-- (void)setFloat:(float)value forKey:(NSString *)keyName;
-- (void)setInteger:(NSInteger)value forKey:(NSString *)keyName;
-- (void)setDouble:(double)value forKey:(NSString *)keyName;
+- (void)ys_setBool:(BOOL)value forKey:(NSString *)keyName;
+- (void)ys_setFloat:(float)value forKey:(NSString *)keyName;
+- (void)ys_setInteger:(NSInteger)value forKey:(NSString *)keyName;
+- (void)ys_setDouble:(double)value forKey:(NSString *)keyName;
 
 @end

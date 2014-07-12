@@ -3,7 +3,7 @@
 
 @implementation NSURL (YSKit)
 
-- (NSDictionary *)queryDictionary {
+- (NSDictionary *)ys_queryDictionary {
 	NSString * queryString = [self query];
 	if (!queryString) return nil;
 
@@ -22,14 +22,14 @@
 	return queryDictionary;
 }
 
-+ (NSURL *)appStoreURLforApplicationIdentifier:(NSString *)identifier
++ (NSURL *)ys_appStoreURLforApplicationIdentifier:(NSString *)identifier
 {
 	NSString *link = [NSString stringWithFormat:@"http://itunes.apple.com/us/app/id%@?mt=8", identifier];
 	
 	return [NSURL URLWithString:link];
 }
 
-+ (NSURL *)appStoreReviewURLForApplicationIdentifier:(NSString *)identifier
++ (NSURL *)ys_appStoreReviewURLForApplicationIdentifier:(NSString *)identifier
 {
 	NSString *link = [NSString stringWithFormat:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@", identifier];
 	return [NSURL URLWithString:link];

@@ -116,29 +116,29 @@
 /**
  * Finds the first descendant view (including this view) that is a member of a particular class.
  */
-- (UIView*)descendantOrSelfWithClass:(Class)cls;
+- (UIView*)ys_descendantOrSelfWithClass:(Class)cls;
 
 /**
  * Finds the first ancestor view (including this view) that is a member of a particular class.
  */
-- (UIView*)ancestorOrSelfWithClass:(Class)cls;
+- (UIView*)ys_ancestorOrSelfWithClass:(Class)cls;
 
 /**
  * Removes all subviews.
  */
-- (void)removeAllSubviews;
+- (void)ys_removeAllSubviews;
 
 /**
  Attaches the given block for a single tap action to the receiver.
  @param block The block to execute.
  */
-- (void)setTapActionWithBlock:(void (^)(void))block;
+- (void)ys_setTapActionWithBlock:(void (^)(void))block;
 
 /**
  Attaches the given block for a long press action to the receiver.
  @param block The block to execute.
  */
-- (void)setLongPressActionWithBlock:(void (^)(void))block;
+- (void)ys_setLongPressActionWithBlock:(void (^)(void))block;
 
 #pragma mark - UIView Draw
 
@@ -146,7 +146,7 @@
  
  @return Returns a bitmap image with the same contents and dimensions as the receiver.
  */
-- (UIImage *)snapshotImage;
+- (UIImage *)ys_snapshotImage;
 
 /** Sets the corner attributes of the receiver's layer.
  
@@ -155,7 +155,7 @@
  @param width The width of the border line.
  @param color The color to be used for the border line. Can be `nil` to leave it unchanged.
  */
-- (void)setRoundedCornersWithRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color;
+- (void)ys_setRoundedCornersWithRadius:(CGFloat)radius width:(CGFloat)width color:(UIColor *)color;
 
 
 /**---------------------------------------------------------------------------------------
@@ -175,7 +175,7 @@
  @param offset The offset of the shadow
  @see updateShadowPathToBounds:withDuration:
  */
-- (void)addShadowWithColor:(UIColor *)color alpha:(CGFloat)alpha radius:(CGFloat)radius offset:(CGSize)offset;
+- (void)ys_addShadowWithColor:(UIColor *)color alpha:(CGFloat)alpha radius:(CGFloat)radius offset:(CGSize)offset;
 
 
 /** sets the shadow path to fit the receiver's bounds.
@@ -185,20 +185,20 @@
  @param bounds The new bounds of the shadow path
  @param duration The animation duration. Specify a duration of 0 to not do an animation
  */
-- (void)updateShadowPathToBounds:(CGRect)bounds withDuration:(NSTimeInterval)duration;
+- (void)ys_updateShadowPathToBounds:(CGRect)bounds withDuration:(NSTimeInterval)duration;
 
-- (id)subviewWithClassname:(NSString *)classname;
-- (void)addSubviewAndPreservePosition:(UIView *)view;
+- (id)ys_subviewWithClassname:(NSString *)classname;
+- (void)ys_addSubviewAndPreservePosition:(UIView *)view;
 
 #pragma mark - Animations
 
-- (void)performAnimatedBlock:(void (^)(void))block duration:(CGFloat)duration;
+- (void)ys_performAnimatedBlock:(void (^)(void))block duration:(CGFloat)duration;
 
-- (void)setAlpha:(CGFloat)alpha animationDuration:(CGFloat)duration;
-- (void)rotateToAngle:(CGFloat)angle animationDuration:(CGFloat)duration;
-- (void)moveToPoint:(CGPoint)center animationDuration:(CGFloat)duration;
+- (void)ys_setAlpha:(CGFloat)alpha animationDuration:(CGFloat)duration;
+- (void)ys_rotateToAngle:(CGFloat)angle animationDuration:(CGFloat)duration;
+- (void)ys_moveToPoint:(CGPoint)center animationDuration:(CGFloat)duration;
 
-- (void)spinWithVelocity:(CGFloat)velocity forInterval:(NSTimeInterval)interval;
+- (void)ys_spinWithVelocity:(CGFloat)velocity forInterval:(NSTimeInterval)interval;
 
 
 @end

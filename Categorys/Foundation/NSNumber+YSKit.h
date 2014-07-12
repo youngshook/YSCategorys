@@ -20,20 +20,20 @@
  *
  *  @return random int value
  */
-+ (int) randomInt:(int)maxInt;
++ (int) ys_randomInt:(int)maxInt;
 
 /**
  *  get a random BOOL value, YES or NO.
  *
  *  @return random BOOL value
  */
-+ (BOOL) randomBool;
++ (BOOL) ys_randomBool;
 
 /**
  *  return a NSDate value base on unix time in seconds
  *
  *  @return a NSDate value
  */
-- (NSDate *) dateValue;
+- (NSDate *) ys_dateValue;
 
 @end

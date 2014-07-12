@@ -13,7 +13,7 @@
 
 @interface UIWindow (YSKit)
 
-+ (UIWindow *)mainWindow;
-+ (UIView *)keyboardView;
++ (UIWindow *)ys_mainWindow;
++ (UIView *)ys_keyboardView;
 
 @end

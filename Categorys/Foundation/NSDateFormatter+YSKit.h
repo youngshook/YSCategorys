@@ -17,7 +17,7 @@
 
  @return A cached `NSDateFormatter` object.
  */
-+ (NSDateFormatter *)GMTFormatter;
++ (NSDateFormatter *)ys_GMTFormatter;
 
 /** Returns a date formatter object which was set with current locale.
 
@@ -27,7 +27,7 @@
 
  @see `currentLocaleFormatterOnlyDate`
  */
-+ (NSDateFormatter *)currentLocaleFormatter;
++ (NSDateFormatter *)ys_currentLocaleFormatter;
 
 /** Returns a date formatter object which was set with current locale.
 
@@ -37,7 +37,7 @@
 
  @see `currentLocaleFormatter`
  */
-+ (NSDateFormatter *)currentLocaleFormatterOnlyDate;
++ (NSDateFormatter *)ys_currentLocaleFormatterOnlyDate;
 
 
 /** Returns a date formatter object with a given date format and a specified time zone.
@@ -47,7 +47,7 @@
 
  @return A `NSDateFormatter` object.
  */
-+ (NSDateFormatter *)dateFormatterWithDateFormat:(NSString *)formatString timeZoneWithName:(NSString *)tzName;
++ (NSDateFormatter *)ys_dateFormatterWithDateFormat:(NSString *)formatString timeZoneWithName:(NSString *)tzName;
 
 /** Returns a date formatter object with Asia/Hong_Kong time zone.
 
@@ -55,6 +55,6 @@
 
  @see `dateFormatterWithDateFormat:timeZoneWithName:`
  */
-+ (NSDateFormatter *)hongKongTimeZoneDateFormatter;
++ (NSDateFormatter *)ys_hongKongTimeZoneDateFormatter;
 
 @end

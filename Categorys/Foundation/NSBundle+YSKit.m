@@ -2,27 +2,27 @@
 #import "NSBundle+YSKit.h"
 
 @implementation NSBundle (YSKit)
-+ (NSString *)mainBundlePathForCaches {
++ (NSString *)ys_mainBundlePathForCaches {
 	return [NSHomeDirectory() stringByAppendingPathComponent:@"/Library/Caches/"];
 }
 
-+ (NSString *)mainBundlePathForPreferences {
++ (NSString *)ys_mainBundlePathForPreferences {
 	return [NSHomeDirectory() stringByAppendingPathComponent:@"/Library/Preferences/"];
 }
 
-+ (NSString *)mainBundlePathForDocuments {
++ (NSString *)ys_mainBundlePathForDocuments {
 	return [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
 }
 
-+ (NSString *)mainBundlePathForTemp {
++ (NSString *)ys_mainBundlePathForTemp {
 	return [NSHomeDirectory() stringByAppendingPathComponent:@"/tmp/"];
 }
 
-+ (NSString *)pathForMainBoundlePath:(NSString *)path {
++ (NSString *)ys_pathForMainBoundlePath:(NSString *)path {
     return [NSHomeDirectory() stringByAppendingPathComponent:path];
 }
 
-- (NSString *)versionString {
+- (NSString *)ys_versionString {
     NSString *bundleVersion = self.infoDictionary[@"CFBundleVersion"];
     NSString *shortVersion = self.infoDictionary[@"CFBundleShortVersionString"];
     return [NSString stringWithFormat:@"%@.%@", shortVersion, bundleVersion];

@@ -15,10 +15,10 @@
 
 /**	Cover query string into NSDictionary
  */
-- (NSDictionary *)queryDictionary;
+- (NSDictionary *)ys_queryDictionary;
 
-+ (NSURL *)appStoreURLforApplicationIdentifier:(NSString *)identifier;
++ (NSURL *)ys_appStoreURLforApplicationIdentifier:(NSString *)identifier;
 
-+ (NSURL *)appStoreReviewURLForApplicationIdentifier:(NSString *)identifier;
++ (NSURL *)ys_appStoreReviewURLForApplicationIdentifier:(NSString *)identifier;
 
 @end

@@ -13,35 +13,35 @@
 
 @interface NSUserDefaults (YSKit)
 
-+ (BOOL)synchronize;
++ (BOOL)ys_synchronize;
 
-+ (void)setBool:(BOOL)value forKey:(NSString *)key;
-+ (void)setDouble:(double)value forKey:(NSString *)key;
-+ (void)setFloat:(float)value forKey:(NSString *)key;
-+ (void)setInteger:(NSInteger)value forKey:(NSString *)key;
-+ (void)setLong:(long)value forKey:(NSString *)key;
-+ (void)setLongLong:(long long)value forKey:(NSString *)key;
-+ (void)setNilValueForKey:(NSString *)key;
-+ (void)setObject:(id)value forKey:(NSString *)key;
-+ (void)setURL:(NSURL *)url forKey:(NSString *)key;
++ (void)ys_setBool:(BOOL)value forKey:(NSString *)key;
++ (void)ys_setDouble:(double)value forKey:(NSString *)key;
++ (void)ys_setFloat:(float)value forKey:(NSString *)key;
++ (void)ys_setInteger:(NSInteger)value forKey:(NSString *)key;
++ (void)ys_setLong:(long)value forKey:(NSString *)key;
++ (void)ys_setLongLong:(long long)value forKey:(NSString *)key;
++ (void)ys_setNilValueForKey:(NSString *)key;
++ (void)ys_setObject:(id)value forKey:(NSString *)key;
++ (void)ys_setURL:(NSURL *)url forKey:(NSString *)key;
 
-+ (BOOL)boolForKey:(NSString *)key;
-+ (double)doubleForKey:(NSString *)key;
-+ (float)floatForKey:(NSString *)key;
-+ (NSInteger)integerForKey:(NSString *)key;
-+ (long)longForKey:(NSString *)key;
-+ (long long)longLongForKey:(NSString *)key;
-+ (id)objectForKey:(NSString *)key;
-+ (NSURL *)URLForKey:(NSString *)key;
++ (BOOL)ys_boolForKey:(NSString *)key;
++ (double)ys_doubleForKey:(NSString *)key;
++ (float)ys_floatForKey:(NSString *)key;
++ (NSInteger)ys_integerForKey:(NSString *)key;
++ (long)ys_longForKey:(NSString *)key;
++ (long long)ys_longLongForKey:(NSString *)key;
++ (id)ys_objectForKey:(NSString *)key;
++ (NSURL *)ys_URLForKey:(NSString *)key;
 
-+ (void)setCGRect:(CGRect)rect forKey:(NSString *)key;
-+ (void)setCGSize:(CGSize)size forKey:(NSString *)key;
-+ (void)setCGPoint:(CGPoint)point forKey:(NSString *)key;
-+ (void)setNSRange:(NSRange)range forKey:(NSString *)key;
++ (void)ys_setCGRect:(CGRect)rect forKey:(NSString *)key;
++ (void)ys_setCGSize:(CGSize)size forKey:(NSString *)key;
++ (void)ys_setCGPoint:(CGPoint)point forKey:(NSString *)key;
++ (void)ys_setNSRange:(NSRange)range forKey:(NSString *)key;
 
-+ (CGRect)rectForKey:(NSString *)key;
-+ (CGSize)sizeForKey:(NSString *)key;
-+ (CGPoint)pointForKey:(NSString *)key;
-+ (NSRange)rangeForKey:(NSString *)key;
++ (CGRect)ys_rectForKey:(NSString *)key;
++ (CGSize)ys_sizeForKey:(NSString *)key;
++ (CGPoint)ys_pointForKey:(NSString *)key;
++ (NSRange)ys_rangeForKey:(NSString *)key;
 
 @end

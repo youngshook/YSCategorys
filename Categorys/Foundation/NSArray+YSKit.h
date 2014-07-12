@@ -29,7 +29,7 @@
  @param error If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
  @return A new array that contains the array at path, or `nil` if there is a file error or if the contents of the file are an invalid representation of a array.
  */
-+ (NSArray *)arrayWithContentsOfURL:(NSURL *)URL error:(NSError **)error;
++ (NSArray *)ys_arrayWithContentsOfURL:(NSURL *)URL error:(NSError **)error;
 
 
 /**
@@ -39,7 +39,7 @@
  @param error If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
  @return A new dictionary that contains the dictionary at path, or `nil` if there is a file error or if the contents of the file are an invalid representation of a dictionary.
  */
-+ (NSArray *)arrayWithContentsOfFile:(NSString *)path error:(NSError **)error;
++ (NSArray *)ys_arrayWithContentsOfFile:(NSString *)path error:(NSError **)error;
 
 
 /**
@@ -49,7 +49,7 @@
  @param error If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, pass in `NULL`.
  @return A new array that contains the decoded array, or `nil` if there is an error or if the contents of the file are an invalid representation of an array.
  */
-+ (NSArray *)arrayWithContentsOfData:(NSData *)data error:(NSError **)error;
++ (NSArray *)ys_arrayWithContentsOfData:(NSData *)data error:(NSError **)error;
 
 @end
 
@@ -60,5 +60,5 @@
  @param sourceDictionary The dictionary from which to add entries
  @param firstKey ... Keys specifying which object will be added to the reciver.
  */
-- (void)addObjectsFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ...NS_REQUIRES_NIL_TERMINATION;
+- (void)ys_addObjectsFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ...NS_REQUIRES_NIL_TERMINATION;
 @end

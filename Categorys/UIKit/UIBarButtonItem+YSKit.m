@@ -3,12 +3,12 @@
 
 @implementation UIBarButtonItem (YSKit)
 
-+ (UIBarButtonItem *)flexibleSpace
++ (UIBarButtonItem *)ys_flexibleSpace
 {
 	return [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
 }
 
-+ (UIBarButtonItem *)spaceWithWidth:(CGFloat)width
++ (UIBarButtonItem *)ys_spaceWithWidth:(CGFloat)width
 {
 	UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
 	[item setWidth:width];

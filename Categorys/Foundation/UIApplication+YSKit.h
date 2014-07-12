@@ -13,9 +13,9 @@
 
 @interface UIApplication (YSKit)
 
-- (CGFloat)applicationVersion;
+- (CGFloat)ys_applicationVersion;
 
-- (void)increaseNetworkActivityCounter;
-- (void)decreaseNetworkActivityCounter;
+- (void)ys_increaseNetworkActivityCounter;
+- (void)ys_decreaseNetworkActivityCounter;
 
 @end

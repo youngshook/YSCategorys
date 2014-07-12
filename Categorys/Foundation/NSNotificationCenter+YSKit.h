@@ -13,21 +13,21 @@
 
 @interface NSNotificationCenter (YSKit)
 
-+ (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject;
++ (void)ys_addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(id)anObject;
 
-+ (void)postNotification:(NSNotification *)notification;
-+ (void)postNotificationName:(NSString *)aName object:(id)anObject;
-+ (void)postNotificationName:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo;
++ (void)ys_postNotification:(NSNotification *)notification;
++ (void)ys_postNotificationName:(NSString *)aName object:(id)anObject;
++ (void)ys_postNotificationName:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo;
 
-+ (void)removeObserver:(id)observer;
-+ (void)removeObserver:(id)observer name:(NSString *)aName object:(id)anObject;
++ (void)ys_removeObserver:(id)observer;
++ (void)ys_removeObserver:(id)observer name:(NSString *)aName object:(id)anObject;
 
 #if NS_BLOCKS_AVAILABLE
-+ (id)addObserverForName:(NSString *)name object:(id)obj queue:(NSOperationQueue *)queue usingBlock:(void (^)(NSNotification *note))block;
++ (id)ys_addObserverForName:(NSString *)name object:(id)obj queue:(NSOperationQueue *)queue usingBlock:(void (^)(NSNotification *note))block;
 #endif
 
-+ (void)postNotificationOnMainThread:(NSNotification *)notification;
-+ (void)postNotificationNameOnMainThread:(NSString *)aName object:(id)anObject;
-+ (void)postNotificationNameOnMainThread:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo;
++ (void)ys_postNotificationOnMainThread:(NSNotification *)notification;
++ (void)ys_postNotificationNameOnMainThread:(NSString *)aName object:(id)anObject;
++ (void)ys_postNotificationNameOnMainThread:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo;
 
 @end

@@ -13,7 +13,7 @@
 
 @interface UIBarButtonItem (YSKit)
 
-+ (UIBarButtonItem *)flexibleSpace;
-+ (UIBarButtonItem *)spaceWithWidth:(CGFloat)width;
++ (UIBarButtonItem *)ys_flexibleSpace;
++ (UIBarButtonItem *)ys_spaceWithWidth:(CGFloat)width;
 
 @end

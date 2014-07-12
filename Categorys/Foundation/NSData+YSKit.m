@@ -6,7 +6,7 @@
 
 @implementation NSData (YSKit)
 
-- (NSData *) AES256EncryptWithKey:(NSString *)key
+- (NSData *) ys_AES256EncryptWithKey:(NSString *)key
 {
 		// 'key' should be 32 bytes for AES256, will be null-padded otherwise
     char keyPtr[kCCKeySizeAES256 + 1];   // room for terminator (unused)
@@ -41,7 +41,7 @@
     return nil;
 }
 
-- (NSData *) AES256DecryptWithKey:(NSString *)key
+- (NSData *) ys_AES256DecryptWithKey:(NSString *)key
 {
     char keyPtr[kCCKeySizeAES256 + 1];
 	

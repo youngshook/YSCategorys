@@ -4,7 +4,7 @@
 
 @implementation UINavigationController (YSKit)
 
-- (Class)previousViewControllerClassForViewController:(UIViewController *)viewController {
+- (Class)ys_previousViewControllerClassForViewController:(UIViewController *)viewController {
     NSUInteger idx = [self.viewControllers indexOfObject:viewController];
     if (idx == 0 || idx == NSNotFound) {
 	return nil;
@@ -13,14 +13,14 @@
     return [[self.viewControllers objectAtIndex:(idx - 1)] class];
 }
 
-- (id)previousViewControllerForViewController:(UIViewController *)viewController {
+- (id)ys_previousViewControllerForViewController:(UIViewController *)viewController {
     NSUInteger idx = [self.viewControllers indexOfObject:viewController];
     if (idx == 0 || idx == NSNotFound) return nil;
 
     return [self.viewControllers ys_objectAtIndex:(idx - 1)];
 }
 
-- (BOOL)hasViewControllerWithClass:(Class)aClass beforeViewController:(UIViewController *)viewController {
+- (BOOL)ys_hasViewControllerWithClass:(Class)aClass beforeViewController:(UIViewController *)viewController {
     NSUInteger idx = [self.viewControllers indexOfObject:viewController];
     if (idx == 0 || idx == NSNotFound) {
 	return NO;
@@ -35,7 +35,7 @@
     return NO;
 }
 
-- (NSArray *) viewControllersForClass:(Class)aClass
+- (NSArray *) ys_viewControllersForClass:(Class)aClass
 {
     NSMutableArray *controllers = [[NSMutableArray array] mutableCopy];
 	
@@ -52,7 +52,7 @@
     return ary;
 }
 
-- (UIViewController *) viewControllerForClass:(Class)aClass
+- (UIViewController *) ys_viewControllerForClass:(Class)aClass
 {
     for (UIViewController *v in self.viewControllers) {
 		
@@ -65,15 +65,15 @@
     return nil;
 }
 
-- (NSArray *) popToViewControllerClass:(Class)aClass animated:(BOOL)animated
+- (NSArray *) ys_popToViewControllerClass:(Class)aClass animated:(BOOL)animated
 {
 	
-    UIViewController *v = [self viewControllerForClass:aClass];
+    UIViewController *v = [self ys_viewControllerForClass:aClass];
 	
     return [self popToViewController:v animated:animated];
 }
 
-- (UIViewController *) popThenPushViewController:(UIViewController *)viewController animated:(BOOL)animated
+- (UIViewController *) ys_popThenPushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     UIViewController *v = [self popViewControllerAnimated:NO];
 	

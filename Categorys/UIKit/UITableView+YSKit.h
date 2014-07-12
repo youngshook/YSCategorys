@@ -21,7 +21,7 @@
  @param animated
     YES if you want to animate the deselection and NO if the change should be immediate.
  */
-- (void)deselectRows:(BOOL)animated;
+- (void)ys_deselectRows:(BOOL)animated;
 
 /**
  @abstract Returns a reusable table-view cell object located by its class. The cell´s reuseIdentifier must equal to its class name.
@@ -30,25 +30,25 @@
 
  @return A UITableViewCell object with the associated identifier or nil if no such object exists in the reusable-cell queue.
  */
-- (id)dequeueReusableCellWithClass:(Class)cellClass;
+- (id)ys_dequeueReusableCellWithClass:(Class)cellClass;
 
-- (void)reloadDataKeepSelection;
-- (void)reloadDataWithRowAnimation:(UITableViewRowAnimation)animation;
+- (void)ys_reloadDataKeepSelection;
+- (void)ys_reloadDataWithRowAnimation:(UITableViewRowAnimation)animation;
 
-- (void)selectRowsAtIndexPaths:(NSArray *)indexPaths animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
-- (void)selectAllRowsAnimated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
+- (void)ys_selectRowsAtIndexPaths:(NSArray *)indexPaths animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
+- (void)ys_selectAllRowsAnimated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
 
-- (CGSize)cellSize;
-- (CGSize)cellSizeForIndexPath:(NSIndexPath *)indexPath;
+- (CGSize)ys_cellSize;
+- (CGSize)ys_cellSizeForIndexPath:(NSIndexPath *)indexPath;
 
-- (void)registerClassForCellWithDefaultReuseIdentifier:(Class)cellClass;
-- (id)dequeueReusableCellWithDefaultIdentifier;
-- (id)dequeueReusableCellWithDefaultIdentifierForIndexPath:(NSIndexPath *)indexPath;
+- (void)ys_registerClassForCellWithDefaultReuseIdentifier:(Class)cellClass;
+- (id)ys_dequeueReusableCellWithDefaultIdentifier;
+- (id)ys_dequeueReusableCellWithDefaultIdentifierForIndexPath:(NSIndexPath *)indexPath;
 
-- (void)scrollToTop;
-- (void)scrollToTopAnimated:(BOOL)animated;
+- (void)ys_scrollToTop;
+- (void)ys_scrollToTopAnimated:(BOOL)animated;
 
-- (void)scrollToBottom;
-- (void)scrollToBottomAnimated:(BOOL)animated;
+- (void)ys_scrollToBottom;
+- (void)ys_scrollToBottomAnimated:(BOOL)animated;
 
 @end

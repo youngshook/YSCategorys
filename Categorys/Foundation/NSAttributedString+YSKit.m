@@ -3,7 +3,7 @@
 
 @implementation NSAttributedString (YSKit)
 
-+ (instancetype)hyperlinkFromString:(NSString*)inString withURL:(NSURL*)aURL
++ (instancetype)ys_hyperlinkFromString:(NSString*)inString withURL:(NSURL*)aURL
 {
     NSMutableAttributedString* attrString = [[NSMutableAttributedString alloc] initWithString: inString];
     NSRange range = NSMakeRange(0, [attrString length]);
@@ -22,7 +22,7 @@
     return attrString;
 }
 
-+ (instancetype)linkifiedAttributedStringFromString:(NSString *)string
++ (instancetype)ys_linkifiedAttributedStringFromString:(NSString *)string
 {
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string];
     NSError *error = nil;
@@ -36,7 +36,7 @@
         if ([match resultType] == NSTextCheckingTypeLink) {
             NSURL *url = [match URL];
             NSString *URLString = [string substringWithRange:matchRange];
-            NSAttributedString *linkedAttributedString = [self hyperlinkFromString:URLString withURL:url];
+            NSAttributedString *linkedAttributedString = [self ys_hyperlinkFromString:URLString withURL:url];
             [attributedString replaceCharactersInRange:matchRange withAttributedString:linkedAttributedString];
         }
     }

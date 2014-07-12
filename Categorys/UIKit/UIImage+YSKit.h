@@ -11,8 +11,8 @@
 
 @interface UIImage (YSKit)
 
-+ (UIImage *)resourceName:(NSString *)PNGFileName;
-+ (UIImage *)resourceName:(NSString *)fileName ofType:(NSString *)type;
++ (UIImage *)ys_resourceName:(NSString *)PNGFileName;
++ (UIImage *)ys_resourceName:(NSString *)fileName ofType:(NSString *)type;
 
 /**
  Captures screen for selected view.
@@ -20,7 +20,7 @@
  @param view View that is going to be captured.
  @return View screenshot.
  */
-+ (UIImage *)captureView:(UIView *)view;
++ (UIImage *)ys_captureView:(UIView *)view;
 
 /**
  Captures frame inside selected view.
@@ -29,7 +29,7 @@
  @param view View hosting frame.
  @return View frame screenshot.
  */
-+ (UIImage *)captureFrame:(CGRect)frame inView:(UIView *)view;
++ (UIImage *)ys_captureFrame:(CGRect)frame inView:(UIView *)view;
 
 /**
  Creates an image filled with a solid color
@@ -37,34 +37,34 @@
  @param size The size of the image
  @returns The image filled with given color and given size
  */
-+ (UIImage *)imageWithSolidColor:(UIColor *)color size:(CGSize)size;
++ (UIImage *)ys_imageWithSolidColor:(UIColor *)color size:(CGSize)size;
 
 /**
  Creates an image filled with a tint color using the receiver as image mask. The resulting image ignores the receiver's color values and instead uses the alpha values combined with the passed color.
  @param color The color to use for tinting
  @returns A new image
  */
-- (UIImage *)imageMaskedAndTintedWithColor:(UIColor *)color;
+- (UIImage *)ys_imageMaskedAndTintedWithColor:(UIColor *)color;
 
 // Aspect scale, may crop image
-- (UIImage *)imageAspectFillSize:(CGSize)targetSize;
+- (UIImage *)ys_imageAspectFillSize:(CGSize)targetSize;
 
 // Aspect scale, no crop
-- (UIImage *)imageAspectFitSize:(CGSize)targetSize;
+- (UIImage *)ys_imageAspectFitSize:(CGSize)targetSize;
 
 // Crop image, no resize
-- (UIImage *)imageWithCropRect:(CGRect)rect;
+- (UIImage *)ys_imageWithCropRect:(CGRect)rect;
 
 // Scale image, may change the aspect ratio
-- (UIImage *)imageWithScaledSize:(CGSize)newSize;
+- (UIImage *)ys_imageWithScaledSize:(CGSize)newSize;
 
 // Scale image, keep the aspect ratio
-- (UIImage*)imageWithScale:(CGFloat)scale;
+- (UIImage*)ys_imageWithScale:(CGFloat)scale;
 
-- (UIImage *)imageByScalingAndCroppingForSize:(CGSize)targetSize DEPRECATED_ATTRIBUTE;
+- (UIImage *)ys_imageByScalingAndCroppingForSize:(CGSize)targetSize DEPRECATED_ATTRIBUTE;
 
 
-- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
+- (UIImage *)ys_imageRotatedByDegrees:(CGFloat)degrees;
 
 #pragma mark - Tint color
 /// @name Tint color
@@ -79,7 +79,7 @@
 
  @return A tinted image.
 */
-- (UIImage *)imageWithTintColor:(UIColor *)tintColor;
+- (UIImage *)ys_imageWithTintColor:(UIColor *)tintColor;
 
 /** Creates and returns an tined image object that uses the specified color object.
 
@@ -91,7 +91,7 @@
 
  @return A tinted image.
 */
-- (UIImage *)imageOnlyKeepsAlphaWithTintColor:(UIColor *)tintColor;
+- (UIImage *)ys_imageOnlyKeepsAlphaWithTintColor:(UIColor *)tintColor;
 
 
 @end

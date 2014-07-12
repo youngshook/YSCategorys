@@ -28,120 +28,120 @@
  *
  *  @return bool string, @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* NSStringFromBOOL(BOOL boolValue);
+FOUNDATION_EXPORT NSString* YSNSStringFromBOOL(BOOL boolValue);
 
 /**
- *    NSStringIsBlank(nil)          == YES
- *    NSStringIsBlank(@"")          == YES
- *    NSStringIsBlank(@" ")         == YES
- *    NSStringIsBlank(@"bob")       == NO
- *    NSStringIsBlank(@"  bob   ")  == NO
+ *    YSNSStringIsBlank(nil)          == YES
+ *    YSNSStringIsBlank(@"")          == YES
+ *    YSNSStringIsBlank(@" ")         == YES
+ *    YSNSStringIsBlank(@"bob")       == NO
+ *    YSNSStringIsBlank(@"  bob   ")  == NO
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-FOUNDATION_EXPORT BOOL NSStringIsBlank(NSString *stringValue);
+FOUNDATION_EXPORT BOOL YSNSStringIsBlank(NSString *stringValue);
 
 /**
- *    NSStringIsBlankString(nil)          isEqualToString:@"YES"
- *    NSStringIsBlankString(@"")          isEqualToString:@"YES"
- *    NSStringIsBlankString(@" ")         isEqualToString:@"YES"
- *    NSStringIsBlankString(@"bob")       isEqualToString:@"NO"
- *    NSStringIsBlankString(@"  bob   ")  isEqualToString:@"NO"
+ *    YSNSStringIsBlankString(nil)          isEqualToString:@"YES"
+ *    YSNSStringIsBlankString(@"")          isEqualToString:@"YES"
+ *    YSNSStringIsBlankString(@" ")         isEqualToString:@"YES"
+ *    YSNSStringIsBlankString(@"bob")       isEqualToString:@"NO"
+ *    YSNSStringIsBlankString(@"  bob   ")  isEqualToString:@"NO"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* NSStringIsBlankString(NSString *stringValue);
+FOUNDATION_EXPORT NSString* YSNSStringIsBlankString(NSString *stringValue);
 
 /**
- *    NSStringIsNotBlank(nil)           == NO
- *    NSStringIsNotBlank(@"")           == NO
- *    NSStringIsNotBlank(@" ")          == NO
- *    NSStringIsNotBlank(@"bob")        == YES
- *    NSStringIsNotBlank(@"  bob   ")   == YES
+ *    YSNSStringIsNotBlank(nil)           == NO
+ *    YSNSStringIsNotBlank(@"")           == NO
+ *    YSNSStringIsNotBlank(@" ")          == NO
+ *    YSNSStringIsNotBlank(@"bob")        == YES
+ *    YSNSStringIsNotBlank(@"  bob   ")   == YES
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-FOUNDATION_EXPORT BOOL NSStringIsNotBlank(NSString *stringValue);
+FOUNDATION_EXPORT BOOL YSNSStringIsNotBlank(NSString *stringValue);
 
 /**
- *    NSStringIsNotBlankString(nil)           isEqualToString:@"NO"
- *    NSStringIsNotBlankString(@"")           isEqualToString:@"NO"
- *    NSStringIsNotBlankString(@" ")          isEqualToString:@"NO"
- *    NSStringIsNotBlankString(@"bob")        isEqualToString:@"YES"
- *    NSStringIsNotBlankString(@"  bob   ")   isEqualToString:@"YES"
+ *    YSNSStringIsNotBlankString(nil)           isEqualToString:@"NO"
+ *    YSNSStringIsNotBlankString(@"")           isEqualToString:@"NO"
+ *    YSNSStringIsNotBlankString(@" ")          isEqualToString:@"NO"
+ *    YSNSStringIsNotBlankString(@"bob")        isEqualToString:@"YES"
+ *    YSNSStringIsNotBlankString(@"  bob   ")   isEqualToString:@"YES"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* NSStringIsNotBlankString(NSString *stringValue);
+FOUNDATION_EXPORT NSString* YSNSStringIsNotBlankString(NSString *stringValue);
 
 /**
- *    NSStringIsEmpty(nil)          == YES
- *    NSStringIsEmpty(@"")          == YES
- *    NSStringIsEmpty(@" ")         == NO
- *    NSStringIsEmpty(@"bob")       == NO
- *    NSStringIsEmpty(@"  bob   ")  == NO
+ *    YSNSStringIsEmpty(nil)          == YES
+ *    YSNSStringIsEmpty(@"")          == YES
+ *    YSNSStringIsEmpty(@" ")         == NO
+ *    YSNSStringIsEmpty(@"bob")       == NO
+ *    YSNSStringIsEmpty(@"  bob   ")  == NO
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-FOUNDATION_EXPORT BOOL NSStringIsEmpty(NSString *stringValue);
+FOUNDATION_EXPORT BOOL YSNSStringIsEmpty(NSString *stringValue);
 
 /**
- *    NSStringIsEmptyString(nil)          isEqualToString:@"YES"
- *    NSStringIsEmptyString(@"")          isEqualToString:@"YES"
- *    NSStringIsEmptyString(@" ")         isEqualToString:@"NO"
- *    NSStringIsEmptyString(@"bob")       isEqualToString:@"NO"
- *    NSStringIsEmptyString(@"  bob   ")  isEqualToString:@"NO"
+ *    YSNSStringIsEmptyString(nil)          isEqualToString:@"YES"
+ *    YSNSStringIsEmptyString(@"")          isEqualToString:@"YES"
+ *    YSNSStringIsEmptyString(@" ")         isEqualToString:@"NO"
+ *    YSNSStringIsEmptyString(@"bob")       isEqualToString:@"NO"
+ *    YSNSStringIsEmptyString(@"  bob   ")  isEqualToString:@"NO"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* NSStringIsEmptyString(NSString *stringValue);
+FOUNDATION_EXPORT NSString* YSNSStringIsEmptyString(NSString *stringValue);
 
 /**
- *    NSStringIsNotEmpty(nil)           == NO
- *    NSStringIsNotEmpty(@"")           == NO
- *    NSStringIsNotEmpty(@" ")          == YES
- *    NSStringIsNotEmpty(@"bob")        == YES
- *    NSStringIsNotEmpty(@"  bob   ")   == YES
+ *    YSNSStringIsNotEmpty(nil)           == NO
+ *    YSNSStringIsNotEmpty(@"")           == NO
+ *    YSNSStringIsNotEmpty(@" ")          == YES
+ *    YSNSStringIsNotEmpty(@"bob")        == YES
+ *    YSNSStringIsNotEmpty(@"  bob   ")   == YES
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-FOUNDATION_EXPORT BOOL NSStringIsNotEmpty(NSString *stringValue);
+FOUNDATION_EXPORT BOOL YSNSStringIsNotEmpty(NSString *stringValue);
 
 /**
- *    NSStringIsNotEmptyString(nil)           isEqualToString:@"NO"
- *    NSStringIsNotEmptyString(@"")           isEqualToString:@"NO"
- *    NSStringIsNotEmptyString(@" ")          isEqualToString:@"YES"
- *    NSStringIsNotEmptyString(@"bob")        isEqualToString:@"YES"
- *    NSStringIsNotEmptyString(@"  bob   ")   isEqualToString:@"YES"
+ *    YSNSStringIsNotEmptyString(nil)           isEqualToString:@"NO"
+ *    YSNSStringIsNotEmptyString(@"")           isEqualToString:@"NO"
+ *    YSNSStringIsNotEmptyString(@" ")          isEqualToString:@"YES"
+ *    YSNSStringIsNotEmptyString(@"bob")        isEqualToString:@"YES"
+ *    YSNSStringIsNotEmptyString(@"  bob   ")   isEqualToString:@"YES"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* NSStringIsNotEmptyString(NSString *stringValue);
+FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
 
 
 #pragma mark - -=Objective-C function=-
 
 @interface NSString (YSKit)
 
-+ (NSString *)MD5String:(NSString *)string;
++ (NSString *)ys_MD5String:(NSString *)string;
 
-+ (NSString *)pinyinFromString:(NSString *)orgString;
++ (NSString *)ys_pinyinFromString:(NSString *)orgString;
 
 /** Returns a Boolean value indicating whether the receiver contains the specified string.
 
@@ -149,7 +149,7 @@ FOUNDATION_EXPORT NSString* NSStringIsNotEmptyString(NSString *stringValue);
 
  @return `YES` if the receiver contains the string; otherwise, `NO`.
  */
-- (BOOL)containsString:(NSString *)string;
+- (BOOL)ys_containsString:(NSString *)string;
 
 /** Returns a Boolean value indicating whether the receiver contains the specified string.
 
@@ -158,144 +158,144 @@ FOUNDATION_EXPORT NSString* NSStringIsNotEmptyString(NSString *stringValue);
 
  @return `YES` if the receiver contains the string; otherwise, `NO`.
  */
-- (BOOL)containsString:(NSString *)string options:(NSStringCompareOptions)mask;
+- (BOOL)ys_containsString:(NSString *)string options:(NSStringCompareOptions)mask;
 
 /** Reverse a NSString
 
  @return String reversed
  */
-- (NSString *)stringTrimToWidthLength:(CGFloat)length WithFont:(UIFont *)font DEPRECATED_ATTRIBUTE;
+- (NSString *)ys_stringTrimToWidthLength:(CGFloat)length WithFont:(UIFont *)font DEPRECATED_ATTRIBUTE;
 
 /** Remove HTML tags in receiver’s.
  */
-- (NSString *)extractedHTMLContent;
+- (NSString *)ys_extractedHTMLContent;
 
-- (BOOL)isInteger;
-- (NSArray *)componentsSeparatedAtEachCharacter;
+- (BOOL)ys_isInteger;
+- (NSArray *)ys_componentsSeparatedAtEachCharacter;
 
-- (NSInteger)numberOfOccurrencesOfString:(NSString *)string;
-- (NSString *)stringByRemovingCharactersInSet:(NSCharacterSet *)set;
-- (NSString *)firstLetterCapitalizedString;
-- (NSString *)stringRepeated:(NSUInteger)repeatCount;
-- (NSString *)normalizedString;
-- (NSString *)reverseString;
+- (NSInteger)ys_numberOfOccurrencesOfString:(NSString *)string;
+- (NSString *)ys_stringByRemovingCharactersInSet:(NSCharacterSet *)set;
+- (NSString *)ys_firstLetterCapitalizedString;
+- (NSString *)ys_stringRepeated:(NSUInteger)repeatCount;
+- (NSString *)ys_normalizedString;
+- (NSString *)ys_reverseString;
 
-- (NSString *)URLEncodedString;
-- (NSString *)URLDecodedString;
-- (NSDictionary *)parametersFromURLString;
+- (NSString *)ys_URLEncodedString;
+- (NSString *)ys_URLDecodedString;
+- (NSDictionary *)ys_parametersFromURLString;
 
-- (NSString *)substringFromString:(NSString *)string;
-- (NSString *)substringToString:(NSString *)string;
-- (NSString *)substringBetweenString:(NSString *)startString andString:(NSString *)endString;
+- (NSString *)ys_substringFromString:(NSString *)string;
+- (NSString *)ys_substringToString:(NSString *)string;
+- (NSString *)ys_substringBetweenString:(NSString *)startString andString:(NSString *)endString;
 
-- (NSString *)substringFromString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd;
-- (NSString *)substringToString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd;
-- (NSString *)substringBetweenString:(NSString *)startString andString:(NSString *)endString searchFromEnd:(BOOL)searchFromEnd;
+- (NSString *)ys_substringFromString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd;
+- (NSString *)ys_substringToString:(NSString *)string searchFromEnd:(BOOL)searchFromEnd;
+- (NSString *)ys_substringBetweenString:(NSString *)startString andString:(NSString *)endString searchFromEnd:(BOOL)searchFromEnd;
 
 #pragma mark - Blank
 
 /**
- *    [NSString isBlank:nil]          == YES
- *    [NSString isBlank:@""]          == YES
- *    [NSString isBlank:@" "]         == YES
- *    [NSString isBlank:@"bob"]       == NO
- *    [NSString isBlank:@"  bob   "]  == NO
+ *    [NSString ys_isBlank:nil]          == YES
+ *    [NSString ys_isBlank:@""]          == YES
+ *    [NSString ys_isBlank:@" "]         == YES
+ *    [NSString ys_isBlank:@"bob"]       == NO
+ *    [NSString ys_isBlank:@"  bob   "]  == NO
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) isBlank:(NSString *)stringValue;
++ (BOOL) ys_isBlank:(NSString *)stringValue;
 
 /**
- *    [NSString isBlankString:nil]          isEqualToString:@"YES"
- *    [NSString isBlankString:@""]          isEqualToString:@"YES"
- *    [NSString isBlankString:@" "]         isEqualToString:@"YES"
- *    [NSString isBlankString:@"bob"]       isEqualToString:@"NO"
- *    [NSString isBlankString:@"  bob   "]  isEqualToString:@"NO"
+ *    [NSString ys_isBlankString:nil]          isEqualToString:@"YES"
+ *    [NSString ys_isBlankString:@""]          isEqualToString:@"YES"
+ *    [NSString ys_isBlankString:@" "]         isEqualToString:@"YES"
+ *    [NSString ys_isBlankString:@"bob"]       isEqualToString:@"NO"
+ *    [NSString ys_isBlankString:@"  bob   "]  isEqualToString:@"NO"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) isBlankString:(NSString *)stringValue;
++ (NSString *) ys_isBlankString:(NSString *)stringValue;
 
 /**
- *    [NSString isNotBlank:nil]          == NO
- *    [NSString isNotBlank:@""]          == NO
- *    [NSString isNotBlank:@" "]         == NO
- *    [NSString isNotBlank:@"bob"]       == YES
- *    [NSString isNotBlank:@"  bob   "]  == YES
+ *    [NSString ys_isNotBlank:nil]          == NO
+ *    [NSString ys_isNotBlank:@""]          == NO
+ *    [NSString ys_isNotBlank:@" "]         == NO
+ *    [NSString ys_isNotBlank:@"bob"]       == YES
+ *    [NSString ys_isNotBlank:@"  bob   "]  == YES
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) isNotBlank:(NSString *)stringValue;
++ (BOOL) ys_isNotBlank:(NSString *)stringValue;
 
 /**
- *    [NSString isNotBlankString:nil]          isEqualToString:@"NO"
- *    [NSString isNotBlankString:@""]          isEqualToString:@"NO"
- *    [NSString isNotBlankString:@" "]         isEqualToString:@"NO"
- *    [NSString isNotBlankString:@"bob"]       isEqualToString:@"YES"
- *    [NSString isNotBlankString:@"  bob   "]  isEqualToString:@"YES"
+ *    [NSString ys_isNotBlankString:nil]          isEqualToString:@"NO"
+ *    [NSString ys_isNotBlankString:@""]          isEqualToString:@"NO"
+ *    [NSString ys_isNotBlankString:@" "]         isEqualToString:@"NO"
+ *    [NSString ys_isNotBlankString:@"bob"]       isEqualToString:@"YES"
+ *    [NSString ys_isNotBlankString:@"  bob   "]  isEqualToString:@"YES"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) isNotBlankString:(NSString *)stringValue;
++ (NSString *) ys_isNotBlankString:(NSString *)stringValue;
 
 /**
- *    [NSString isEmpty:nil]          == YES
- *    [NSString isEmpty:@""]          == YES
- *    [NSString isEmpty:@" "]         == NO
- *    [NSString isEmpty:@"bob"]       == NO
- *    [NSString isEmpty:@"  bob   "]  == NO
+ *    [NSString ys_isEmpty:nil]          == YES
+ *    [NSString ys_isEmpty:@""]          == YES
+ *    [NSString ys_isEmpty:@" "]         == NO
+ *    [NSString ys_isEmpty:@"bob"]       == NO
+ *    [NSString ys_isEmpty:@"  bob   "]  == NO
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) isEmpty:(NSString *)stringValue;
++ (BOOL) ys_isEmpty:(NSString *)stringValue;
 
 /**
- *    [NSString isEmptyString:nil]          isEqualToString:@"YES"
- *    [NSString isEmptyString:@""]          isEqualToString:@"YES"
- *    [NSString isEmptyString:@" "]         isEqualToString:@"NO"
- *    [NSString isEmptyString:@"bob"]       isEqualToString:@"NO"
- *    [NSString isEmptyString:@"  bob   "]  isEqualToString:@"NO"
+ *    [NSString ys_isEmptyString:nil]          isEqualToString:@"YES"
+ *    [NSString ys_isEmptyString:@""]          isEqualToString:@"YES"
+ *    [NSString ys_isEmptyString:@" "]         isEqualToString:@"NO"
+ *    [NSString ys_isEmptyString:@"bob"]       isEqualToString:@"NO"
+ *    [NSString ys_isEmptyString:@"  bob   "]  isEqualToString:@"NO"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) isEmptyString:(NSString *)stringValue;
++ (NSString *) ys_isEmptyString:(NSString *)stringValue;
 
 /**
- *    [NSString isNotEmpty:nil]          == NO
- *    [NSString isNotEmpty:@""]          == NO
- *    [NSString isNotEmpty:@" "]         == YES
- *    [NSString isNotEmpty:@"bob"]       == YES
- *    [NSString isNotEmpty:@"  bob   "]  == YES
+ *    [NSString ys_isNotEmpty:nil]          == NO
+ *    [NSString ys_isNotEmpty:@""]          == NO
+ *    [NSString ys_isNotEmpty:@" "]         == YES
+ *    [NSString ys_isNotEmpty:@"bob"]       == YES
+ *    [NSString ys_isNotEmpty:@"  bob   "]  == YES
  *
  *  @param stringValue tested string
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) isNotEmpty:(NSString *)stringValue;
++ (BOOL) ys_isNotEmpty:(NSString *)stringValue;
 
 /**
- *    [NSString isNotEmptyString:nil]          isEqualToString:@"NO"
- *    [NSString isNotEmptyString:@""]          isEqualToString:@"NO"
- *    [NSString isNotEmptyString:@" "]         isEqualToString:@"YES"
- *    [NSString isNotEmptyString:@"bob"]       isEqualToString:@"YES"
- *    [NSString isNotEmptyString:@"  bob   "]  isEqualToString:@"YES"
+ *    [NSString ys_isNotEmptyString:nil]          isEqualToString:@"NO"
+ *    [NSString ys_isNotEmptyString:@""]          isEqualToString:@"NO"
+ *    [NSString ys_isNotEmptyString:@" "]         isEqualToString:@"YES"
+ *    [NSString ys_isNotEmptyString:@"bob"]       isEqualToString:@"YES"
+ *    [NSString ys_isNotEmptyString:@"  bob   "]  isEqualToString:@"YES"
  *
  *  @param stringValue tested string
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) isNotEmptyString:(NSString *)stringValue;
++ (NSString *) ys_isNotEmptyString:(NSString *)stringValue;
 
 @end

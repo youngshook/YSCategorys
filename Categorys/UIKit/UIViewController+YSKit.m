@@ -3,7 +3,7 @@
 
 @implementation UIViewController (YSKit)
 
-- (CGRect)defaultViewFrame
+- (CGRect)ys_defaultViewFrame
 {
 	CGRect frame		= [[UIScreen mainScreen] bounds];
 	frame.size.height  -= [[UIApplication sharedApplication] isStatusBarHidden] ? 0.f : 20.f;
@@ -15,7 +15,7 @@
 	return frame;
 }
 
-+ (UIViewController *)rootViewControllerWhichCanPresentModalViewController {
++ (UIViewController *)ys_rootViewControllerWhichCanPresentModalViewController {
     UIViewController *vc = ([UIApplication sharedApplication].keyWindow.rootViewController)? : [(UIWindow *)[[UIApplication sharedApplication].windows firstObject] rootViewController];
 
     while (vc.presentedViewController) {
@@ -25,7 +25,7 @@
     return vc;
 }
 
-- (void)addChildViewController:(UIViewController *)childController intoView:(UIView *)viewControllerSubview {
+- (void)ys_addChildViewController:(UIViewController *)childController intoView:(UIView *)viewControllerSubview {
     [self addChildViewController:childController];
     if (viewControllerSubview) {
 	[viewControllerSubview addSubview:childController.view];
@@ -37,7 +37,7 @@
     [self didMoveToParentViewController:self];
 }
 
-- (void)removeFromParentViewControllerAndView {
+- (void)ys_removeFromParentViewControllerAndView {
     [self willMoveToParentViewController:nil];
 
     if (self.view.superview) {
@@ -49,7 +49,7 @@
     }
 }
 
-- (void)dismissKeyboard {
+- (void)ys_dismissKeyboard {
 	[[UIApplication sharedApplication].keyWindow endEditing:YES];
 	
 	//! ref: http://lldong.github.com/blog/2012/11/02/dissmiss-keyboard/

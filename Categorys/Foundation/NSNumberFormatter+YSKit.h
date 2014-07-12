@@ -20,7 +20,7 @@
 
  @return An NSNumberFormatter with specified significant digits config.
  */
-+ (NSNumberFormatter *)significantFormatterWithMinimumDigits:(NSUInteger)min maximumDigits:(NSUInteger)max;
++ (NSNumberFormatter *)ys_significantFormatterWithMinimumDigits:(NSUInteger)min maximumDigits:(NSUInteger)max;
 
 /** Returns a string containing the formatted value of the provided file size.
 
@@ -29,7 +29,7 @@
 
  @return A formated string.
  */
-+ (NSString *)formatedFileSizeStringWithBytes:(long long)bytes useBinaryUnites:(BOOL)isBinaryUnites;
++ (NSString *)ys_formatedFileSizeStringWithBytes:(long long)bytes useBinaryUnites:(BOOL)isBinaryUnites;
 
 /** Returns a string containing the formatted value of the provided float value.
 
@@ -37,6 +37,6 @@
 
  @return A string containing the formatted value of number using the receiver’s current settings.
  */
-- (NSString *)stringFromFloat:(float)floatVaule;
+- (NSString *)ys_stringFromFloat:(float)floatVaule;
 
 @end

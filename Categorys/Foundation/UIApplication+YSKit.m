@@ -5,12 +5,12 @@ static NSInteger YSNetworkActivityCounter_ = 0;
 
 @implementation UIApplication (YSKit)
 
-- (CGFloat)applicationVersion
+- (CGFloat)ys_applicationVersion
 {
 	return [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"] floatValue];
 }
 
-- (void)increaseNetworkActivityCounter
+- (void)ys_increaseNetworkActivityCounter
 {
 	YSNetworkActivityCounter_++;
 	
@@ -18,7 +18,7 @@ static NSInteger YSNetworkActivityCounter_ = 0;
 		[self setNetworkActivityIndicatorVisible:YES];
 }
 
-- (void)decreaseNetworkActivityCounter
+- (void)ys_decreaseNetworkActivityCounter
 {
 	YSNetworkActivityCounter_--;
 	

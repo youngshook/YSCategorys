@@ -3,22 +3,22 @@
 
 @implementation NSDictionary (YSKit)
 
-- (BOOL)boolForKey:(NSString *)keyName {
+- (BOOL)ys_boolForKey:(NSString *)keyName {
     return [[self objectForKey:keyName] boolValue];
 }
-- (float)floatForKey:(NSString *)keyName {
+- (float)ys_floatForKey:(NSString *)keyName {
     return [[self objectForKey:keyName] floatValue];
 }
-- (NSInteger)integerForKey:(NSString *)keyName {
+- (NSInteger)ys_integerForKey:(NSString *)keyName {
     return [[self objectForKey:keyName] integerValue];
 }
-- (double)doubleForKey:(NSString *)keyName {
+- (double)ys_doubleForKey:(NSString *)keyName {
     return [[self objectForKey:keyName] doubleValue];
 }
 
 #pragma mark - JSON
 
-- (NSString *)jsonString
+- (NSString *)ys_jsonString
 {
     NSError *error = nil;
 	
@@ -38,7 +38,7 @@
 	return jsonString;
 }
 
-+ (NSDictionary *)dictionaryWithJSON:(NSString *)json
++ (NSDictionary *)ys_dictionaryWithJSON:(NSString *)json
 {
     NSError *error = nil;
 	
@@ -56,7 +56,7 @@
     return jsonDict;
 }
 
-+ (NSDictionary *)dictionaryWithContentsOfURL:(NSURL *)URL error:(NSError **)error
++ (NSDictionary *)ys_dictionaryWithContentsOfURL:(NSURL *)URL error:(NSError **)error
 {
 	NSData *readData = [NSData dataWithContentsOfURL:URL options:0 error:error];
 	
@@ -65,16 +65,16 @@
 		return nil;
 		}
 	
-	return [NSDictionary dictionaryWithContentsOfData:readData error:error];
+	return [NSDictionary ys_dictionaryWithContentsOfData:readData error:error];
 }
 
-+ (NSDictionary *)dictionaryWithContentsOfFile:(NSString *)path error:(NSError **)error
++ (NSDictionary *)ys_dictionaryWithContentsOfFile:(NSString *)path error:(NSError **)error
 {
 	NSURL *url = [NSURL fileURLWithPath:path];
-	return [NSDictionary dictionaryWithContentsOfURL:url error:error];
+	return [NSDictionary ys_dictionaryWithContentsOfURL:url error:error];
 }
 
-+ (NSDictionary *)dictionaryWithContentsOfData:(NSData *)data error:(NSError **)error
++ (NSDictionary *)ys_dictionaryWithContentsOfData:(NSData *)data error:(NSError **)error
 {
 	CFErrorRef parseError = NULL;
 	NSDictionary *dictionary = (__bridge_transfer NSDictionary *)CFPropertyListCreateWithData(kCFAllocatorDefault, (__bridge CFDataRef)data, kCFPropertyListImmutable, NULL, (CFErrorRef *)&parseError);
@@ -104,7 +104,7 @@
 
 @implementation NSMutableDictionary (YSKit)
 
-- (NSUInteger)addEntriesFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ... {
+- (NSUInteger)ys_addEntriesFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ... {
     NSUInteger keyCopedCount = 0;
     va_list ap;
     va_start(ap, firstKey);
@@ -119,16 +119,16 @@
     return keyCopedCount;
 }
 
-- (void)setBool:(BOOL)value forKey:(NSString *)keyName {
+- (void)ys_setBool:(BOOL)value forKey:(NSString *)keyName {
     [self setObject:[NSNumber numberWithBool:value] forKey:keyName];
 }
-- (void)setFloat:(float)value forKey:(NSString *)keyName {
+- (void)ys_setFloat:(float)value forKey:(NSString *)keyName {
     [self setObject:[NSNumber numberWithFloat:value] forKey:keyName];
 }
-- (void)setInteger:(NSInteger)value forKey:(NSString *)keyName {
+- (void)ys_setInteger:(NSInteger)value forKey:(NSString *)keyName {
     [self setObject:[NSNumber numberWithInteger:value] forKey:keyName];
 }
-- (void)setDouble:(double)value forKey:(NSString *)keyName {
+- (void)ys_setDouble:(double)value forKey:(NSString *)keyName {
     [self setObject:[NSNumber numberWithDouble:value] forKey:keyName];
 }
 

@@ -3,7 +3,7 @@
 
 @implementation UIWindow (YSKit)
 
-+ (UIWindow *)mainWindow
++ (UIWindow *)ys_mainWindow
 {
 	UIWindow* window = [[UIApplication sharedApplication] keyWindow];
 	
@@ -15,7 +15,7 @@
 	return [windows count] ? windows[0] : nil;
 }
 
-+ (UIView *)keyboardView
++ (UIView *)ys_keyboardView
 {
 	for (UIWindow* window in [[UIApplication sharedApplication] windows])
 		for (UIView* view in [window subviews])

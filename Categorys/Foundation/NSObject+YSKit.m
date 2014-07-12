@@ -4,7 +4,7 @@
 
 @implementation NSObject (YSKit)
 
-+ (BOOL)addInstanceMethodWithSelectorName:(NSString *)selectorName block:(void(^)(id))block
++ (BOOL)ys_addInstanceMethodWithSelectorName:(NSString *)selectorName block:(void(^)(id))block
 {
 		// don't accept nil name
     NSParameterAssert(selectorName);
@@ -28,7 +28,7 @@
 
 #pragma mark - Method Swizzling
 
-+ (void)swizzleMethod:(SEL)selector withMethod:(SEL)otherSelector
++ (void)ys_swizzleMethod:(SEL)selector withMethod:(SEL)otherSelector
 {
 		// my own class is being targetted
 	Class c = [self class];
@@ -47,7 +47,7 @@
 		}
 }
 
-+ (void)swizzleClassMethod:(SEL)selector withMethod:(SEL)otherSelector
++ (void)ys_swizzleClassMethod:(SEL)selector withMethod:(SEL)otherSelector
 {
 		// my own class is being targetted
 	Class c = [self class];

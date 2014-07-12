@@ -13,7 +13,7 @@
 
 @interface NSData (YSKit)
 
-- (NSData *) AES256EncryptWithKey:(NSString *)key;   // Encrypt
-- (NSData *) AES256DecryptWithKey:(NSString *)key;   // Decrypt
+- (NSData *) ys_AES256EncryptWithKey:(NSString *)key;   // Encrypt
+- (NSData *) ys_AES256DecryptWithKey:(NSString *)key;   // Decrypt
 
 @end

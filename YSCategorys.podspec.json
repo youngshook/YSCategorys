@@ -17,17 +17,6 @@
   },
   "requires_arc": true,
   "frameworks": "QuartzCore",
-  "source_files": "Categorys/*.{h,m}",
-  "subspecs": [
-    {
-      "name": "Foundation",
-      "source_files": "Categorys/Foundation/*.{h,m}",
-      "requires_arc": true
-    },
-    {
-      "name": "UIKit",
-      "source_files": "Categorys/UIKit/*.{h,m}",
-      "requires_arc": true
-    }
-  ]
+  "source_files": "Categorys/**/*.{h,m}",
+  "public_header_files": "Categorys/**/*.h"
 }

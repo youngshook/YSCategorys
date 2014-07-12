@@ -13,8 +13,8 @@
 
 @interface NSAttributedString (YSKit)
 
-+ (instancetype)hyperlinkFromString:(NSString*)inString withURL:(NSURL*)aURL;
++ (instancetype)ys_hyperlinkFromString:(NSString*)inString withURL:(NSURL*)aURL;
 
-+ (instancetype)linkifiedAttributedStringFromString:(NSString *)string;
++ (instancetype)ys_linkifiedAttributedStringFromString:(NSString *)string;
 
 @end

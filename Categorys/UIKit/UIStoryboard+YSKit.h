@@ -12,5 +12,5 @@
 @interface UIStoryboard (YSKit)
 
 // By using this method, you must set view controller stroryboard ID to it's class name.
-- (id)instantiateViewControllerWithIdentifierUsingClass:(Class)viewControllerClass;
+- (id)ys_instantiateViewControllerWithIdentifierUsingClass:(Class)viewControllerClass;
 @end

@@ -7,7 +7,7 @@
 
 @implementation UIDevice (YSKit)
 
-- (BOOL)isPad {
+- (BOOL)ys_isPad {
     static BOOL isPad = NO;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -18,7 +18,7 @@
     return isPad;
 }
 
-- (BOOL)isRetinaDisplay {
+- (BOOL)ys_isRetinaDisplay {
     static BOOL isRetinaDisplay = NO;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -30,21 +30,21 @@
     return isRetinaDisplay;
 }
 
-- (long long)fileSystemFreeSize {
+- (long long)ys_fileSystemFreeSize {
     NSError *e = nil;
     NSDictionary *info = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&e];
     if (e) NSLog(@"Can`t get file system free size, reason: %@", e);
     return [info[NSFileSystemFreeSize] longLongValue];
 }
 
-- (long long)fileSystemSize {
+- (long long)ys_fileSystemSize {
     NSError *e = nil;
     NSDictionary *info = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&e];
     if (e) NSLog(@"Can`t get file system size, reason: %@", e);
     return [info[NSFileSystemSize] longLongValue];
 }
 
-- (BOOL)isBeingDebugged {
+- (BOOL)ys_isBeingDebugged {
     int                 junk;
     int                 mib[4];
     struct kinfo_proc   info;

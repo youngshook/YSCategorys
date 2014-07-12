@@ -3,136 +3,136 @@
 
 @implementation NSUserDefaults (YSKit)
 
-+ (BOOL)synchronize
++ (BOOL)ys_synchronize
 {
 	return [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (void)setBool:(BOOL)value forKey:(NSString *)key
++ (void)ys_setBool:(BOOL)value forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setBool:value forKey:key];
 }
 
-+ (void)setDouble:(double)value forKey:(NSString *)key
++ (void)ys_setDouble:(double)value forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setDouble:value forKey:key];
 }
 
-+ (void)setFloat:(float)value forKey:(NSString *)key
++ (void)ys_setFloat:(float)value forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setFloat:value forKey:key];
 }
 
-+ (void)setInteger:(NSInteger)value forKey:(NSString *)key
++ (void)ys_setInteger:(NSInteger)value forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setInteger:value forKey:key];
 }
 
-+ (void)setLong:(long)value forKey:(NSString *)key
++ (void)ys_setLong:(long)value forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLong:value] forKey:key];
 }
 
-+ (void)setLongLong:(long long)value forKey:(NSString *)key
++ (void)ys_setLongLong:(long long)value forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithLongLong:value] forKey:key];
 }
 
-+ (void)setNilValueForKey:(NSString *)key
++ (void)ys_setNilValueForKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setNilValueForKey:key];
 }
 
-+ (void)setObject:(id)value forKey:(NSString *)key
++ (void)ys_setObject:(id)value forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
 }
 
-+ (void)setURL:(NSURL *)url forKey:(NSString *)key
++ (void)ys_setURL:(NSURL *)url forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setURL:url forKey:key];
 }
 
-+ (BOOL)boolForKey:(NSString *)key
++ (BOOL)ys_boolForKey:(NSString *)key
 {
 	return [[NSUserDefaults standardUserDefaults] boolForKey:key];
 }
 
-+ (double)doubleForKey:(NSString *)key
++ (double)ys_doubleForKey:(NSString *)key
 {
 	return [[NSUserDefaults standardUserDefaults] doubleForKey:key];
 }
 
-+ (float)floatForKey:(NSString *)key
++ (float)ys_floatForKey:(NSString *)key
 {
 	return [[NSUserDefaults standardUserDefaults] floatForKey:key];
 }
 
-+ (NSInteger)integerForKey:(NSString *)key
++ (NSInteger)ys_integerForKey:(NSString *)key
 {
 	return [[NSUserDefaults standardUserDefaults] integerForKey:key];
 }
 
-+ (long)longForKey:(NSString *)key
++ (long)ys_longForKey:(NSString *)key
 {
 	return [[[NSUserDefaults standardUserDefaults] objectForKey:key] longValue];
 }
 
-+ (long long)longLongForKey:(NSString *)key
++ (long long)ys_longLongForKey:(NSString *)key
 {
 	return [[[NSUserDefaults standardUserDefaults] objectForKey:key] longLongValue];
 }
 
-+ (id)objectForKey:(NSString *)key
++ (id)ys_objectForKey:(NSString *)key
 {
 	return [[NSUserDefaults standardUserDefaults] objectForKey:key];
 }
 
-+ (NSURL *)URLForKey:(NSString *)key
++ (NSURL *)ys_URLForKey:(NSString *)key
 {
 	return [[NSUserDefaults standardUserDefaults] URLForKey:key];
 }
 
 #pragma mark -
 
-+ (void)setCGRect:(CGRect)rect forKey:(NSString *)key
++ (void)ys_setCGRect:(CGRect)rect forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setObject:NSStringFromCGRect(rect) forKey:key];
 }
 
-+ (void)setCGSize:(CGSize)size forKey:(NSString *)key
++ (void)ys_setCGSize:(CGSize)size forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setObject:NSStringFromCGSize(size) forKey:key];
 }
 
-+ (void)setCGPoint:(CGPoint)point forKey:(NSString *)key
++ (void)ys_setCGPoint:(CGPoint)point forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setObject:NSStringFromCGPoint(point) forKey:key];
 }
 
-+ (void)setNSRange:(NSRange)range forKey:(NSString *)key
++ (void)ys_setNSRange:(NSRange)range forKey:(NSString *)key
 {
 	[[NSUserDefaults standardUserDefaults] setObject:NSStringFromRange(range) forKey:key];
 }
 
-+ (CGRect)rectForKey:(NSString *)key
++ (CGRect)ys_rectForKey:(NSString *)key
 {
-	return CGRectFromString([self objectForKey:key]);
+	return CGRectFromString([self ys_objectForKey:key]);
 }
 
-+ (CGSize)sizeForKey:(NSString *)key
++ (CGSize)ys_sizeForKey:(NSString *)key
 {
-	return CGSizeFromString([NSUserDefaults objectForKey:key]);
+	return CGSizeFromString([NSUserDefaults ys_objectForKey:key]);
 }
 
-+ (CGPoint)pointForKey:(NSString *)key
++ (CGPoint)ys_pointForKey:(NSString *)key
 {
-	return CGPointFromString([NSUserDefaults objectForKey:key]);
+	return CGPointFromString([NSUserDefaults ys_objectForKey:key]);
 }
 
-+ (NSRange)rangeForKey:(NSString *)key
++ (NSRange)ys_rangeForKey:(NSString *)key
 {
-	return NSRangeFromString([NSUserDefaults objectForKey:key]);
+	return NSRangeFromString([NSUserDefaults ys_objectForKey:key]);
 }
 
 @end

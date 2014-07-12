@@ -3,7 +3,7 @@
 
 @implementation UIResponder (YSKit)
 
-- (id)viewController {
+- (id)ys_viewController {
     id nextResponder = self;
     do {
 	if ([nextResponder isKindOfClass:[UIViewController class]]) {

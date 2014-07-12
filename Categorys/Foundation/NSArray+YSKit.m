@@ -11,7 +11,7 @@
     return [self objectAtIndex:index];
 }
 
-+ (NSArray *)arrayWithContentsOfURL:(NSURL *)URL error:(NSError **)error
++ (NSArray *)ys_arrayWithContentsOfURL:(NSURL *)URL error:(NSError **)error
 {
 	NSData *readData = [NSData dataWithContentsOfURL:URL options:0 error:error];
 	
@@ -20,16 +20,16 @@
 		return nil;
 		}
 	
-	return [NSArray arrayWithContentsOfData:readData error:error];
+	return [NSArray ys_arrayWithContentsOfData:readData error:error];
 }
 
-+ (NSArray *)arrayWithContentsOfFile:(NSString *)path error:(NSError **)error
++ (NSArray *)ys_arrayWithContentsOfFile:(NSString *)path error:(NSError **)error
 {
 	NSURL *url = [NSURL fileURLWithPath:path];
-	return [NSArray arrayWithContentsOfURL:url error:error];
+	return [NSArray ys_arrayWithContentsOfURL:url error:error];
 }
 
-+ (NSArray *)arrayWithContentsOfData:(NSData *)data error:(NSError **)error
++ (NSArray *)ys_arrayWithContentsOfData:(NSData *)data error:(NSError **)error
 {
 	CFErrorRef parseError = NULL;
 	NSArray *array = (__bridge_transfer NSArray *)CFPropertyListCreateWithData(kCFAllocatorDefault, (__bridge CFDataRef)data, kCFPropertyListImmutable, NULL, (CFErrorRef *)&parseError);
@@ -57,7 +57,7 @@
 
 @implementation NSMutableArray (YSKit)
 
-- (void)addObjectsFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ... {
+- (void)ys_addObjectsFromDictionary:(NSDictionary *)sourceDictionary withSpecifiedKeys:(NSString *)firstKey, ... {
     va_list ap;
     va_start(ap, firstKey);
     for (NSString *key = firstKey; key != nil; key = va_arg(ap, id)) {
