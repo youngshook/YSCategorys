@@ -1,10 +1,13 @@
-//
-//  UIView+YSKit.h
-//  YSCategorys
-//
-//  Created by YoungShook on 14-7-11.
-//  Copyright (c) 2014年 YShook Station. All rights reserved.
-//
+/*!
+	UIView extension
+	YSCategorys
+ 
+	Copyright (c) 2013-2014 YoungShook
+	https://github.com/youngshook/YSCategorys
+ 
+	The MIT License (MIT)
+	http://www.opensource.org/licenses/mit-license.php
+ */
 
 #import <UIKit/UIKit.h>
 

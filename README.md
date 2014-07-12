@@ -18,6 +18,7 @@ A set of categorys to make iOS development easier.
        * NSURL
        * NSNull
        * NSData
+       * NSInvocation
        * NSAttributedString
        * NSNotificationCenter
        * NSOperationQueue
@@ -26,9 +27,11 @@ A set of categorys to make iOS development easier.
 
 *   UIKit
        * UIView
+       * UILabel
        * UIAlertView
        * UIButton
        * UIColor
+       * CGRect
        * UIDevice
        * UIImage
        * UINavigationController

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B540483B1971C8230074566E /* NSInvocation+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B540483A1971C8230074566E /* NSInvocation+YSKit.m */; };
+		B540483E1971C87E0074566E /* UILabel+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B540483D1971C87E0074566E /* UILabel+YSKit.m */; };
 		B54A4057196987B100A5BDB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54A4056196987B100A5BDB9 /* Foundation.framework */; };
 		B54A4059196987B100A5BDB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54A4058196987B100A5BDB9 /* CoreGraphics.framework */; };
 		B54A405B196987B100A5BDB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54A405A196987B100A5BDB9 /* UIKit.framework */; };
@@ -50,6 +52,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B54048391971C8230074566E /* NSInvocation+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+YSKit.h"; sourceTree = "<group>"; };
+		B540483A1971C8230074566E /* NSInvocation+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+YSKit.m"; sourceTree = "<group>"; };
+		B540483C1971C87E0074566E /* UILabel+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YSKit.h"; sourceTree = "<group>"; };
+		B540483D1971C87E0074566E /* UILabel+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YSKit.m"; sourceTree = "<group>"; };
+		B540483F1971CA880074566E /* CGRect+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGRect+YSKit.h"; sourceTree = "<group>"; };
 		B54A4053196987B100A5BDB9 /* YSCategorys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSCategorys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54A4056196987B100A5BDB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B54A4058196987B100A5BDB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -245,6 +252,8 @@
 				B5AC769F197043E200566642 /* NSUserDefaults+YSKit.m */,
 				B5AC76A11970446000566642 /* UIApplication+YSKit.h */,
 				B5AC76A21970446000566642 /* UIApplication+YSKit.m */,
+				B54048391971C8230074566E /* NSInvocation+YSKit.h */,
+				B540483A1971C8230074566E /* NSInvocation+YSKit.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -252,8 +261,11 @@
 		B5AC76491969B74B00566642 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B540483F1971CA880074566E /* CGRect+YSKit.h */,
 				B5AC76921970156A00566642 /* UIView+YSKit.h */,
 				B5AC76931970156A00566642 /* UIView+YSKit.m */,
+				B540483C1971C87E0074566E /* UILabel+YSKit.h */,
+				B540483D1971C87E0074566E /* UILabel+YSKit.m */,
 				B5AC764A1969B74B00566642 /* UIAlertView+YSKit.h */,
 				B5AC764B1969B74B00566642 /* UIAlertView+YSKit.m */,
 				B5AC764C1969B74B00566642 /* UIButton+YSKit.h */,
@@ -352,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5AC76AC19704D9900566642 /* UIWindow+YSKit.m in Sources */,
+				B540483E1971C87E0074566E /* UILabel+YSKit.m in Sources */,
 				B54A4067196987B100A5BDB9 /* YSAppDelegate.m in Sources */,
 				B5AC76691969B74B00566642 /* NSNumberFormatter+YSKit.m in Sources */,
 				B5AC769D197040F800566642 /* NSOperationQueue+YSKit.m in Sources */,
@@ -378,6 +391,7 @@
 				B5AC766D1969B74B00566642 /* UIAlertView+YSKit.m in Sources */,
 				B5AC76781969B74B00566642 /* UIWebView+YSKit.m in Sources */,
 				B5AC769A19703CD400566642 /* NSNotificationCenter+YSKit.m in Sources */,
+				B540483B1971C8230074566E /* NSInvocation+YSKit.m in Sources */,
 				B5AC769719703C0000566642 /* NSAttributedString+YSKit.m in Sources */,
 				B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */,
 				B5AC76A61970451800566642 /* UIBarButtonItem+YSKit.m in Sources */,

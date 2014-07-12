@@ -1,10 +1,3 @@
-//
-//  UIView+YSKit.m
-//  YSCategorys
-//
-//  Created by YoungShook on 14-7-11.
-//  Copyright (c) 2014年 YShook Station. All rights reserved.
-//
 
 #import "UIView+YSKit.h"
 #import <QuartzCore/QuartzCore.h>

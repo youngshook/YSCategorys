@@ -1,5 +1,9 @@
 # Change Log
 
+### 1.0.3
+
+* Added NSInvocation CGRect UILabel Categorys
+
 ### 1.0.2
 
 * Added prefix to all source files to avoid name collision.
