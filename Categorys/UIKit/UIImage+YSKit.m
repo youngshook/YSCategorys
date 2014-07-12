@@ -11,6 +11,28 @@
 	return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:type]];
 }
 
+#pragma mark - Snapshot Images
+
++ (UIImage *)captureView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
++ (UIImage *)captureFrame:(CGRect)frame inView:(UIView *)view
+{
+    UIGraphicsBeginImageContextWithOptions(frame.size, view.opaque, 0.0);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(ctx, -frame.origin.x, -frame.origin.y);
+    [view.layer renderInContext:ctx];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
 #pragma mark - Generating Images
 
 + (UIImage *)imageWithSolidColor:(UIColor *)color size:(CGSize)size

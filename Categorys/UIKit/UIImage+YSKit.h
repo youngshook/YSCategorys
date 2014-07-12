@@ -15,6 +15,23 @@
 + (UIImage *)resourceName:(NSString *)fileName ofType:(NSString *)type;
 
 /**
+ Captures screen for selected view.
+
+ @param view View that is going to be captured.
+ @return View screenshot.
+ */
++ (UIImage *)captureView:(UIView *)view;
+
+/**
+ Captures frame inside selected view.
+
+ @param frame Frame that is going to be captured.
+ @param view View hosting frame.
+ @return View frame screenshot.
+ */
++ (UIImage *)captureFrame:(CGRect)frame inView:(UIView *)view;
+
+/**
  Creates an image filled with a solid color
  @param color The solid color that fills the image
  @param size The size of the image
