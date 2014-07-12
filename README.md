@@ -49,6 +49,10 @@ YSCategorys is available through [CocoaPods](http://cocoapods.org), to install i
 
     pod "YSCategorys"
     
+Then add the import:
+
+    #import <YSKit.h>
+
 ===========
 
 The MIT License (MIT) 
