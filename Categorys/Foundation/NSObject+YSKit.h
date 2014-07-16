@@ -38,4 +38,10 @@
  */
 + (void)ys_swizzleClassMethod:(SEL)selector withMethod:(SEL)otherSelector;
 
+//!https://github.com/youngshook/YSDynamicProperties
+
++ (void)ys_implementDynamicPropertyAccessors;
++ (void)ys_implementDynamicPropertyAccessorsForPropertyName:(NSString *)propertyName;
++ (void)ys_implementDynamicPropertyAccessorsForPropertyMatching:(NSString *)regexString;
+
 @end

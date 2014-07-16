@@ -22,6 +22,15 @@
 */
 - (id)ys_objectAtIndex:(NSUInteger)index;
 
+
+/**
+ *	Convert NSArray to NSString Obj
+ *
+ *	@return NSString Obj
+ */
+- (NSString *)ys_jsonString;
+
+
 /**
  Creates and returns an array found in a file specified by a given URL.
  

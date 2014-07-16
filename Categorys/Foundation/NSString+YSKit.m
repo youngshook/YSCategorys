@@ -55,6 +55,15 @@
     return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, self.length) withTemplate:@""];
 }
 
+-(id)ys_JSONValue
+{
+    NSData* data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    __autoreleasing NSError* error = nil;
+    id result = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if (error != nil) return nil;
+    return result;
+}
+
 - (BOOL)ys_isInteger
 {
 	return [self rangeOfCharacterFromSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]].location == NSNotFound;

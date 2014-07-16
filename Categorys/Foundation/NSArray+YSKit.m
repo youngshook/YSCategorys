@@ -11,6 +11,25 @@
     return [self objectAtIndex:index];
 }
 
+- (NSString *)ys_jsonString{
+	NSError *error = nil;
+	
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:0
+                                                         error:&error];
+	
+    if (jsonData == nil) {
+		
+        NSLog(@"fail to get JSON from dictionary: %@, error: %@", self, error);
+		
+        return nil;
+    }
+	
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+	
+	return jsonString;
+}
+
 + (NSArray *)ys_arrayWithContentsOfURL:(NSURL *)URL error:(NSError **)error
 {
 	NSData *readData = [NSData dataWithContentsOfURL:URL options:0 error:error];

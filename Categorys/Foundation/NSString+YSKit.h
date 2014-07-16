@@ -170,6 +170,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  */
 - (NSString *)ys_extractedHTMLContent;
 
+- (id)ys_JSONValue;
 - (BOOL)ys_isInteger;
 - (NSArray *)ys_componentsSeparatedAtEachCharacter;
 

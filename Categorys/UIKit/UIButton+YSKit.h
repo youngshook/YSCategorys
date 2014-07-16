@@ -34,4 +34,8 @@
  */
 - (void)ys_setBackgroundImageResizingCapInsets:(UIEdgeInsets)capInsets forState:(UIControlState)state NS_AVAILABLE_IOS(5_0);
 
+- (void)ys_setEnlargeEdge:(CGFloat) size;
+
+- (void)ys_setEnlargeEdgeWithTop:(CGFloat) top right:(CGFloat) right bottom:(CGFloat) bottom left:(CGFloat) left;
+
 @end
