@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.0.4
+
+* Added Button EnlargeEdge
+* Added Json Convert Method to NSArray
+* Update JSON Convert Method in NSDictionary
+* Added Dynamic Properties to NSObject
+
 ### 1.0.3
 
 * Added NSInvocation CGRect UILabel Categorys
