@@ -13,7 +13,7 @@
 
 /** Traversing the responder chain to get a UIViewController reletive to the receiver.
 
- @return A view controller. `nil` if cannot find a UIViewController in responder chain.
+   @return A view controller. `nil` if cannot find a UIViewController in responder chain.
  */
 - (id)ys_viewController;
 

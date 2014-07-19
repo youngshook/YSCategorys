@@ -1,9 +1,8 @@
-
 #import "NSDateFormatter+YSKit.h"
 
 @implementation NSDateFormatter (YSKit)
 + (NSDateFormatter *)ys_GMTFormatter {
-	static NSDateFormatter * share;
+	static NSDateFormatter *share;
 	if (!share) {
 		share = [[NSDateFormatter alloc] init];
 		[share setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"];
@@ -13,7 +12,7 @@
 }
 
 + (NSDateFormatter *)ys_currentLocaleFormatter {
-	static NSDateFormatter * share;
+	static NSDateFormatter *share;
 	if (!share) {
 		share = [[NSDateFormatter alloc] init];
 		[share setLocale:[NSLocale currentLocale]];
@@ -23,7 +22,7 @@
 }
 
 + (NSDateFormatter *)ys_currentLocaleFormatterOnlyDate {
-	static NSDateFormatter * share;
+	static NSDateFormatter *share;
 	if (!share) {
 		share = [[NSDateFormatter alloc] init];
 		[share setLocale:[NSLocale currentLocale]];
@@ -33,14 +32,14 @@
 }
 
 + (NSDateFormatter *)ys_dateFormatterWithDateFormat:(NSString *)formatString timeZoneWithName:(NSString *)tzName {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithName:tzName]];
-    [formatter setDateFormat:formatString];
-    return formatter;
+	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+	[formatter setTimeZone:[NSTimeZone timeZoneWithName:tzName]];
+	[formatter setDateFormat:formatString];
+	return formatter;
 }
 
 + (NSDateFormatter *)ys_hongKongTimeZoneDateFormatter {
-	static NSDateFormatter * share;
+	static NSDateFormatter *share;
 	if (!share) {
 		share = [NSDateFormatter ys_dateFormatterWithDateFormat:@"yyyy'-'MM'-'dd' 'HH':'mm':'ss" timeZoneWithName:@"Asia/Hong_Kong"];
 	}

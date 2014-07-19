@@ -1,12 +1,12 @@
 /*!
-	NSNumber extension
-	YSCategorys
- 
-	Copyright (c) 2013-2014 YoungShook
-	https://github.com/youngshook/YSCategorys
- 
-	The MIT License (MIT)
-	http://www.opensource.org/licenses/mit-license.php
+    NSNumber extension
+    YSCategorys
+
+    Copyright (c) 2013-2014 YoungShook
+    https://github.com/youngshook/YSCategorys
+
+    The MIT License (MIT)
+    http://www.opensource.org/licenses/mit-license.php
  */
 
 #import <Foundation/Foundation.h>
@@ -20,20 +20,20 @@
  *
  *  @return random int value
  */
-+ (int) ys_randomInt:(int)maxInt;
++ (int)ys_randomInt:(int)maxInt;
 
 /**
  *  get a random BOOL value, YES or NO.
  *
  *  @return random BOOL value
  */
-+ (BOOL) ys_randomBool;
++ (BOOL)ys_randomBool;
 
 /**
  *  return a NSDate value base on unix time in seconds
  *
  *  @return a NSDate value
  */
-- (NSDate *) ys_dateValue;
+- (NSDate *)ys_dateValue;
 
 @end

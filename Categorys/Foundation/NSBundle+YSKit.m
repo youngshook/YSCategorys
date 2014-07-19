@@ -1,4 +1,3 @@
-
 #import "NSBundle+YSKit.h"
 
 @implementation NSBundle (YSKit)
@@ -19,13 +18,13 @@
 }
 
 + (NSString *)ys_pathForMainBoundlePath:(NSString *)path {
-    return [NSHomeDirectory() stringByAppendingPathComponent:path];
+	return [NSHomeDirectory() stringByAppendingPathComponent:path];
 }
 
 - (NSString *)ys_versionString {
-    NSString *bundleVersion = self.infoDictionary[@"CFBundleVersion"];
-    NSString *shortVersion = self.infoDictionary[@"CFBundleShortVersionString"];
-    return [NSString stringWithFormat:@"%@.%@", shortVersion, bundleVersion];
+	NSString *bundleVersion = self.infoDictionary[@"CFBundleVersion"];
+	NSString *shortVersion = self.infoDictionary[@"CFBundleShortVersionString"];
+	return [NSString stringWithFormat:@"%@.%@", shortVersion, bundleVersion];
 }
 
 @end

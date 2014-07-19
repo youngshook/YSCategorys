@@ -10,6 +10,6 @@
  */
 
 @interface UIAlertView (YSKit)
-+ (void)ys_showWithTitle:(NSString *)title message:(NSString *)message  buttonTitle:(NSString *)buttonTitle;
++ (void)ys_showWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTitle;
 
 @end

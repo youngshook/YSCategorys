@@ -28,7 +28,7 @@
  *
  *  @return bool string, @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* YSNSStringFromBOOL(BOOL boolValue);
+FOUNDATION_EXPORT NSString *YSNSStringFromBOOL(BOOL boolValue);
 
 /**
  *    YSNSStringIsBlank(nil)          == YES
@@ -54,7 +54,7 @@ FOUNDATION_EXPORT BOOL YSNSStringIsBlank(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* YSNSStringIsBlankString(NSString *stringValue);
+FOUNDATION_EXPORT NSString *YSNSStringIsBlankString(NSString *stringValue);
 
 /**
  *    YSNSStringIsNotBlank(nil)           == NO
@@ -80,7 +80,7 @@ FOUNDATION_EXPORT BOOL YSNSStringIsNotBlank(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* YSNSStringIsNotBlankString(NSString *stringValue);
+FOUNDATION_EXPORT NSString *YSNSStringIsNotBlankString(NSString *stringValue);
 
 /**
  *    YSNSStringIsEmpty(nil)          == YES
@@ -106,7 +106,7 @@ FOUNDATION_EXPORT BOOL YSNSStringIsEmpty(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* YSNSStringIsEmptyString(NSString *stringValue);
+FOUNDATION_EXPORT NSString *YSNSStringIsEmptyString(NSString *stringValue);
 
 /**
  *    YSNSStringIsNotEmpty(nil)           == NO
@@ -132,7 +132,7 @@ FOUNDATION_EXPORT BOOL YSNSStringIsNotEmpty(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
+FOUNDATION_EXPORT NSString *YSNSStringIsNotEmptyString(NSString *stringValue);
 
 
 #pragma mark - -=Objective-C function=-
@@ -145,24 +145,24 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
 
 /** Returns a Boolean value indicating whether the receiver contains the specified string.
 
- @param string The string to check. This value must not be `nil`.
+   @param string The string to check. This value must not be `nil`.
 
- @return `YES` if the receiver contains the string; otherwise, `NO`.
+   @return `YES` if the receiver contains the string; otherwise, `NO`.
  */
 - (BOOL)ys_containsString:(NSString *)string;
 
 /** Returns a Boolean value indicating whether the receiver contains the specified string.
 
- @param string The string to check. This value must not be `nil`.
- @param mask A mask specifying search options. The following options may be specified by combining them with the C bitwise OR operator: NSCaseInsensitiveSearch, NSLiteralSearch, NSBackwardsSearch, NSAnchoredSearch. See String Programming Guide for details on these options.
+   @param string The string to check. This value must not be `nil`.
+   @param mask A mask specifying search options. The following options may be specified by combining them with the C bitwise OR operator: NSCaseInsensitiveSearch, NSLiteralSearch, NSBackwardsSearch, NSAnchoredSearch. See String Programming Guide for details on these options.
 
- @return `YES` if the receiver contains the string; otherwise, `NO`.
+   @return `YES` if the receiver contains the string; otherwise, `NO`.
  */
 - (BOOL)ys_containsString:(NSString *)string options:(NSStringCompareOptions)mask;
 
 /** Reverse a NSString
 
- @return String reversed
+   @return String reversed
  */
 - (NSString *)ys_stringTrimToWidthLength:(CGFloat)length WithFont:(UIFont *)font DEPRECATED_ATTRIBUTE;
 
@@ -206,7 +206,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) ys_isBlank:(NSString *)stringValue;
++ (BOOL)ys_isBlank:(NSString *)stringValue;
 
 /**
  *    [NSString ys_isBlankString:nil]          isEqualToString:@"YES"
@@ -219,7 +219,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) ys_isBlankString:(NSString *)stringValue;
++ (NSString *)ys_isBlankString:(NSString *)stringValue;
 
 /**
  *    [NSString ys_isNotBlank:nil]          == NO
@@ -232,7 +232,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) ys_isNotBlank:(NSString *)stringValue;
++ (BOOL)ys_isNotBlank:(NSString *)stringValue;
 
 /**
  *    [NSString ys_isNotBlankString:nil]          isEqualToString:@"NO"
@@ -245,7 +245,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) ys_isNotBlankString:(NSString *)stringValue;
++ (NSString *)ys_isNotBlankString:(NSString *)stringValue;
 
 /**
  *    [NSString ys_isEmpty:nil]          == YES
@@ -258,7 +258,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) ys_isEmpty:(NSString *)stringValue;
++ (BOOL)ys_isEmpty:(NSString *)stringValue;
 
 /**
  *    [NSString ys_isEmptyString:nil]          isEqualToString:@"YES"
@@ -271,7 +271,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) ys_isEmptyString:(NSString *)stringValue;
++ (NSString *)ys_isEmptyString:(NSString *)stringValue;
 
 /**
  *    [NSString ys_isNotEmpty:nil]          == NO
@@ -284,7 +284,7 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return BOOL YES or NO
  */
-+ (BOOL) ys_isNotEmpty:(NSString *)stringValue;
++ (BOOL)ys_isNotEmpty:(NSString *)stringValue;
 
 /**
  *    [NSString ys_isNotEmptyString:nil]          isEqualToString:@"NO"
@@ -297,6 +297,6 @@ FOUNDATION_EXPORT NSString* YSNSStringIsNotEmptyString(NSString *stringValue);
  *
  *  @return NSString @"YES" or @"NO"
  */
-+ (NSString *) ys_isNotEmptyString:(NSString *)stringValue;
++ (NSString *)ys_isNotEmptyString:(NSString *)stringValue;
 
 @end

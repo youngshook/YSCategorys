@@ -1,5 +1,9 @@
 # Change Log
 
+### 1.0.5
+
+* Format Code LLVM Style
+
 ### 1.0.4
 
 * Added Button EnlargeEdge
