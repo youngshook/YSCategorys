@@ -18,7 +18,7 @@
 - (NSInteger)ys_integerForKey:(NSString *)keyName;
 - (double)ys_doubleForKey:(NSString *)keyName;
 
-- (NSString *)ys_jsonString;
+- (NSString *)ys_JSONString;
 
 + (NSDictionary *)ys_dictionaryWithJSON:(NSString *)json;
 

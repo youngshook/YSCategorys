@@ -13,6 +13,7 @@
 
 @interface NSData (YSKit)
 
+- (id)ys_JSONValue;
 - (NSData *)ys_AES256EncryptWithKey:(NSString *)key;    // Encrypt
 - (NSData *)ys_AES256DecryptWithKey:(NSString *)key;    // Decrypt
 

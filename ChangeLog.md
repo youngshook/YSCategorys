@@ -1,5 +1,10 @@
 # Change Log
 
+### 1.0.6
+
+* Change JSON Convert method name
+* Added JSON Convert Method to NSData
+
 ### 1.0.5
 
 * Format Code LLVM Style
@@ -7,7 +12,7 @@
 ### 1.0.4
 
 * Added Button EnlargeEdge
-* Added Json Convert Method to NSArray
+* Added JSON Convert Method to NSArray
 * Update JSON Convert Method in NSDictionary
 * Added Dynamic Properties to NSObject
 

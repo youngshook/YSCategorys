@@ -5,6 +5,13 @@
 
 @implementation NSData (YSKit)
 
+- (id)ys_JSONValue {
+	__autoreleasing NSError *error = nil;
+	id result = [NSJSONSerialization JSONObjectWithData:self options:kNilOptions error:&error];
+	if (error != nil) return nil;
+	return result;
+}
+
 - (NSData *)ys_AES256EncryptWithKey:(NSString *)key {
 	// 'key' should be 32 bytes for AES256, will be null-padded otherwise
 	char keyPtr[kCCKeySizeAES256 + 1];   // room for terminator (unused)

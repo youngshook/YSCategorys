@@ -33,7 +33,7 @@
    @param state The state that uses the specified image. The values are described in UIControlState.
  */
 
-- (void)ys_centerImageAndButton:(CGFloat)gap imageOnTop:(BOOL)imageOnTop
+- (void)ys_centerImageAndButton:(CGFloat)gap imageOnTop:(BOOL)imageOnTop;
 
 - (void)ys_setBackgroundImageResizingCapInsets:(UIEdgeInsets)capInsets forState:(UIControlState)state NS_AVAILABLE_IOS(5_0);
 

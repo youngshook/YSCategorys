@@ -10,7 +10,7 @@
 	return [self objectAtIndex:index];
 }
 
-- (NSString *)ys_jsonString {
+- (NSString *)ys_JSONString {
 	NSError *error = nil;
 
 	NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self

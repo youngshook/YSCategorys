@@ -28,7 +28,7 @@
  *
  *	@return NSString Obj
  */
-- (NSString *)ys_jsonString;
+- (NSString *)ys_JSONString;
 
 
 /**
