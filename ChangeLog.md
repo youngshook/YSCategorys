@@ -1,5 +1,11 @@
 # Change Log
 
+
+
+### 1.0.7
+
+* Added GetPropertirs method to NSObject 
+
 ### 1.0.6
 
 * Change JSON Convert method name

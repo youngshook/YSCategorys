@@ -60,6 +60,53 @@
 	//	}
 }
 
+- (NSArray *)ys_getPropertyKeys{
+    unsigned int outCount, i;
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    NSMutableArray *keys = [[NSMutableArray alloc] initWithCapacity:outCount];
+    for (i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+        [keys addObject:propertyName];
+    }
+    free(properties);
+    return keys;
+}
+
+- (NSMutableDictionary *)ys_getProperties{
+    unsigned int outCount, i;
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    NSMutableDictionary* propertiesDictionary = [NSMutableDictionary dictionaryWithCapacity:outCount];
+    for (i = 0; i < outCount; i++) {
+        NSString *propertyName = [NSString  stringWithUTF8String:property_getName(properties[i])];
+        id propertyValue = [self valueForKey:propertyName];
+        if (propertyValue) {
+            [propertiesDictionary setObject:propertyValue forKey:propertyName];
+        }
+    }
+    free(properties);
+    return propertiesDictionary;
+}
+
+- (void)ys_reflectDataFromObject:(id)dataSource{
+    BOOL ret = NO;
+    for (NSString *key in [self ys_getPropertyKeys]) {
+        if ([dataSource isKindOfClass:[NSDictionary class]]) {
+            ret = [dataSource valueForKey:key]? YES : NO;
+        }
+        else {
+            ret = [dataSource respondsToSelector:NSSelectorFromString(key)];
+        }
+        if (ret) {
+            id propertyValue = [dataSource valueForKey:key];
+            if (![propertyValue isKindOfClass:[NSNull class]] && propertyValue != nil) {
+                [self setValue:propertyValue forKey:key];
+            }
+        }
+    }
+}
+
+
 #pragma mark - DynamicProperties
 
 + (void)ys_implementDynamicPropertyAccessors {

@@ -1,6 +1,6 @@
 {
   "name": "YSCategorys",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "summary": "A set of categorys to make iOS development easier.",
   "homepage": "https://github.com/youngshook/YSCategorys",
   "license": "MIT",
@@ -10,7 +10,7 @@
   "social_media_url": "http://twitter.com/young_shook", 
   "source": {
     "git": "git@github.com:youngshook/YSCategorys.git",
-    "tag": "1.0.6"
+    "tag": "1.0.7"
   },
   "platforms": {
     "ios": "5.0"

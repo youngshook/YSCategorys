@@ -1,1993 +1,565 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>B54048391971C8230074566E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSInvocation+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B540483A1971C8230074566E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSInvocation+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B540483B1971C8230074566E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B540483A1971C8230074566E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B540483C1971C87E0074566E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UILabel+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B540483D1971C87E0074566E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UILabel+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B540483E1971C87E0074566E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B540483D1971C87E0074566E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B540483F1971CA880074566E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CGRect+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A404A196987B100A5BDB9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B5AC76331969B74A00566642</string>
-				<string>B54A405C196987B100A5BDB9</string>
-				<string>B54A4055196987B100A5BDB9</string>
-				<string>B54A4054196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A404B196987B100A5BDB9</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>YS</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>YShook Station</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>B54A404E196987B100A5BDB9</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>B54A404A196987B100A5BDB9</string>
-			<key>productRefGroup</key>
-			<string>B54A4054196987B100A5BDB9</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>B54A4052196987B100A5BDB9</string>
-			</array>
-		</dict>
-		<key>B54A404E196987B100A5BDB9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B54A407D196987B100A5BDB9</string>
-				<string>B54A407E196987B100A5BDB9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B54A404F196987B100A5BDB9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B5AC76AC19704D9900566642</string>
-				<string>B540483E1971C87E0074566E</string>
-				<string>B54A4067196987B100A5BDB9</string>
-				<string>B5AC76691969B74B00566642</string>
-				<string>B5AC769D197040F800566642</string>
-				<string>B5AC766E1969B74B00566642</string>
-				<string>B5AC766A1969B74B00566642</string>
-				<string>B5AC76761969B74B00566642</string>
-				<string>B5AC76941970156A00566642</string>
-				<string>B5AC76641969B74B00566642</string>
-				<string>B5AC76A0197043E200566642</string>
-				<string>B5AC76661969B74B00566642</string>
-				<string>B5AC766B1969B74B00566642</string>
-				<string>B5AC76681969B74B00566642</string>
-				<string>B5AC76A91970454500566642</string>
-				<string>B5AC76701969B74B00566642</string>
-				<string>B5AC766F1969B74B00566642</string>
-				<string>B5AC76711969B74B00566642</string>
-				<string>B5AC766C1969B74B00566642</string>
-				<string>B5AC76A31970446000566642</string>
-				<string>B5AC76751969B74B00566642</string>
-				<string>B5AC7681196C5ACB00566642</string>
-				<string>B5AC76671969B74B00566642</string>
-				<string>B5AC76631969B74B00566642</string>
-				<string>B5AC76741969B74B00566642</string>
-				<string>B5AC766D1969B74B00566642</string>
-				<string>B5AC76781969B74B00566642</string>
-				<string>B5AC769A19703CD400566642</string>
-				<string>B540483B1971C8230074566E</string>
-				<string>B5AC769719703C0000566642</string>
-				<string>B5AC767B196C469B00566642</string>
-				<string>B5AC76A61970451800566642</string>
-				<string>B54A4063196987B100A5BDB9</string>
-				<string>B5AC767E196C585800566642</string>
-				<string>B5AC76721969B74B00566642</string>
-				<string>B5AC76771969B74B00566642</string>
-				<string>B5AC76651969B74B00566642</string>
-				<string>B5AC76731969B74B00566642</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B54A4050196987B100A5BDB9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B54A4059196987B100A5BDB9</string>
-				<string>B54A405B196987B100A5BDB9</string>
-				<string>B54A4057196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B54A4051196987B100A5BDB9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B54A4061196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B54A4052196987B100A5BDB9</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B54A407F196987B100A5BDB9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B54A404F196987B100A5BDB9</string>
-				<string>B54A4050196987B100A5BDB9</string>
-				<string>B54A4051196987B100A5BDB9</string>
-				<string>EC7FC93341A142788018B4E8</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>YSCategorys</string>
-			<key>productName</key>
-			<string>YSCategorys</string>
-			<key>productReference</key>
-			<string>B54A4053196987B100A5BDB9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>B54A4053196987B100A5BDB9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>YSCategorys.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B54A4054196987B100A5BDB9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B54A4053196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4055196987B100A5BDB9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B54A4056196987B100A5BDB9</string>
-				<string>B54A4058196987B100A5BDB9</string>
-				<string>B54A405A196987B100A5BDB9</string>
-				<string>B54A406F196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4056196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>B54A4057196987B100A5BDB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B54A4056196987B100A5BDB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B54A4058196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>B54A4059196987B100A5BDB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B54A4058196987B100A5BDB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B54A405A196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>B54A405B196987B100A5BDB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B54A405A196987B100A5BDB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B54A405C196987B100A5BDB9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B54A4065196987B100A5BDB9</string>
-				<string>B54A4066196987B100A5BDB9</string>
-				<string>B54A405D196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>YSCategorys</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A405D196987B100A5BDB9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B54A405E196987B100A5BDB9</string>
-				<string>B54A405F196987B100A5BDB9</string>
-				<string>B54A4062196987B100A5BDB9</string>
-				<string>B54A4064196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A405E196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>YSCategorys-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A405F196987B100A5BDB9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B54A4060196987B100A5BDB9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4060196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4061196987B100A5BDB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B54A405F196987B100A5BDB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B54A4062196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4063196987B100A5BDB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B54A4062196987B100A5BDB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B54A4064196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YSCategorys-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4065196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YSAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4066196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YSAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B54A4067196987B100A5BDB9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B54A4066196987B100A5BDB9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B54A406F196987B100A5BDB9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>B54A407D196987B100A5BDB9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B54A407E196987B100A5BDB9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B54A407F196987B100A5BDB9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B54A4080196987B100A5BDB9</string>
-				<string>B54A4081196987B100A5BDB9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B54A4080196987B100A5BDB9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YSCategorys/YSCategorys-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YSCategorys/YSCategorys-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B54A4081196987B100A5BDB9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YSCategorys/YSCategorys-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YSCategorys/YSCategorys-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B5AC76331969B74A00566642</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B5AC76621969B74B00566642</string>
-				<string>B5AC76341969B74A00566642</string>
-				<string>B5AC76491969B74B00566642</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Categorys</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76341969B74A00566642</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B5AC76451969B74B00566642</string>
-				<string>B5AC76461969B74B00566642</string>
-				<string>B5AC76351969B74A00566642</string>
-				<string>B5AC76361969B74B00566642</string>
-				<string>B5AC76371969B74B00566642</string>
-				<string>B5AC76381969B74B00566642</string>
-				<string>B5AC76391969B74B00566642</string>
-				<string>B5AC763A1969B74B00566642</string>
-				<string>B5AC763B1969B74B00566642</string>
-				<string>B5AC763C1969B74B00566642</string>
-				<string>B5AC763D1969B74B00566642</string>
-				<string>B5AC763E1969B74B00566642</string>
-				<string>B5AC763F1969B74B00566642</string>
-				<string>B5AC76401969B74B00566642</string>
-				<string>B5AC76411969B74B00566642</string>
-				<string>B5AC76421969B74B00566642</string>
-				<string>B5AC76431969B74B00566642</string>
-				<string>B5AC76441969B74B00566642</string>
-				<string>B5AC76471969B74B00566642</string>
-				<string>B5AC76481969B74B00566642</string>
-				<string>B5AC7679196C469B00566642</string>
-				<string>B5AC767A196C469B00566642</string>
-				<string>B5AC767C196C585800566642</string>
-				<string>B5AC767D196C585800566642</string>
-				<string>B5AC767F196C5ACB00566642</string>
-				<string>B5AC7680196C5ACB00566642</string>
-				<string>B5AC769519703C0000566642</string>
-				<string>B5AC769619703C0000566642</string>
-				<string>B5AC769819703CD400566642</string>
-				<string>B5AC769919703CD400566642</string>
-				<string>B5AC769B197040F800566642</string>
-				<string>B5AC769C197040F800566642</string>
-				<string>B5AC769E197043E200566642</string>
-				<string>B5AC769F197043E200566642</string>
-				<string>B5AC76A11970446000566642</string>
-				<string>B5AC76A21970446000566642</string>
-				<string>B54048391971C8230074566E</string>
-				<string>B540483A1971C8230074566E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Foundation</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76351969B74A00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSArray+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76361969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSArray+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76371969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSBundle+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76381969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSBundle+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76391969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSDate+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC763A1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSDate+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC763B1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSDateFormatter+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC763C1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSDateFormatter+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC763D1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSDictionary+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC763E1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSDictionary+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC763F1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSFileManager+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76401969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSFileManager+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76411969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSNumberFormatter+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76421969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSNumberFormatter+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76431969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSObject+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76441969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSObject+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76451969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSString+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76461969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSString+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76471969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSURL+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76481969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSURL+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76491969B74B00566642</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B540483F1971CA880074566E</string>
-				<string>B5AC76921970156A00566642</string>
-				<string>B5AC76931970156A00566642</string>
-				<string>B540483C1971C87E0074566E</string>
-				<string>B540483D1971C87E0074566E</string>
-				<string>B5AC764A1969B74B00566642</string>
-				<string>B5AC764B1969B74B00566642</string>
-				<string>B5AC764C1969B74B00566642</string>
-				<string>B5AC764D1969B74B00566642</string>
-				<string>B5AC764E1969B74B00566642</string>
-				<string>B5AC764F1969B74B00566642</string>
-				<string>B5AC76501969B74B00566642</string>
-				<string>B5AC76511969B74B00566642</string>
-				<string>B5AC76521969B74B00566642</string>
-				<string>B5AC76531969B74B00566642</string>
-				<string>B5AC76541969B74B00566642</string>
-				<string>B5AC76551969B74B00566642</string>
-				<string>B5AC76561969B74B00566642</string>
-				<string>B5AC76571969B74B00566642</string>
-				<string>B5AC76581969B74B00566642</string>
-				<string>B5AC76591969B74B00566642</string>
-				<string>B5AC765A1969B74B00566642</string>
-				<string>B5AC765B1969B74B00566642</string>
-				<string>B5AC765C1969B74B00566642</string>
-				<string>B5AC765D1969B74B00566642</string>
-				<string>B5AC765E1969B74B00566642</string>
-				<string>B5AC765F1969B74B00566642</string>
-				<string>B5AC76601969B74B00566642</string>
-				<string>B5AC76611969B74B00566642</string>
-				<string>B5AC76A41970451800566642</string>
-				<string>B5AC76A51970451800566642</string>
-				<string>B5AC76A71970454500566642</string>
-				<string>B5AC76A81970454500566642</string>
-				<string>B5AC76AA19704D9900566642</string>
-				<string>B5AC76AB19704D9900566642</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UIKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC764A1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIAlertView+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC764B1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIAlertView+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC764C1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIButton+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC764D1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIButton+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC764E1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIColor+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC764F1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIColor+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76501969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIDevice+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76511969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIDevice+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76521969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIImage+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76531969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIImage+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76541969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UINavigationController+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76551969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UINavigationController+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76561969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIResponder+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76571969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIResponder+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76581969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UISearchBar+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76591969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UISearchBar+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC765A1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIStoryboard+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC765B1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIStoryboard+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC765C1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UITableView+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC765D1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UITableView+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC765E1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIViewController+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC765F1969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIViewController+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76601969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIWebView+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76611969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIWebView+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76621969B74B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76631969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76361969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76641969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76381969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76651969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC763A1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76661969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC763C1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76671969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC763E1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76681969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76401969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76691969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76421969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC766A1969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76441969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC766B1969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76461969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC766C1969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76481969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC766D1969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC764B1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC766E1969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC764D1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC766F1969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC764F1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76701969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76511969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76711969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76531969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76721969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76551969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76731969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76571969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76741969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76591969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76751969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC765B1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76761969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC765D1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76771969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC765F1969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76781969B74B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76611969B74B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC7679196C469B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSNull+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC767A196C469B00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSNull+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC767B196C469B00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC767A196C469B00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC767C196C585800566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSData+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC767D196C585800566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSData+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC767E196C585800566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC767D196C585800566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC767F196C5ACB00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSNumber+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC7680196C5ACB00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSNumber+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC7681196C5ACB00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC7680196C5ACB00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76921970156A00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIView+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76931970156A00566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIView+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76941970156A00566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76931970156A00566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC769519703C0000566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSAttributedString+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC769619703C0000566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSAttributedString+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC769719703C0000566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC769619703C0000566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC769819703CD400566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSNotificationCenter+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC769919703CD400566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSNotificationCenter+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC769A19703CD400566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC769919703CD400566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC769B197040F800566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSOperationQueue+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC769C197040F800566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSOperationQueue+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC769D197040F800566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC769C197040F800566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC769E197043E200566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSUserDefaults+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC769F197043E200566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSUserDefaults+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76A0197043E200566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC769F197043E200566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76A11970446000566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIApplication+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76A21970446000566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIApplication+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76A31970446000566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76A21970446000566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76A41970451800566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIBarButtonItem+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76A51970451800566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIBarButtonItem+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76A61970451800566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76A51970451800566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76A71970454500566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UICollectionView+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76A81970454500566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UICollectionView+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76A91970454500566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76A81970454500566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B5AC76AA19704D9900566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIWindow+YSKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76AB19704D9900566642</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIWindow+YSKit.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5AC76AC19704D9900566642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B5AC76AB19704D9900566642</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EC7FC93341A142788018B4E8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Find unused imports</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>/bin/sh "/Users/YoungShook/Library/Application Support/Developer/Shared/Xcode/Plug-ins/xcfui.xcplugin/Contents/Resources/fui_script.sh" "/Users/YoungShook/Desktop/Kit/YSCategorys"</string>
-			<key>showEnvVarsInLog</key>
-			<string>1</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>B54A404B196987B100A5BDB9</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B540483B1971C8230074566E /* NSInvocation+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B540483A1971C8230074566E /* NSInvocation+YSKit.m */; };
+		B540483E1971C87E0074566E /* UILabel+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B540483D1971C87E0074566E /* UILabel+YSKit.m */; };
+		B54A4057196987B100A5BDB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54A4056196987B100A5BDB9 /* Foundation.framework */; };
+		B54A4059196987B100A5BDB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54A4058196987B100A5BDB9 /* CoreGraphics.framework */; };
+		B54A405B196987B100A5BDB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54A405A196987B100A5BDB9 /* UIKit.framework */; };
+		B54A4061196987B100A5BDB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B54A405F196987B100A5BDB9 /* InfoPlist.strings */; };
+		B54A4063196987B100A5BDB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B54A4062196987B100A5BDB9 /* main.m */; };
+		B54A4067196987B100A5BDB9 /* YSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B54A4066196987B100A5BDB9 /* YSAppDelegate.m */; };
+		B5AC76631969B74B00566642 /* NSArray+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76361969B74B00566642 /* NSArray+YSKit.m */; };
+		B5AC76641969B74B00566642 /* NSBundle+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76381969B74B00566642 /* NSBundle+YSKit.m */; };
+		B5AC76651969B74B00566642 /* NSDate+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC763A1969B74B00566642 /* NSDate+YSKit.m */; };
+		B5AC76661969B74B00566642 /* NSDateFormatter+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC763C1969B74B00566642 /* NSDateFormatter+YSKit.m */; };
+		B5AC76671969B74B00566642 /* NSDictionary+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC763E1969B74B00566642 /* NSDictionary+YSKit.m */; };
+		B5AC76681969B74B00566642 /* NSFileManager+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76401969B74B00566642 /* NSFileManager+YSKit.m */; };
+		B5AC76691969B74B00566642 /* NSNumberFormatter+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76421969B74B00566642 /* NSNumberFormatter+YSKit.m */; };
+		B5AC766A1969B74B00566642 /* NSObject+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76441969B74B00566642 /* NSObject+YSKit.m */; };
+		B5AC766B1969B74B00566642 /* NSString+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76461969B74B00566642 /* NSString+YSKit.m */; };
+		B5AC766C1969B74B00566642 /* NSURL+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76481969B74B00566642 /* NSURL+YSKit.m */; };
+		B5AC766D1969B74B00566642 /* UIAlertView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC764B1969B74B00566642 /* UIAlertView+YSKit.m */; };
+		B5AC766E1969B74B00566642 /* UIButton+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC764D1969B74B00566642 /* UIButton+YSKit.m */; };
+		B5AC766F1969B74B00566642 /* UIColor+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC764F1969B74B00566642 /* UIColor+YSKit.m */; };
+		B5AC76701969B74B00566642 /* UIDevice+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76511969B74B00566642 /* UIDevice+YSKit.m */; };
+		B5AC76711969B74B00566642 /* UIImage+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76531969B74B00566642 /* UIImage+YSKit.m */; };
+		B5AC76721969B74B00566642 /* UINavigationController+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76551969B74B00566642 /* UINavigationController+YSKit.m */; };
+		B5AC76731969B74B00566642 /* UIResponder+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76571969B74B00566642 /* UIResponder+YSKit.m */; };
+		B5AC76741969B74B00566642 /* UISearchBar+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76591969B74B00566642 /* UISearchBar+YSKit.m */; };
+		B5AC76751969B74B00566642 /* UIStoryboard+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC765B1969B74B00566642 /* UIStoryboard+YSKit.m */; };
+		B5AC76761969B74B00566642 /* UITableView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC765D1969B74B00566642 /* UITableView+YSKit.m */; };
+		B5AC76771969B74B00566642 /* UIViewController+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC765F1969B74B00566642 /* UIViewController+YSKit.m */; };
+		B5AC76781969B74B00566642 /* UIWebView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76611969B74B00566642 /* UIWebView+YSKit.m */; };
+		B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767A196C469B00566642 /* NSNull+YSKit.m */; };
+		B5AC767E196C585800566642 /* NSData+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC767D196C585800566642 /* NSData+YSKit.m */; };
+		B5AC7681196C5ACB00566642 /* NSNumber+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */; };
+		B5AC76941970156A00566642 /* UIView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76931970156A00566642 /* UIView+YSKit.m */; };
+		B5AC769719703C0000566642 /* NSAttributedString+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769619703C0000566642 /* NSAttributedString+YSKit.m */; };
+		B5AC769A19703CD400566642 /* NSNotificationCenter+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769919703CD400566642 /* NSNotificationCenter+YSKit.m */; };
+		B5AC769D197040F800566642 /* NSOperationQueue+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769C197040F800566642 /* NSOperationQueue+YSKit.m */; };
+		B5AC76A0197043E200566642 /* NSUserDefaults+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC769F197043E200566642 /* NSUserDefaults+YSKit.m */; };
+		B5AC76A31970446000566642 /* UIApplication+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76A21970446000566642 /* UIApplication+YSKit.m */; };
+		B5AC76A61970451800566642 /* UIBarButtonItem+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76A51970451800566642 /* UIBarButtonItem+YSKit.m */; };
+		B5AC76A91970454500566642 /* UICollectionView+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76A81970454500566642 /* UICollectionView+YSKit.m */; };
+		B5AC76AC19704D9900566642 /* UIWindow+YSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AC76AB19704D9900566642 /* UIWindow+YSKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B54048391971C8230074566E /* NSInvocation+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+YSKit.h"; sourceTree = "<group>"; };
+		B540483A1971C8230074566E /* NSInvocation+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+YSKit.m"; sourceTree = "<group>"; };
+		B540483C1971C87E0074566E /* UILabel+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YSKit.h"; sourceTree = "<group>"; };
+		B540483D1971C87E0074566E /* UILabel+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YSKit.m"; sourceTree = "<group>"; };
+		B540483F1971CA880074566E /* CGRect+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGRect+YSKit.h"; sourceTree = "<group>"; };
+		B54A4053196987B100A5BDB9 /* YSCategorys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSCategorys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54A4056196987B100A5BDB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B54A4058196987B100A5BDB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B54A405A196987B100A5BDB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B54A405E196987B100A5BDB9 /* YSCategorys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSCategorys-Info.plist"; sourceTree = "<group>"; };
+		B54A4060196987B100A5BDB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B54A4062196987B100A5BDB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B54A4064196987B100A5BDB9 /* YSCategorys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSCategorys-Prefix.pch"; sourceTree = "<group>"; };
+		B54A4065196987B100A5BDB9 /* YSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSAppDelegate.h; sourceTree = "<group>"; };
+		B54A4066196987B100A5BDB9 /* YSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAppDelegate.m; sourceTree = "<group>"; };
+		B54A406F196987B100A5BDB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5AC76351969B74A00566642 /* NSArray+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76361969B74B00566642 /* NSArray+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76371969B74B00566642 /* NSBundle+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76381969B74B00566642 /* NSBundle+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76391969B74B00566642 /* NSDate+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YSKit.h"; sourceTree = "<group>"; };
+		B5AC763A1969B74B00566642 /* NSDate+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YSKit.m"; sourceTree = "<group>"; };
+		B5AC763B1969B74B00566642 /* NSDateFormatter+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+YSKit.h"; sourceTree = "<group>"; };
+		B5AC763C1969B74B00566642 /* NSDateFormatter+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+YSKit.m"; sourceTree = "<group>"; };
+		B5AC763D1969B74B00566642 /* NSDictionary+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YSKit.h"; sourceTree = "<group>"; };
+		B5AC763E1969B74B00566642 /* NSDictionary+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YSKit.m"; sourceTree = "<group>"; };
+		B5AC763F1969B74B00566642 /* NSFileManager+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76401969B74B00566642 /* NSFileManager+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76411969B74B00566642 /* NSNumberFormatter+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76421969B74B00566642 /* NSNumberFormatter+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76431969B74B00566642 /* NSObject+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76441969B74B00566642 /* NSObject+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76451969B74B00566642 /* NSString+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76461969B74B00566642 /* NSString+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76471969B74B00566642 /* NSURL+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76481969B74B00566642 /* NSURL+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+YSKit.m"; sourceTree = "<group>"; };
+		B5AC764A1969B74B00566642 /* UIAlertView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+YSKit.h"; sourceTree = "<group>"; };
+		B5AC764B1969B74B00566642 /* UIAlertView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+YSKit.m"; sourceTree = "<group>"; };
+		B5AC764C1969B74B00566642 /* UIButton+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YSKit.h"; sourceTree = "<group>"; };
+		B5AC764D1969B74B00566642 /* UIButton+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YSKit.m"; sourceTree = "<group>"; };
+		B5AC764E1969B74B00566642 /* UIColor+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YSKit.h"; sourceTree = "<group>"; };
+		B5AC764F1969B74B00566642 /* UIColor+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76501969B74B00566642 /* UIDevice+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76511969B74B00566642 /* UIDevice+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76521969B74B00566642 /* UIImage+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76531969B74B00566642 /* UIImage+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76541969B74B00566642 /* UINavigationController+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76551969B74B00566642 /* UINavigationController+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76561969B74B00566642 /* UIResponder+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76571969B74B00566642 /* UIResponder+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76581969B74B00566642 /* UISearchBar+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76591969B74B00566642 /* UISearchBar+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+YSKit.m"; sourceTree = "<group>"; };
+		B5AC765A1969B74B00566642 /* UIStoryboard+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+YSKit.h"; sourceTree = "<group>"; };
+		B5AC765B1969B74B00566642 /* UIStoryboard+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+YSKit.m"; sourceTree = "<group>"; };
+		B5AC765C1969B74B00566642 /* UITableView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YSKit.h"; sourceTree = "<group>"; };
+		B5AC765D1969B74B00566642 /* UITableView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YSKit.m"; sourceTree = "<group>"; };
+		B5AC765E1969B74B00566642 /* UIViewController+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YSKit.h"; sourceTree = "<group>"; };
+		B5AC765F1969B74B00566642 /* UIViewController+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76601969B74B00566642 /* UIWebView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76611969B74B00566642 /* UIWebView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76621969B74B00566642 /* YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSKit.h; sourceTree = "<group>"; };
+		B5AC7679196C469B00566642 /* NSNull+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+YSKit.h"; sourceTree = "<group>"; };
+		B5AC767A196C469B00566642 /* NSNull+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+YSKit.m"; sourceTree = "<group>"; };
+		B5AC767C196C585800566642 /* NSData+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YSKit.h"; sourceTree = "<group>"; };
+		B5AC767D196C585800566642 /* NSData+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YSKit.m"; sourceTree = "<group>"; };
+		B5AC767F196C5ACB00566642 /* NSNumber+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+YSKit.h"; sourceTree = "<group>"; };
+		B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76921970156A00566642 /* UIView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76931970156A00566642 /* UIView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769519703C0000566642 /* NSAttributedString+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769619703C0000566642 /* NSAttributedString+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769819703CD400566642 /* NSNotificationCenter+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769919703CD400566642 /* NSNotificationCenter+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769B197040F800566642 /* NSOperationQueue+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769C197040F800566642 /* NSOperationQueue+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+YSKit.m"; sourceTree = "<group>"; };
+		B5AC769E197043E200566642 /* NSUserDefaults+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+YSKit.h"; sourceTree = "<group>"; };
+		B5AC769F197043E200566642 /* NSUserDefaults+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76A11970446000566642 /* UIApplication+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76A21970446000566642 /* UIApplication+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76A41970451800566642 /* UIBarButtonItem+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76A51970451800566642 /* UIBarButtonItem+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76A71970454500566642 /* UICollectionView+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76A81970454500566642 /* UICollectionView+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+YSKit.m"; sourceTree = "<group>"; };
+		B5AC76AA19704D9900566642 /* UIWindow+YSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+YSKit.h"; sourceTree = "<group>"; };
+		B5AC76AB19704D9900566642 /* UIWindow+YSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+YSKit.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B54A4050196987B100A5BDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54A4059196987B100A5BDB9 /* CoreGraphics.framework in Frameworks */,
+				B54A405B196987B100A5BDB9 /* UIKit.framework in Frameworks */,
+				B54A4057196987B100A5BDB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B54A404A196987B100A5BDB9 = {
+			isa = PBXGroup;
+			children = (
+				B5AC76331969B74A00566642 /* Categorys */,
+				B54A405C196987B100A5BDB9 /* YSCategorys */,
+				B54A4055196987B100A5BDB9 /* Frameworks */,
+				B54A4054196987B100A5BDB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B54A4054196987B100A5BDB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4053196987B100A5BDB9 /* YSCategorys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B54A4055196987B100A5BDB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4056196987B100A5BDB9 /* Foundation.framework */,
+				B54A4058196987B100A5BDB9 /* CoreGraphics.framework */,
+				B54A405A196987B100A5BDB9 /* UIKit.framework */,
+				B54A406F196987B100A5BDB9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B54A405C196987B100A5BDB9 /* YSCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4065196987B100A5BDB9 /* YSAppDelegate.h */,
+				B54A4066196987B100A5BDB9 /* YSAppDelegate.m */,
+				B54A405D196987B100A5BDB9 /* Supporting Files */,
+			);
+			path = YSCategorys;
+			sourceTree = "<group>";
+		};
+		B54A405D196987B100A5BDB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B54A405E196987B100A5BDB9 /* YSCategorys-Info.plist */,
+				B54A405F196987B100A5BDB9 /* InfoPlist.strings */,
+				B54A4062196987B100A5BDB9 /* main.m */,
+				B54A4064196987B100A5BDB9 /* YSCategorys-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5AC76331969B74A00566642 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC76621969B74B00566642 /* YSKit.h */,
+				B5AC76341969B74A00566642 /* Foundation */,
+				B5AC76491969B74B00566642 /* UIKit */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		B5AC76341969B74A00566642 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC76451969B74B00566642 /* NSString+YSKit.h */,
+				B5AC76461969B74B00566642 /* NSString+YSKit.m */,
+				B5AC76351969B74A00566642 /* NSArray+YSKit.h */,
+				B5AC76361969B74B00566642 /* NSArray+YSKit.m */,
+				B5AC76371969B74B00566642 /* NSBundle+YSKit.h */,
+				B5AC76381969B74B00566642 /* NSBundle+YSKit.m */,
+				B5AC76391969B74B00566642 /* NSDate+YSKit.h */,
+				B5AC763A1969B74B00566642 /* NSDate+YSKit.m */,
+				B5AC763B1969B74B00566642 /* NSDateFormatter+YSKit.h */,
+				B5AC763C1969B74B00566642 /* NSDateFormatter+YSKit.m */,
+				B5AC763D1969B74B00566642 /* NSDictionary+YSKit.h */,
+				B5AC763E1969B74B00566642 /* NSDictionary+YSKit.m */,
+				B5AC763F1969B74B00566642 /* NSFileManager+YSKit.h */,
+				B5AC76401969B74B00566642 /* NSFileManager+YSKit.m */,
+				B5AC76411969B74B00566642 /* NSNumberFormatter+YSKit.h */,
+				B5AC76421969B74B00566642 /* NSNumberFormatter+YSKit.m */,
+				B5AC76431969B74B00566642 /* NSObject+YSKit.h */,
+				B5AC76441969B74B00566642 /* NSObject+YSKit.m */,
+				B5AC76471969B74B00566642 /* NSURL+YSKit.h */,
+				B5AC76481969B74B00566642 /* NSURL+YSKit.m */,
+				B5AC7679196C469B00566642 /* NSNull+YSKit.h */,
+				B5AC767A196C469B00566642 /* NSNull+YSKit.m */,
+				B5AC767C196C585800566642 /* NSData+YSKit.h */,
+				B5AC767D196C585800566642 /* NSData+YSKit.m */,
+				B5AC767F196C5ACB00566642 /* NSNumber+YSKit.h */,
+				B5AC7680196C5ACB00566642 /* NSNumber+YSKit.m */,
+				B5AC769519703C0000566642 /* NSAttributedString+YSKit.h */,
+				B5AC769619703C0000566642 /* NSAttributedString+YSKit.m */,
+				B5AC769819703CD400566642 /* NSNotificationCenter+YSKit.h */,
+				B5AC769919703CD400566642 /* NSNotificationCenter+YSKit.m */,
+				B5AC769B197040F800566642 /* NSOperationQueue+YSKit.h */,
+				B5AC769C197040F800566642 /* NSOperationQueue+YSKit.m */,
+				B5AC769E197043E200566642 /* NSUserDefaults+YSKit.h */,
+				B5AC769F197043E200566642 /* NSUserDefaults+YSKit.m */,
+				B5AC76A11970446000566642 /* UIApplication+YSKit.h */,
+				B5AC76A21970446000566642 /* UIApplication+YSKit.m */,
+				B54048391971C8230074566E /* NSInvocation+YSKit.h */,
+				B540483A1971C8230074566E /* NSInvocation+YSKit.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B5AC76491969B74B00566642 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B540483F1971CA880074566E /* CGRect+YSKit.h */,
+				B5AC76921970156A00566642 /* UIView+YSKit.h */,
+				B5AC76931970156A00566642 /* UIView+YSKit.m */,
+				B540483C1971C87E0074566E /* UILabel+YSKit.h */,
+				B540483D1971C87E0074566E /* UILabel+YSKit.m */,
+				B5AC764A1969B74B00566642 /* UIAlertView+YSKit.h */,
+				B5AC764B1969B74B00566642 /* UIAlertView+YSKit.m */,
+				B5AC764C1969B74B00566642 /* UIButton+YSKit.h */,
+				B5AC764D1969B74B00566642 /* UIButton+YSKit.m */,
+				B5AC764E1969B74B00566642 /* UIColor+YSKit.h */,
+				B5AC764F1969B74B00566642 /* UIColor+YSKit.m */,
+				B5AC76501969B74B00566642 /* UIDevice+YSKit.h */,
+				B5AC76511969B74B00566642 /* UIDevice+YSKit.m */,
+				B5AC76521969B74B00566642 /* UIImage+YSKit.h */,
+				B5AC76531969B74B00566642 /* UIImage+YSKit.m */,
+				B5AC76541969B74B00566642 /* UINavigationController+YSKit.h */,
+				B5AC76551969B74B00566642 /* UINavigationController+YSKit.m */,
+				B5AC76561969B74B00566642 /* UIResponder+YSKit.h */,
+				B5AC76571969B74B00566642 /* UIResponder+YSKit.m */,
+				B5AC76581969B74B00566642 /* UISearchBar+YSKit.h */,
+				B5AC76591969B74B00566642 /* UISearchBar+YSKit.m */,
+				B5AC765A1969B74B00566642 /* UIStoryboard+YSKit.h */,
+				B5AC765B1969B74B00566642 /* UIStoryboard+YSKit.m */,
+				B5AC765C1969B74B00566642 /* UITableView+YSKit.h */,
+				B5AC765D1969B74B00566642 /* UITableView+YSKit.m */,
+				B5AC765E1969B74B00566642 /* UIViewController+YSKit.h */,
+				B5AC765F1969B74B00566642 /* UIViewController+YSKit.m */,
+				B5AC76601969B74B00566642 /* UIWebView+YSKit.h */,
+				B5AC76611969B74B00566642 /* UIWebView+YSKit.m */,
+				B5AC76A41970451800566642 /* UIBarButtonItem+YSKit.h */,
+				B5AC76A51970451800566642 /* UIBarButtonItem+YSKit.m */,
+				B5AC76A71970454500566642 /* UICollectionView+YSKit.h */,
+				B5AC76A81970454500566642 /* UICollectionView+YSKit.m */,
+				B5AC76AA19704D9900566642 /* UIWindow+YSKit.h */,
+				B5AC76AB19704D9900566642 /* UIWindow+YSKit.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B54A4052196987B100A5BDB9 /* YSCategorys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B54A407F196987B100A5BDB9 /* Build configuration list for PBXNativeTarget "YSCategorys" */;
+			buildPhases = (
+				B54A404F196987B100A5BDB9 /* Sources */,
+				B54A4050196987B100A5BDB9 /* Frameworks */,
+				B54A4051196987B100A5BDB9 /* Resources */,
+				EC7FC93341A142788018B4E8 /* Find unused imports */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSCategorys;
+			productName = YSCategorys;
+			productReference = B54A4053196987B100A5BDB9 /* YSCategorys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B54A404B196987B100A5BDB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "YShook Station";
+			};
+			buildConfigurationList = B54A404E196987B100A5BDB9 /* Build configuration list for PBXProject "YSCategorys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B54A404A196987B100A5BDB9;
+			productRefGroup = B54A4054196987B100A5BDB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B54A4052196987B100A5BDB9 /* YSCategorys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B54A4051196987B100A5BDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54A4061196987B100A5BDB9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC7FC93341A142788018B4E8 /* Find unused imports */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Find unused imports";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"/Users/YoungShook/Library/Application Support/Developer/Shared/Xcode/Plug-ins/xcfui.xcplugin/Contents/Resources/fui_script.sh\" \"/Users/YoungShook/Desktop/Kit/YSCategorys\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B54A404F196987B100A5BDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AC76AC19704D9900566642 /* UIWindow+YSKit.m in Sources */,
+				B540483E1971C87E0074566E /* UILabel+YSKit.m in Sources */,
+				B54A4067196987B100A5BDB9 /* YSAppDelegate.m in Sources */,
+				B5AC76691969B74B00566642 /* NSNumberFormatter+YSKit.m in Sources */,
+				B5AC769D197040F800566642 /* NSOperationQueue+YSKit.m in Sources */,
+				B5AC766E1969B74B00566642 /* UIButton+YSKit.m in Sources */,
+				B5AC766A1969B74B00566642 /* NSObject+YSKit.m in Sources */,
+				B5AC76761969B74B00566642 /* UITableView+YSKit.m in Sources */,
+				B5AC76941970156A00566642 /* UIView+YSKit.m in Sources */,
+				B5AC76641969B74B00566642 /* NSBundle+YSKit.m in Sources */,
+				B5AC76A0197043E200566642 /* NSUserDefaults+YSKit.m in Sources */,
+				B5AC76661969B74B00566642 /* NSDateFormatter+YSKit.m in Sources */,
+				B5AC766B1969B74B00566642 /* NSString+YSKit.m in Sources */,
+				B5AC76681969B74B00566642 /* NSFileManager+YSKit.m in Sources */,
+				B5AC76A91970454500566642 /* UICollectionView+YSKit.m in Sources */,
+				B5AC76701969B74B00566642 /* UIDevice+YSKit.m in Sources */,
+				B5AC766F1969B74B00566642 /* UIColor+YSKit.m in Sources */,
+				B5AC76711969B74B00566642 /* UIImage+YSKit.m in Sources */,
+				B5AC766C1969B74B00566642 /* NSURL+YSKit.m in Sources */,
+				B5AC76A31970446000566642 /* UIApplication+YSKit.m in Sources */,
+				B5AC76751969B74B00566642 /* UIStoryboard+YSKit.m in Sources */,
+				B5AC7681196C5ACB00566642 /* NSNumber+YSKit.m in Sources */,
+				B5AC76671969B74B00566642 /* NSDictionary+YSKit.m in Sources */,
+				B5AC76631969B74B00566642 /* NSArray+YSKit.m in Sources */,
+				B5AC76741969B74B00566642 /* UISearchBar+YSKit.m in Sources */,
+				B5AC766D1969B74B00566642 /* UIAlertView+YSKit.m in Sources */,
+				B5AC76781969B74B00566642 /* UIWebView+YSKit.m in Sources */,
+				B5AC769A19703CD400566642 /* NSNotificationCenter+YSKit.m in Sources */,
+				B540483B1971C8230074566E /* NSInvocation+YSKit.m in Sources */,
+				B5AC769719703C0000566642 /* NSAttributedString+YSKit.m in Sources */,
+				B5AC767B196C469B00566642 /* NSNull+YSKit.m in Sources */,
+				B5AC76A61970451800566642 /* UIBarButtonItem+YSKit.m in Sources */,
+				B54A4063196987B100A5BDB9 /* main.m in Sources */,
+				B5AC767E196C585800566642 /* NSData+YSKit.m in Sources */,
+				B5AC76721969B74B00566642 /* UINavigationController+YSKit.m in Sources */,
+				B5AC76771969B74B00566642 /* UIViewController+YSKit.m in Sources */,
+				B5AC76651969B74B00566642 /* NSDate+YSKit.m in Sources */,
+				B5AC76731969B74B00566642 /* UIResponder+YSKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B54A405F196987B100A5BDB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B54A4060196987B100A5BDB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B54A407D196987B100A5BDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B54A407E196987B100A5BDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B54A4080196987B100A5BDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSCategorys/YSCategorys-Prefix.pch";
+				INFOPLIST_FILE = "YSCategorys/YSCategorys-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B54A4081196987B100A5BDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YSCategorys/YSCategorys-Prefix.pch";
+				INFOPLIST_FILE = "YSCategorys/YSCategorys-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B54A404E196987B100A5BDB9 /* Build configuration list for PBXProject "YSCategorys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54A407D196987B100A5BDB9 /* Debug */,
+				B54A407E196987B100A5BDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B54A407F196987B100A5BDB9 /* Build configuration list for PBXNativeTarget "YSCategorys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54A4080196987B100A5BDB9 /* Debug */,
+				B54A4081196987B100A5BDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B54A404B196987B100A5BDB9 /* Project object */;
+}

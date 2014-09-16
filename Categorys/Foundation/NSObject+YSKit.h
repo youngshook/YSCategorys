@@ -13,6 +13,10 @@
 
 @interface NSObject (YSKit)
 
+- (NSArray *)ys_getPropertyKeys;
+- (NSMutableDictionary *)ys_getProperties;
+- (void)ys_reflectDataFromObject:(id)dataSource;
+
 /**
    Adds a new instance method to a class. All instances of this class will have this method.
 
