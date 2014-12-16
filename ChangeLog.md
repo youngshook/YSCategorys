@@ -1,6 +1,8 @@
 # Change Log
 
+### 1.0.8
 
+* update NSDate Categorys
 
 ### 1.0.7
 

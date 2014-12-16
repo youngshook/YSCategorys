@@ -342,4 +342,524 @@
 	return [NSDate ys_timestampFormatString];
 }
 
+
+/*******
+ *@Description:获取当天的包括“年”，“月”，“日”，“周”，“时”，“分”，“秒”的NSDateComponents
+ *@Params:nil
+ *@Return:当天的包括“年”，“月”，“日”，“周”，“时”，“分”，“秒”的NSDateComponents
+ ********/
+- (NSDateComponents *)ys_date_componentsOfDay
+{
+    static NSDateComponents *dateComponents = nil;
+    static NSDate *previousDate = nil;
+    
+    if (!previousDate || ![previousDate isEqualToDate:self]) {
+        previousDate = self;
+        dateComponents = [[NSCalendar currentCalendar] components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit | NSWeekCalendarUnit| NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit fromDate:self];
+    }
+    
+    return dateComponents;
+}
+
+
+//  --------------------------NSDate---------------------------
+- (NSInteger)ys_date_weekdayOrdinal
+{
+    return self.ys_date_weekdayOrdinal;
+}
+
+
+/*
+ *@Description:获得NSDate对应的年份
+ *@Params:nil
+ *@Return:NSDate对应的年份
+ */
+- (NSUInteger)ys_date_year
+{
+    return [self ys_date_componentsOfDay].year;
+}
+
+/*
+ *@Description:获得NSDate对应的月份
+ *@Params:nil
+ *@Return:NSDate对应的月份
+ */
+- (NSUInteger)ys_date_month
+{
+    return [self ys_date_componentsOfDay].month;
+}
+
+
+/*
+ *@Description:获得NSDate对应的日期
+ *@Params:nil
+ *@Return:NSDate对应的日期
+ */
+- (NSUInteger)ys_date_day
+{
+    return [self ys_date_componentsOfDay].day;
+}
+
+
+/*
+ *@Description:获得NSDate对应的小时数
+ *@Params:nil
+ *@Return:NSDate对应的小时数
+ */
+- (NSUInteger)ys_date_hour
+{
+    return [self ys_date_componentsOfDay].hour;
+}
+
+
+/*
+ *@Description:获得NSDate对应的分钟数
+ *@Params:nil
+ *@Return:NSDate对应的分钟数
+ */
+- (NSUInteger)ys_date_minute
+{
+    return [self ys_date_componentsOfDay].minute;
+}
+
+
+/*
+ *@Description:获得NSDate对应的秒数
+ *@Params:nil
+ *@Return:NSDate对应的秒数
+ */
+- (NSUInteger)ys_date_second
+{
+    return [self ys_date_componentsOfDay].second;
+}
+
+/*
+ *@Description:获得NSDate对应的星期
+ *@Params:nil
+ *@Return:NSDate对应的星期
+ */
+- (NSUInteger)ys_date_weekday
+{
+    return [self ys_date_componentsOfDay].weekday;
+}
+
+/*
+ *@Description:获得NSDate对应的周数
+ *@Params:nil
+ *@Return:NSDate对应的周数
+ */
+- (NSUInteger)ys_date_week
+{
+    return [self ys_date_componentsOfDay].weekOfMonth;
+}
+
+/*
+ *@Description:获取当天的起始时间（00:00:00）
+ *@Params:nil
+ *@Return:当天的起始时间
+ */
+- (NSDate *)ys_date_beginingOfDay
+{
+    [[self ys_date_componentsOfDay] setHour:0];
+    [[self ys_date_componentsOfDay] setMinute:0];
+    [[self ys_date_componentsOfDay] setSecond:0];
+    
+    return [[NSCalendar currentCalendar] dateFromComponents:[self ys_date_componentsOfDay]];
+}
+
+/*
+ *@Description:获取当天的结束时间（23:59:59）
+ *@Params:nil
+ *@Return:当天的结束时间
+ */
+- (NSDate *)ys_date_endOfDay
+{
+    [[self ys_date_componentsOfDay] setHour:23];
+    [[self ys_date_componentsOfDay] setMinute:59];
+    [[self ys_date_componentsOfDay] setSecond:59];
+    
+    return [[NSCalendar currentCalendar] dateFromComponents:[self ys_date_componentsOfDay]];
+}
+
+/*
+ *@Description:获取当月的第一天
+ *@Params:nil
+ *@Return:当月的第一天
+ */
+- (NSDate *)ys_date_firstDayOfTheMonth
+{
+    [[self ys_date_componentsOfDay] setDay:1];
+    return [[NSCalendar currentCalendar] dateFromComponents:[self ys_date_componentsOfDay]];
+}
+
+/*
+ *@Description:获取当月的最后一天
+ *@Params:nil
+ *@Return:当月的最后一天
+ */
+- (NSDate *)ys_date_lastDayOfTheMonth
+{
+    [[self ys_date_componentsOfDay] setDay:[self ys_date_numberOfDaysInMonth]];
+    return [[NSCalendar currentCalendar] dateFromComponents:[self ys_date_componentsOfDay]];
+}
+
+/*
+ *@Description:获取前一个月的第一天
+ *@Params:nil
+ *@Return:前一个月的第一天
+ */
+- (NSDate *)ys_date_firstDayOfThePreviousMonth
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.month = -1;
+    
+    return [[[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0] ys_date_firstDayOfTheMonth];
+}
+
+/*
+ *@Description:获取后一个月的第一天
+ *@Params:nil
+ *@Return:后一个月的第一天
+ */
+- (NSDate *)ys_date_firstDayOfTheFollowingMonth
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.month = 1;
+    
+    return [[[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0] ys_date_firstDayOfTheMonth];
+}
+
+
+/*
+ *@Description:获取前一个月中与当天对应的日期
+ *@Params:nil
+ *@Return:前一个月中与当天对应的日期
+ */
+- (NSDate *)ys_date_associateDayOfThePreviousMonth
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.month = -1;
+    
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+}
+
+/*
+ *@Description:获取后一个月中与当天对应的日期
+ *@Params:nil
+ *@Return:后一个月中与当天对应的日期
+ */
+- (NSDate *)ys_date_associateDayOfTheFollowingMonth
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.month = 1;
+    
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+}
+
+
+/*
+ *@Description:获取当月的天数
+ *@Params:nil
+ *@Return:当月的天数
+ */
+- (NSUInteger)ys_date_numberOfDaysInMonth
+{
+    return [[NSCalendar currentCalendar] rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:self].length;
+}
+
+
+/*
+ *@Description:获取当月的周数
+ *@Params:nil
+ *@Return:当月的周数
+ */
+- (NSUInteger)ys_date_numberOfWeeksInMonth
+{
+    NSUInteger weekOfFirstDay = [[self ys_date_firstDayOfTheMonth] ys_date_componentsOfDay].weekday;
+    NSUInteger numberDaysInMonth = [self ys_date_numberOfDaysInMonth];
+    
+    return ((weekOfFirstDay - 1 + numberDaysInMonth) % 7) ? ((weekOfFirstDay - 1 + numberDaysInMonth) / 7 + 1): ((weekOfFirstDay - 1 + numberDaysInMonth) / 7);
+}
+
+
+/*
+ *@Description:获取这一周的第一天
+ *@Params:nil
+ *@Return:这一周的第一天
+ */
+- (NSDate *)ys_date_firstDayOfTheWeek
+{
+    NSDate *firstDay = nil;
+    if ([[NSCalendar currentCalendar] rangeOfUnit:NSWeekCalendarUnit startDate:&firstDay interval:NULL forDate:self]) {
+        return firstDay;
+    }
+    
+    return firstDay;
+}
+
+/*
+ *@Description:获取当月中，前一周的第一天
+ *@Params:nil
+ *@Return:前一周的第一天
+ */
+- (NSDate *)ys_date_firstDayOfThePreviousWeekInTheMonth
+{
+    NSDate *firstDayOfTheWeekInTheMonth = [self ys_date_firstDayOfTheWeekInTheMonth];
+    if ([firstDayOfTheWeekInTheMonth ys_date_componentsOfDay].weekday > 1) {
+        return nil;
+    } else {
+        if ([firstDayOfTheWeekInTheMonth ys_date_componentsOfDay].day > 7) {
+            NSDateComponents *components = [[NSDateComponents alloc] init];
+            components.day = -7;
+            return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+        } else if ([firstDayOfTheWeekInTheMonth ys_date_componentsOfDay].day > 1) {
+            return [self ys_date_firstDayOfTheMonth];
+        } else {
+            return nil;
+        }
+    }
+}
+
+/*
+ *@Description:获取前一个月中，最后一周的第一天
+ *@Params:nil
+ *@Return:前一个月中，最后一周的第一天
+ */
+- (NSDate *)ys_date_firstDayOfTheLastWeekInPreviousMonth
+{
+    NSDate *firstDayOfThePreviousMonth = [self ys_date_firstDayOfThePreviousMonth];
+    NSUInteger numberOfDaysInPreviousMonth = [firstDayOfThePreviousMonth ys_date_numberOfDaysInMonth];
+    
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.year = [firstDayOfThePreviousMonth ys_date_componentsOfDay].year;
+    components.month = [firstDayOfThePreviousMonth ys_date_componentsOfDay].month;
+    components.day = numberOfDaysInPreviousMonth;
+    NSDate *lastDayOfThePreviousMonth = [[NSCalendar currentCalendar] dateFromComponents:components];
+    
+    return [lastDayOfThePreviousMonth ys_date_firstDayOfTheWeekInTheMonth];
+}
+
+
+/*
+ *@Description:获取当月中，后一周的第一天
+ *@Params:nil
+ *@Return:后一周的第一天
+ */
+- (NSDate *)ys_date_firstDayOfTheFollowingWeekInTheMonth
+{
+    NSDate *firstDayOfTheWeekInTheMonth = [self ys_date_firstDayOfTheWeekInTheMonth];
+    NSUInteger numberOfDaysInMonth = [self ys_date_numberOfDaysInMonth];
+    if (([firstDayOfTheWeekInTheMonth ys_date_componentsOfDay].day + 6) >= numberOfDaysInMonth) {
+        return nil;
+    } else {
+        NSDateComponents *components = [[NSDateComponents alloc] init];
+        components.day = 6;
+        return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+    }
+}
+
+/*
+ *@Description:获取下一个月中，最前一周的第一天
+ *@Params:nil
+ *@Return:下一个月中，最前一周的第一天
+ */
+- (NSDate *)ys_date_firstDayOfTheFirstWeekInFollowingMonth
+{
+    NSDate *firstDayOfTheFollowingMonth = [self ys_date_firstDayOfTheFollowingMonth];
+    
+    return [firstDayOfTheFollowingMonth ys_date_firstDayOfTheWeekInTheMonth];
+}
+
+
+/*
+ *@Description:获取当月中，这一周的第一天
+ *@Params:nil
+ *@Return:当月中，这一周的第一天
+ */
+- (NSDate *)ys_date_firstDayOfTheWeekInTheMonth
+{
+    NSDate *firstDayOfTheWeek = nil;
+    if ([[NSCalendar currentCalendar] rangeOfUnit:NSWeekCalendarUnit startDate:&firstDayOfTheWeek interval:NULL forDate:self]) {
+        NSDate *firstDayOfTheMonth = [self ys_date_firstDayOfTheMonth];
+        if ([firstDayOfTheWeek ys_date_componentsOfDay].month == [firstDayOfTheMonth ys_date_componentsOfDay].month) {
+            return firstDayOfTheWeek;
+        } else {
+            return firstDayOfTheMonth;
+        }
+    }
+    
+    return firstDayOfTheWeek;
+}
+
+
+/*
+ *@Description:获取当月中，这一周的天数
+ *@Params:nil
+ *@Return:当月中，这一周的天数
+ */
+- (NSUInteger)ys_date_numberOfDaysInTheWeekInMonth
+{
+    NSDate *firstDayOfTheWeek = [self ys_date_firstDayOfTheWeek];
+    NSDate *firstDayOfTheWeekInTheMonth = [self ys_date_firstDayOfTheWeekInTheMonth];
+    
+    if ([firstDayOfTheWeek ys_date_componentsOfDay].month == [firstDayOfTheWeekInTheMonth ys_date_componentsOfDay].month) {
+        return (firstDayOfTheWeek.ys_date_numberOfDaysInMonth - [firstDayOfTheWeek ys_date_componentsOfDay].day + 1) >= 7 ? 7 : (firstDayOfTheWeek.ys_date_numberOfDaysInMonth - [firstDayOfTheWeek ys_date_componentsOfDay].day + 1);
+    } else {
+        return (8 - [firstDayOfTheWeekInTheMonth ys_date_componentsOfDay].weekday);
+    }
+}
+
+/*
+ *@Description:获取当天是当月的第几周
+ *@Params:nil
+ *@Return:当天是当月的第几周
+ */
+- (NSUInteger)ys_date_weekOfDayInMonth
+{
+    NSDate *firstDayOfTheMonth = [self ys_date_firstDayOfTheMonth];
+    NSUInteger weekdayOfFirstDayOfTheMonth = [firstDayOfTheMonth ys_date_componentsOfDay].weekday;
+    NSUInteger day = [self ys_date_componentsOfDay].day;
+    
+    return ((day + weekdayOfFirstDayOfTheMonth - 1)%7) ? ((day + weekdayOfFirstDayOfTheMonth - 1)/7) + 1: ((day + weekdayOfFirstDayOfTheMonth - 1)/7);
+}
+
+/*
+ *@Description:获取当天是当年的第几周
+ *@Params:nil
+ *@Return:当天是当年的第几周
+ */
+- (NSUInteger)ys_date_weekOfDayInYear
+{
+    return [[NSCalendar currentCalendar] ordinalityOfUnit:NSWeekOfYearCalendarUnit inUnit:NSYearCalendarUnit forDate:self];
+}
+
+/*
+ *@Description:获取前一周中与当天对应的日期
+ *@Params:nil
+ *@Return:前一个周中与当天对应的日期
+ */
+- (NSDate *)ys_date_associateDayOfThePreviousWeek
+{
+    NSUInteger day = [self ys_date_componentsOfDay].day;
+    NSUInteger weekday = [self ys_date_componentsOfDay].weekday;
+    
+    if (day > 7) {
+        NSDateComponents *components = [[NSDateComponents alloc] init];
+        components.day = -7;
+        
+        return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+    } else if (day > weekday) {
+        
+        return [self ys_date_firstDayOfTheMonth];
+    } else {
+        NSDateComponents *components = [[NSDateComponents alloc] init];
+        components.day = -1;
+        
+        return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:[self ys_date_firstDayOfTheWeekInTheMonth] options:0];
+    }
+}
+
+/*
+ *@Description:获取后一周中与当天对应的日期
+ *@Params:nil
+ *@Return:后一周中与当天对应的日期
+ */
+- (NSDate *)ys_date_associateDayOfTheFollowingWeek
+{
+    NSUInteger numberOfDaysInMonth = [self ys_date_numberOfDaysInMonth];
+    NSUInteger day = [self ys_date_componentsOfDay].day;
+    NSUInteger weekday = [self ys_date_componentsOfDay].weekday;
+    if (day + 7 <= numberOfDaysInMonth) {
+        NSDateComponents *components = [[NSDateComponents alloc] init];
+        components.day = 7;
+        
+        return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+    } else if ((day + (7 - weekday + 1)) <= numberOfDaysInMonth) {
+        NSDateComponents *components = [[NSDateComponents alloc] init];
+        components.day = numberOfDaysInMonth - day;
+        
+        return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+    } else {
+        return [self ys_date_firstDayOfTheFollowingMonth];
+    }
+}
+
+
+/*
+ *@Description:前一天
+ *@Params:nil
+ *@Return:前一天
+ */
+- (NSDate *)ys_date_previousDay
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.day = -1;
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+}
+
+- (NSDate *)ys_date_dateWithDayInterval:(NSInteger)dayInterval {
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.day = dayInterval;
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+}
+
+/*
+ *@Description:后一天
+ *@Params:nil
+ *@Return:后一天
+ */
+- (NSDate *)ys_date_followingDay
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.day = 1;
+    return [[NSCalendar currentCalendar] dateByAddingComponents:components toDate:self options:0];
+}
+
+
+/*
+ *@Description:判断与某一天是否为同一天
+ *@Params:
+ *  otherDate:某一天
+ *@Return:YES-同一天；NO-不同一天
+ */
+- (BOOL)ys_date_sameDayWithDate:(NSDate *)otherDate
+{
+    if (self.ys_date_year == otherDate.ys_date_year && self.ys_date_month == otherDate.ys_date_month && self.ys_date_day == otherDate.ys_date_day) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+
+/*
+ *@Description:判断与某一天是否为同一周
+ *@Params:
+ *  otherDate:某一天
+ *@Return:YES-同一周；NO-不同一周
+ */
+- (BOOL)ys_date_sameWeekWithDate:(NSDate *)otherDate
+{
+    if (self.ys_date_year == otherDate.ys_date_year  && self.ys_date_month == otherDate.ys_date_month && self.ys_date_weekOfDayInYear == otherDate.ys_date_weekOfDayInYear) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+/*
+ *@Description:判断与某一天是否为同一月
+ *@Params:
+ *  otherDate:某一天
+ *@Return:YES-同一月；NO-不同一月
+ */
+- (BOOL)ys_date_sameMonthWithDate:(NSDate *)otherDate
+{
+    if (self.ys_date_year == otherDate.ys_date_year && self.ys_date_month == otherDate.ys_date_month) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 @end
