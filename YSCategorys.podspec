@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.name         = "YSCategorys"
   s.version      = "1.0.8"
   s.summary      = "A set of categorys to make iOS development easier."
-  s.homepage     = "https://github.com/youngshook/YSCategorys"
+  s.homepage     = "http://github.com/youngshook/YSCategorys"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.author             = { "Young Shook" => "shook.young@gmail.com" }
   # Or just: s.author    = "Young Shook"
   # s.authors            = { "Young Shook" => "shook.young@gmail.com" }
-  s.social_media_url   = "http://twitter.com/young_shook"
+  s.social_media_url   = "http://weibo.com/justfuckingdoit"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
