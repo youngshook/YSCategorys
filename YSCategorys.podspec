@@ -101,9 +101,6 @@ Pod::Spec.new do |s|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
-  s.frameworks = "QuartzCore", "UIKit", "Foundation"
-
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
@@ -119,13 +116,17 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
+  s.subspec 'UIKit' do |ss|
+  ss.source_files = 'Categorys/UIKit'
+  ss.ios.framework = 'UIKit','QuartzCore'
+  end
+
+  s.subspec 'Foundation' do |ss|
+  ss.source_files = 'Categorys/Foundation'
+  ss.ios.framework = 'Foundation'
+  end
+
 end
 
-s.subspec ‘UIKit’ do |UIKit|
-UIKit.source_files = ‘Categorys/UIKit’
-end
 
-s.subspec ‘Foundation’ do |Foundation|
-UIKit.source_files = ‘Categorys/Foundation’
-end
 
