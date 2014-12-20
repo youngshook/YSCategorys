@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Young Shook" => "shook.young@gmail.com" }
   s.social_media_url   = "http://weibo.com/justfuckingdoit"
   s.ios.deployment_target = "6.0"
-  s.public_header_files = "Categorys/**/*.h"
+  s.public_header_files = "Categorys/*.h"
   s.requires_arc = true
 
   s.source       = { :git => "https://github.com/youngshook/YSCategorys.git", :tag => "1.0.8" }
