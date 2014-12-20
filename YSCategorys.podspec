@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YSCategorys"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9"
   s.summary      = "A set of categorys to make iOS development easier."
   s.homepage     = "http://github.com/youngshook/YSCategorys"
   s.license      = "MIT"
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.public_header_files = "Categorys/*.h"
   s.requires_arc = true
 
-  s.source       = { :git => "https://github.com/youngshook/YSCategorys.git", :tag => "1.0.8" }
+  s.source       = { :git => "https://github.com/youngshook/YSCategorys.git", :tag => "1.0.9" }
   s.subspec 'UIKit' do |ss|
   ss.source_files = 'Categorys/UIKit'
   ss.ios.framework = 'UIKit','QuartzCore'
