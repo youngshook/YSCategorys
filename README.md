@@ -63,9 +63,21 @@ Then add the import:
 
 ===========
 
-The MIT License (MIT) 
+## License
 
-http://www.opensource.org/licenses/mit-license.php    
-    
-    
-    
+This code is distributed under the terms and conditions of the [MIT license](http://opensource.org/licenses/MIT).
+
+## Donate
+
+You can support me by:
+
+* sending me iTunes Gift Cards;
+* via Alipay: shook.young@gmail.com
+* via PayPal: shook.young@gmail.com
+
+:-)
+
+## Contact
+
+* [Email](mailto:shook.young@gmail.com)
+* [Twitter](https://twitter.com/youngshook)
