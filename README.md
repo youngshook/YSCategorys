@@ -1,5 +1,6 @@
-YSCategorys
-===========
+#YSCategorys
+
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/YSCategorys/badge.png)](http://cocoapods.org/?q=on%3Aosx%20on%3Aios%20YSCategorys)
 
 A set of categorys to make iOS development easier.
 
@@ -45,6 +46,10 @@ A set of categorys to make iOS development easier.
        * UICollectionView
        * UIWindow
 
+
+## Document
+
+[YSCategorys Document](http://cocoadocs.org/docsets/YSCategorys/1.1.0/)
 
 ## Installation
 
