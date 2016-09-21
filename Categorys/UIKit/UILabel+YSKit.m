@@ -36,9 +36,8 @@
 
 	CGSize maximumLabelSize = CGSizeMake(self.frame.size.width, 9999);
 
-	CGSize expectedLabelSize = [[self text] sizeWithFont:[self font]
-	                                   constrainedToSize:maximumLabelSize
-	                                       lineBreakMode:[self lineBreakMode]];
+    CGSize expectedLabelSize =[[self text] boundingRectWithSize:maximumLabelSize options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[self font]} context:nil].size;
+
 	return expectedLabelSize.height;
 }
 

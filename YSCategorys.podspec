@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Young Shook" => "shook.young@gmail.com" }
   s.social_media_url   = "http://weibo.com/justfuckingdoit"
-  s.ios.deployment_target = "6.0"
+  s.ios.deployment_target = "8.0"
   s.public_header_files = 'Categorys/**/*.h'
   s.source_files = 'Categorys/YSKit.h'
   s.requires_arc = true

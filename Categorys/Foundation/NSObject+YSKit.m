@@ -13,15 +13,15 @@
 	// See http://stackoverflow.com/questions/6357663/casting-a-block-to-a-void-for-dynamic-class-method-resolution
 
 #if MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_7
-	void *impBlockForIMP = (void *)objc_unretainedPointer(block);
+    void *impBlockForIMP = (void *)objc_unretainedPointer(block);
 #else
-	id impBlockForIMP = (__bridge id)objc_unretainedPointer(block);
+    id impBlockForIMP = (__bridge id)(__bridge void *)(block);
 #endif
 
-	IMP myIMP = imp_implementationWithBlock(impBlockForIMP);
+    IMP myIMP = imp_implementationWithBlock(impBlockForIMP);
 
-	SEL selector = NSSelectorFromString(selectorName);
-	return class_addMethod(self, selector, myIMP, "v@:");
+    SEL selector = NSSelectorFromString(selectorName);
+    return class_addMethod(self, selector, myIMP, "v@:");
 }
 
 #pragma mark - Method Swizzling
